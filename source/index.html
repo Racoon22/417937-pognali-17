@@ -1,12 +1,175 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__wrapper">
+    <img src="http://placehold.it/100x20" alt="" class="site-header__logo">
+    <span class="site-header__burger-icon"></span>
+  </div>
+</header>
+<section class="main">
+  <h1 class="main__title">В путешествие с крутыми попутчиками!</h1>
+  <div class="main__button-wrapper">
+    <a href="#" class="main__phone visually-hidden">Позвонить</a>
+    <a href="#" class="main__email visually-hidden">Написать на почту</a>
+    <a href="#" class="main__login">Авторизация</a>
+  </div>
+  <blockquote class="main__review">
+    «Лучшее приложение, что я видел в жизни!»
+    <cite class="main__review-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+  </blockquote>
+  <ul class="main__steps steps">
+    <li class="steps__item">
+      <p class="steps__title">Выберите направление<span class="steps__number">1</span></p>
+    </li>
+    <li class="steps__item">
+      <p class="steps__title">Изучите идеи путешественников<span class="steps__number">2</span></p>
+    </li>
+    <li class="steps__item">
+      <p class="steps__title">Находите тех, кто похож на вас<span class="steps__number"></span>3</p>
+    </li>
+    <li class="steps__item">
+      <p class="steps__title">Путешествуйте вместе!<span class="steps__number">4</span></p>
+    </li>
+  </ul>
+</section>
+<section class="about">
+  <h2 class="about__title">О сервисе</h2>
+  <p class="about__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
+    своими идеями путешествий и черпайте вдохновение в чужих. </p>
+  <p class="about__exhortation">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+</section>
+<section class="directions">
+  <h2 class="directions__title">Направления</h2>
+  <p class="directions__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели
+    бы отправиться и чем можно там заняться.
+  </p>
+  <ul class="directions__list">
+    <li class="directions__item">
+      <div class="directions__wrapper">
+        <img src="http://placehold.it/35x25" alt="" class="directions__flag">
+        <h3 class="directions__title">Тайланд</h3>
+        <p class="directions__slogan">Джугли зовут!</p>
+        <span class="directions__visitors">18321</span>
+      </div>
+    </li>
+    <li class="directions__item">
+      <div class="directions__wrapper">
+        <img src="http://placehold.it/35x25" alt="" class="directions__flag">
+        <h3 class="directions__title">Франция</h3>
+        <p class="directions__slogan">Трэ бьен, манифик!</p>
+        <span class="directions__visitors">12518</span>
+      </div>
+    </li>
+    <li class="directions__item">
+      <div class="directions__wrapper">
+        <img src="http://placehold.it/35x25" alt="" class="directions__flag">
+        <h3 class="directions__title">Чехия</h3>
+        <p class="directions__slogan">Закоулки старой Европы</p>
+        <span class="directions__visitors">5326</span>
+      </div>
+    </li>
+  </ul>
+  <a href="#" class="directions__show-all button">Показать все</a>
+</section>
+<section class="companions">
+  <h2 class="companions__title">Попутчики</h2>
+  <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен
+    пляж и коктейль, а другому маршрут для хайкинга. </p>
+  <p class="companions__exhortation">Теперь можно легко найти единомышленников!</p>
+  <ul class="companions__list">
+    <li class="companions__item">
+      <div class="companions__photo-wrapper"><img src="http://placehold.it/270x270" alt="" class="companions__img">
+        <span class="companions__level"></span>
+        <div class="companions__info">
+          <ul class="companions__countries-list">
+            <li class="companions__countries-item">
+              <img src="http://placehold.it/35x25" alt="" class="companions__countries-img">
+            </li>
+            <li class="companions__countries-item">
+              <img src="http://placehold.it/35x25" alt="" class="companions__countries-img">
+            </li>
+            <li class="companions__countries-item">
+              <img src="http://placehold.it/35x25" alt="" class="companions__countries-img">
+            </li>
+          </ul>
+          <h3 class="companions__name">Таня Фирсова</h3>
+          <p class="companions__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          <ul class="companions__transports transports-list">
+            <li class="transports-list__item visually-hidden">Самолет</li>
+            <li class="transports-list__item visually-hidden">Автобус</li>
+            <li class="transports-list__item visually-hidden">Велосипед</li>
+            <li class="transports-list__item visually-hidden">Пешком</li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="companions__item">
+      <div class="companions__photo-wrapper"><img src="http://placehold.it/270x270" alt="" class="companions__img">
+        <span class="companions__level"></span>
+        <div class="companions__info">
+          <ul class="companions__countries-list">
+            <li class="companions__countries-item">
+            </li>
+            <li class="companions__countries-item">
+              <img src="http://placehold.it/35x25" alt="" class="companions__countries-img">
+            </li>
+            <li class="companions__countries-item">
+              <img src="http://placehold.it/35x25" alt="" class="companions__countries-img">
+            </li>
+          </ul>
+          <h3 class="companions__name">Петя Демин</h3>
+          <p class="companions__tags">#бургер #бар #футбол #концерт #крафт</p>
+          <ul class="companions__transports transports-list">
+            <li class="transports-list__item transports-list__item--plane visually-hidden">Самолет</li>
+            <li class="transports-list__item transports-list__item--bus visually-hidden">Автобус</li>
+            <li class="transports-list__item transports-list__item--bicycle visually-hidden">Велосипед</li>
+            <li class="transports-list__item transports-list__item--afoot visually-hidden">Пешком</li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <a href="#" class="directions__show-all button">Показать все</a>
+</section>
+<section class="profile">
+  <h1 class="profile__title">Добавьте свой профиль</h1>
+  <img src="http://placehold.it/35x25" alt="" class="profile__image">
+  <ul class="profile__price-list">
+    <li class="profile__price-item">
+      <p class="profile__price-description">
+        <span class="profile__price-number">Базовое размещение Бесплатно</span>
+      </p>
+    </li>
+    <li class="profile__price-item">
+      <p class="profile__price-description">
+        <span class="profile__price-number">Вывод на первых позициях 99 руб./мес</span>
+      </p>
+    </li>
+    <li class="profile__price-item">
+      <p class="profile__price-description">
+        <span class="profile__price-number">Кастомный цвет карточки 59 руб./мес</span>
+      </p>
+    </li>
+  </ul>
+  <a href="#" class="profile___modal-link">Показать тарифы для бизнеса</a>
+</section>
+<footer class="site-footer">
+  <img src="http://placehold.it/100x20" alt="" class="site-footer__logo">
+  <ul class="site-footer__social-list">
+    <li class="site-footer__social-item"><a href="#" class="site-footer__social-link visually-hidden">Фейсбук</a></li>
+    <li class="site-footer__social-item"><a href="#" class="site-footer__social-link visually-hidden">Вконтакте</a></li>
+    <li class="site-footer__social-item"><a href="#" class="site-footer__social-link visually-hidden">Инстаграмм</a>
+    </li>
+  </ul>
+  <div class="site-footer__copyright-wrapper">
+    <p class="site-footer__copyright"></p>
+    <img src="http://placehold.it/27x35" alt="" class="site-footer__copyright-logo">
+  </div>
+</footer>
+</body>
 </html>
