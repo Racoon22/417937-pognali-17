@@ -1,0 +1,12 @@
+.site-footer {
+  background-color: #ffffff;
+}
+
+.site-footer__copyright {
+  color: $grey;
+  font-weight: 400;
+}
+
+.site-footer__social-list {
+  @include reset-list;
+}

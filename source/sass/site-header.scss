@@ -1,0 +1,11 @@
+.site-header {
+  background-color: #161c36;
+}
+
+.header__title {
+  @include reset-margin-padding;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
