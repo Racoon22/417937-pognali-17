@@ -32,8 +32,3 @@ body {
 .page-wrapper {
   background-color: $coconut;
 }
-
-.title {
-  @include reset-margin-padding;
-  color: #ffffff;
-}
