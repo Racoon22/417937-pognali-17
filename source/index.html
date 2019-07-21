@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="site-header">
+<header class="site-header container">
   <div class="site-header__wrapper">
-    <img src="http://placehold.it/100x20" alt="" class="site-header__logo">
+    <img src="img/logo-mobile-white@1x.png" height="20" width="100" alt="" class="site-header__logo">
     <span class="site-header__burger-icon"></span>
   </div>
 </header>
-<section class="main">
+<section class="main container">
   <h1 class="main__title">В путешествие с крутыми попутчиками!</h1>
   <div class="main__button-wrapper">
     <a href="#" class="main__phone visually-hidden">Позвонить</a>
@@ -30,20 +31,20 @@
       <p class="steps__title">Изучите идеи путешественников<span class="steps__number">2</span></p>
     </li>
     <li class="steps__item">
-      <p class="steps__title">Находите тех, кто похож на вас<span class="steps__number"></span>3</p>
+      <p class="steps__title">Находите тех, кто похож на вас<span class="steps__number">3</span></p>
     </li>
     <li class="steps__item">
       <p class="steps__title">Путешествуйте вместе!<span class="steps__number">4</span></p>
     </li>
   </ul>
 </section>
-<section class="about">
+<section class="about container">
   <h2 class="about__title">О сервисе</h2>
   <p class="about__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
     своими идеями путешествий и черпайте вдохновение в чужих. </p>
-  <p class="about__exhortation">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+  <p class="about__resume">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
 </section>
-<section class="directions">
+<section class="directions container">
   <h2 class="directions__title">Направления</h2>
   <p class="directions__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели
     бы отправиться и чем можно там заняться.
@@ -51,8 +52,8 @@
   <ul class="directions__list">
     <li class="directions__item">
       <div class="directions__wrapper">
-        <img src="http://placehold.it/35x25" alt="" class="directions__flag">
-        <h3 class="directions__title">Тайланд</h3>
+        <img src="img/th" alt="" class="directions__flag">
+        <h3 class="directions__item-title">Тайланд</h3>
         <p class="directions__slogan">Джугли зовут!</p>
         <span class="directions__visitors">18321</span>
       </div>
@@ -60,7 +61,7 @@
     <li class="directions__item">
       <div class="directions__wrapper">
         <img src="http://placehold.it/35x25" alt="" class="directions__flag">
-        <h3 class="directions__title">Франция</h3>
+        <h3 class="directions__item-title">Франция</h3>
         <p class="directions__slogan">Трэ бьен, манифик!</p>
         <span class="directions__visitors">12518</span>
       </div>
@@ -68,7 +69,7 @@
     <li class="directions__item">
       <div class="directions__wrapper">
         <img src="http://placehold.it/35x25" alt="" class="directions__flag">
-        <h3 class="directions__title">Чехия</h3>
+        <h3 class="directions__item-title">Чехия</h3>
         <p class="directions__slogan">Закоулки старой Европы</p>
         <span class="directions__visitors">5326</span>
       </div>
@@ -76,14 +77,14 @@
   </ul>
   <a href="#" class="directions__show-all button">Показать все</a>
 </section>
-<section class="companions">
+<section class="companions container">
   <h2 class="companions__title">Попутчики</h2>
   <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен
     пляж и коктейль, а другому маршрут для хайкинга. </p>
-  <p class="companions__exhortation">Теперь можно легко найти единомышленников!</p>
+  <p class="companions__resume">Теперь можно легко найти единомышленников!</p>
   <ul class="companions__list">
     <li class="companions__item">
-      <div class="companions__photo-wrapper"><img src="http://placehold.it/270x270" alt="" class="companions__img">
+      <div class="companions__photo-wrapper"><img src="img/firsova-desktop@1x.jpg" alt="" class="companions__img">
         <span class="companions__level"></span>
         <div class="companions__info">
           <ul class="companions__countries-list">
@@ -109,7 +110,8 @@
       </div>
     </li>
     <li class="companions__item">
-      <div class="companions__photo-wrapper"><img src="http://placehold.it/270x270" alt="" class="companions__img">
+      <div class="companions__photo-wrapper">
+        <img src="img/demin-desktop@1x.jpg" width="270" height="270" alt="" class="companions__img">
         <span class="companions__level"></span>
         <div class="companions__info">
           <ul class="companions__countries-list">
@@ -134,32 +136,29 @@
       </div>
     </li>
   </ul>
-  <a href="#" class="directions__show-all button">Показать все</a>
+  <a href="#" class="directions__show-all button">Показать всеx</a>
 </section>
-<section class="profile">
+<section class="profile container">
   <h1 class="profile__title">Добавьте свой профиль</h1>
   <img src="http://placehold.it/35x25" alt="" class="profile__image">
   <ul class="profile__price-list">
     <li class="profile__price-item">
-      <p class="profile__price-description">
-        <span class="profile__price-number">Базовое размещение Бесплатно</span>
-      </p>
+      <p class="profile__price-description">Базовое размещение Бесплатно</p>
+      <span class="profile__price-number">1</span>
     </li>
     <li class="profile__price-item">
-      <p class="profile__price-description">
-        <span class="profile__price-number">Вывод на первых позициях 99 руб./мес</span>
-      </p>
+      <p class="profile__price-description">Вывод на первых позициях 99 руб./мес</p>
+        <span class="profile__price-number">2</span>
     </li>
     <li class="profile__price-item">
-      <p class="profile__price-description">
-        <span class="profile__price-number">Кастомный цвет карточки 59 руб./мес</span>
-      </p>
+      <p class="profile__price-description">Кастомный цвет карточки 59 руб./мес</p>
+        <span class="profile__price-number">3</span>
     </li>
   </ul>
   <a href="#" class="profile___modal-link">Показать тарифы для бизнеса</a>
 </section>
-<footer class="site-footer">
-  <img src="http://placehold.it/100x20" alt="" class="site-footer__logo">
+<footer class="site-footer container">
+  <img src="img/logo-mobile-blue@1x.png" alt="" class="site-footer__logo">
   <ul class="site-footer__social-list">
     <li class="site-footer__social-item"><a href="#" class="site-footer__social-link visually-hidden">Фейсбук</a></li>
     <li class="site-footer__social-item"><a href="#" class="site-footer__social-link visually-hidden">Вконтакте</a></li>
@@ -167,8 +166,8 @@
     </li>
   </ul>
   <div class="site-footer__copyright-wrapper">
-    <p class="site-footer__copyright"></p>
-    <img src="http://placehold.it/27x35" alt="" class="site-footer__copyright-logo">
+    <p class="site-footer__copyright">Разработано</p>
+    <img src="img/htmlacademy.svg" width="27" height="34" alt="" class="site-footer__copyright-logo">
   </div>
 </footer>
 </body>
