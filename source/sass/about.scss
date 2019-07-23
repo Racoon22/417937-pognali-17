@@ -11,8 +11,8 @@
 }
 
 .about__description {
-  color: #ffffff;
   @include reset-margin-padding;
+  color: #ffffff;
 }
 
 .about__resume {

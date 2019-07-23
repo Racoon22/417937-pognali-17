@@ -7,7 +7,7 @@
 }
 
 .directions__description {
-  @include reset-margin-padding
+  @include reset-margin-padding;
 }
 
 .directions__item-title {
