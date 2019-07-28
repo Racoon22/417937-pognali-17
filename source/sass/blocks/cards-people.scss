@@ -1,0 +1,131 @@
+.cards-people {
+  margin-top: 40px;
+}
+
+.cards-people__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-people__avatar {
+  border-radius: 50%;
+}
+
+.cards-people__item {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 15px 22px 20px;
+  width: 270px;
+
+  border-radius: 20px;
+  background-color: #ffffff;
+
+  color: $grey;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.cards-people__profile-link {
+  float: left;
+  margin-right: 17px;
+}
+
+.cards-people__name {
+  @include reset-margin-padding;
+  min-height: 40px;
+  margin-bottom: 5px;
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.cards-people__second-name {
+  display: block;
+}
+
+.cards-people__likes {
+  display: block;
+  min-height: 22px;
+  color: #161c35;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.cards-people__counties-list {
+  @include reset-list;
+}
+
+.cards-people__country-name {
+  color: #1d2e5b;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.cards-people__level {
+  color: #1d2e5b;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .cards-people__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cards-people__item-wrapper {
+    display: flex;
+    width: 200px;
+    flex-shrink: 0;
+  }
+
+  .cards-people__item-wrapper {
+    flex-grow: 1;
+  }
+
+  .cards-people__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-people__actions {
+    order: 3;
+    display: flex;
+  }
+
+  .cards-people__item {
+    width: 670px;
+  }
+
+  .cards-people__country-wrapper {
+    order: 1;
+    width: 100%;
+  }
+
+  .cards-people__button {
+    display: none;
+    color: #161c36;
+  }
+
+  .cards-people__avatar {
+    border-radius: 10px;
+    width: 190px;
+  }
+
+  .cards-people__counties-list {
+    display: flex;
+  }
+
+  .cards-people__button--tablet {
+    display: block;
+  }
+}

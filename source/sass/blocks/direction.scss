@@ -1,0 +1,143 @@
+.directions {
+  position: relative;
+  z-index: 15;
+  padding: 72px 25px 30px;
+  background-color: $coconut;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: -30px;
+}
+
+.directions__text-box {
+  margin-left: 25px;
+  margin-bottom: 65px;
+}
+
+
+.directions__title {
+  @include section-title;
+  margin-bottom: 25px;
+}
+
+.directions__description {
+  @include reset-margin-padding;
+  @include section-text;
+  width: 195px;
+}
+
+.directions__list {
+  @include reset-list;
+}
+
+.directions__item {
+  margin-bottom: 10px;
+}
+
+.directions__item-title {
+  @include reset-margin-padding;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.directions__item-img {
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.directions__item-wrapper {
+  position: relative;
+  margin-top: -20px;
+
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.directions__slogan {
+  color: $grey;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.directions__visitors {
+  color: $grey;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.directions__show-all--desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .directions__container {
+    padding: 72px 40px 30px;
+  }
+
+  .directions__wrapper {
+    background-image: url("../../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
+  };
+
+/*  TODO исправить название  */
+  .directions__text-box {
+    margin-left: 40px;
+    margin-bottom: 65px;
+  }
+
+  .directions__description {
+    width: 375px;
+  }
+
+  .directions__item {
+    display: flex;
+    width: 618px;
+  }
+
+  .directions__item-img {
+    width: 186px;
+    order: 2;
+  }
+
+  .directions__item-wrapper {
+    flex-grow: 1;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .about__container {
+    padding: 85px 60px 0 60px;
+  }
+
+  .about__description {
+    margin-bottom: 38px;
+    width: 610px;
+  }
+
+  .directions__wrapper {
+    display: flex;
+    padding: 62px 0 60px 72px;
+    background-image: url("../../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 20%;
+  }
+
+  .directions__text-box {
+    order: 2;
+  }
+
+  .directions__show-all {
+    display: none;
+  }
+
+  .directions__show-all--desktop {
+    display: block;
+  }
+}

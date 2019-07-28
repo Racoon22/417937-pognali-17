@@ -1,0 +1,136 @@
+.steps {
+  @include reset-list;
+}
+
+.steps__item {
+  position: relative;
+  background-color: #ff8d30;
+  margin: 0;
+  padding: 23px 0 25px 25px;
+  color: #161c35;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border-radius: 10px 10px 0 0;
+
+  & span {
+    display: block;
+    width: 150px;
+  }
+
+  &:not(:first-child) {
+    margin-top: -10px;
+  }
+
+  &:last-child {
+    border-radius: 10px;
+  }
+
+  &:nth-child(1) {
+    background-color: rgb(255, 141, 48);
+  }
+
+  &:nth-child(2) {
+    background-color: rgb(255, 165, 48);
+  }
+
+  &:nth-child(3) {
+    background-color: rgb(255, 189, 48);
+  }
+
+  &:nth-child(4) {
+    background-color: rgb(255, 215, 75);
+  }
+
+  &::after {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    content: attr(block-id);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .steps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .steps__item {
+    padding: 34px 0 62px 34px;
+    margin-top: 0;
+    flex-grow: 1;
+    flex-basis: 315px;
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-left: -15px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    &:nth-child(2) {
+      border-radius: 10px 10px 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 10px 10px;
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: -10px;
+    }
+
+    &::after {
+      position: absolute;
+      right: auto;
+      top: auto;
+      bottom: -25px;
+      left: 33px;
+      content: attr(block-id);
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 120px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .steps__item {
+    padding: 34px 0 31px 34px;
+    margin-top: 0;
+    flex-grow: 1;
+    flex-basis: 260px;
+
+    &:nth-child(n) {
+      margin-top: 0;
+    }
+
+    &:not(:first-child) {
+      margin-left: -15px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: auto;
+      left: auto;
+      right: 33px;
+      top: -20px;
+      content: attr(block-id);
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 120px;
+    }
+  }
+}
+

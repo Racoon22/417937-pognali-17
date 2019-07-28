@@ -29,6 +29,22 @@ body {
   background-color: $midnight;
 }
 
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  padding: 0 60px;
+}
+
 .page-wrapper {
   background-color: $coconut;
+}
+
+.clear-fix::after {
+  display: block;
+  content: "";
+  clear: both;
 }

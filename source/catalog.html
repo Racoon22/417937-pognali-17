@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Погнали</title>
 </head>
@@ -46,58 +47,70 @@
       <button type="button" class="site-header__burger-icon"></button>
     </div>
   </header>
-  <div class="container container-midnight">
-    <h1 class="title">Попутчики</h1>
+  <div class="title container">
+    <h1 class="title__text">Попутчики</h1>
+    <a href="/" class="title__link">На главную</a>
   </div>
   <section class="cards-people container">
     <ul class="cards-people__list">
       <li class="cards-people__item">
-        <a href="" class="cards-people__profile-link">
-          <img src="img/firsova-mobile@1x.jpg" alt="" class="cards-people__avatar">
-          <h3 class="cards-people__name">Таня Фирсова</h3>
-        </a>
-        <span class="cards-people__distance">1,5 m</span>
-        <p class="cards-people__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-        <h4 class="cards-people__country-wanted">хочет посетить:</h4>
-        <ul class="cards-people__counties-list">
-          <li class="cards-people__country-item">
-            <img src="http://placehold.it/35x25" alt="" class="cards-people__country-image">
-            <span class="cards-people__country-name">Шри ланка</span>
-          </li>
-          <li class="cards-people__country-item">
-            <img src="http://placehold.it/35x25" alt="" class="cards-people__country-image">
-            <span class="cards-people__country-name">Тайланд</span>
-          </li>
-          <li class="cards-people__country-item">
-            <img src="http://placehold.it/35x25" alt="" class="cards-people__country-image">
-            <span class="cards-people__country-name">Сейшелы</span>
-          </li>
-        </ul>
-        <h4 class="cards-people__transport">Транспорт:</h4>
-        <ul class="cards-people__transports transports-list transports-list--companions">
-          <li class="transports-list__item transports-list__item--plane">
-            <span class="transports-list__name visually-hidden">Самолет</span>
-          </li>
-          <li class="transports-list__item transports-list__item--bus">
-            <span class="transports-list__name visually-hidden">Автобус</span>
-          </li>
-          <li class="transports-list__item transports-list__item--bicycle">
-            <span class="transports-list__name visually-hidden">Велосипед</span>
-          </li>
-          <li class="transports-list__item transports-list__item--afoot">
-            <span class="transports-list__name visually-hidden">Пешком</span>
-          </li>
-        </ul>
-        <h4 class="cards-people__level-title">левел:</h4>
-        <span class="cards-people__level">99</span>
-        <a href="#" class="button button-to-call">Позвать!</a>
+        <div class="cards-people__item-wrapper">
+          <a href="" class="cards-people__profile-link clear-fix">
+            <img src="img/firsova-mobile@1x.jpg" alt="" class="cards-people__avatar">
+          </a>
+          <div class="cards-people__info">
+            <h3 class="cards-people__name">Таня <span class="cards-people__second-name">Фирсова</span></h3>
+            <div class="cards-people__actions">
+              <a href="#" class="cards-people__button cards-people__button--tablet">Позвать!</a>
+              <span class="cards-people__likes">1,5 m</span>
+            </div>
+            <p class="cards-people__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          </div>
+        </div>
+        <div class="cards-people__country-wrapper">
+          <h4 class="cards-people__country-wanted">хочет посетить:</h4>
+          <ul class="cards-people__counties-list">
+            <li class="cards-people__country-item">
+              <img src="http://placehold.it/35x25" alt="" class="cards-people__country-image">
+              <span class="cards-people__country-name">Шри ланка</span>
+            </li>
+            <li class="cards-people__country-item">
+              <img src="http://placehold.it/35x25" alt="" class="cards-people__country-image">
+              <span class="cards-people__country-name">Тайланд</span>
+            </li>
+            <li class="cards-people__country-item">
+              <img src="http://placehold.it/35x25" alt="" class="cards-people__country-image">
+              <span class="cards-people__country-name">Сейшелы</span>
+            </li>
+          </ul>
+        </div>
+        <div class="cards-people__transport-level-wrapper">
+          <h4 class="cards-people__transport">Транспорт:</h4>
+          <ul class="cards-people__transports transports-list transports-list--companions">
+            <li class="transports-list__item transports-list__item--plane">
+              <span class="transports-list__name visually-hidden">Самолет</span>
+            </li>
+            <li class="transports-list__item transports-list__item--bus">
+              <span class="transports-list__name visually-hidden">Автобус</span>
+            </li>
+            <li class="transports-list__item transports-list__item--bicycle">
+              <span class="transports-list__name visually-hidden">Велосипед</span>
+            </li>
+            <li class="transports-list__item transports-list__item--afoot">
+              <span class="transports-list__name visually-hidden">Пешком</span>
+            </li>
+          </ul>
+          <h4 class="cards-people__level-title">левел:</h4>
+          <span class="cards-people__level">99</span>
+        </div>
+        <a href="#" class="cards-people__button button button--small">Позвать!</a>
       </li>
       <li class="cards-people__item">
         <a href="#" class="cards-people__profile-link">
           <img src="http://placehold.it/70x70" alt="" class="cards-people__avatar">
           <h3 class="cards-people__name">Петя Демин</h3>
         </a>
-        <span class="cards-people__distance">150</span>
+        <span class="cards-people__likes">150</span>
         <p class="cards-people__tags">#бургер #бар #футбол #концерт #крафт</p>
         <h4 class="cards-people__country-wanted">хочет посетить:</h4>
         <ul class="cards-people__counties-list">
@@ -127,14 +140,14 @@
         </ul>
         <h4 class="cards-people__level-title">левел:</h4>
         <span class="cards-people__level">80</span>
-        <a href="#" class="button button-to-call">Позвать!</a>
+        <a href="#" class="cards-people__button button button--small">Позвать!</a>
       </li>
       <li class="cards-people__item">
         <a href="#" class="cards-people__profile-link">
           <img src="http://placehold.it/70x70" alt="" class="cards-people__avatar">
           <h3 class="cards-people__name">Марк Смолов</h3>
         </a>
-        <span class="cards-people__distance">1700</span>
+        <span class="cards-people__likes">1700</span>
         <p class="cards-people__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
         <h4 class="cards-people__country-wanted">хочет посетить:</h4>
         <ul class="cards-people__counties-list">
@@ -168,14 +181,14 @@
         </ul>
         <h4 class="cards-people__level-title">левел:</h4>
         <span class="cards-people__level">25</span>
-        <a href="#" class="button button-to-call">Позвать!</a>
+        <a href="#" class="cards-people__button button button--small">Позвать!</a>
       </li>
       <li class="cards-people__item">
         <a href="#" class="cards-people__profile-link">
           <img src="http://placehold.it/70x70" alt="" class="cards-people__avatar">
           <h3 class="cards-people__name">Лариса Роговая</h3>
         </a>
-        <span class="cards-people__distance">23</span>
+        <span class="cards-people__likes">23</span>
         <p class="cards-people__tags">#образование #карьера #учеба #линкедин</p>
         <h4 class="cards-people__country-wanted">хочет посетить:</h4>
         <ul class="cards-people__counties-list">
@@ -205,7 +218,7 @@
         </ul>
         <h4 class="cards-people__level-title">левел:</h4>
         <span class="cards-people__level">50</span>
-        <a href="#" class="button button-to-call">Позвать!</a>
+        <a href="#" class="cards-people__button button button--small">Позвать!</a>
       </li>
     </ul>
     <a href="#" class="cards-people__show-more">Показать еще</a>
