@@ -1,0 +1,33 @@
+
+.card-direction {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 26px 28px 23px 25px;
+}
+
+.card-direction__title {
+  @include reset-margin-padding;
+}
+
+.card-direction__flag {
+  position: absolute;
+  top: -12px;
+}
+
+.card-direction__slogan {
+  @include reset-margin-padding;
+  width: 100%;
+  color: rgba($grey, 0.3);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.card-direction__visitors {
+  color: rgba($grey, 0.3);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}

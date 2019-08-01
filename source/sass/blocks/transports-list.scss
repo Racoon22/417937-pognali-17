@@ -1,3 +1,18 @@
 .transports-list {
   @include reset-list;
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .transports-list {
+    display: block;
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .transports-list {
+    display: flex;
+    margin-bottom: 0;
+  }
 }

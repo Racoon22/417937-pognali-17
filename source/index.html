@@ -89,46 +89,56 @@
   <a href="#" class="about__button button">Подробнее</a>
 </section>
 <section class="directions">
-    <div class="directions__wrapper">
-      <div class="directions__text-box">
-        <h2 class="directions__title">Направления</h2>
-        <p class="directions__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда
-          хотели
-          бы отправиться и чем можно там заняться.
-        </p>
-        <a href="#" class="directions__show-all directions__show-all--desktop button">Показать все</a>
-      </div>
-      <ul class="directions__list">
-        <li class="directions__item">
-          <img src="img/thailand-mobile@1x.jpg" alt="" class="directions__item-img">
-          <div class="directions__item-wrapper">
-            <img src="http://placehold.it/35x25" alt="" class="directions__flag">
-            <h3 class="directions__item-title">Тайланд</h3>
-            <p class="directions__slogan">Джугли зовут!</p>
-            <span class="directions__visitors">18321</span>
-          </div>
-        </li>
-        <li class="directions__item">
-          <img src="img/france-mobile@1x.jpg" alt="" class="directions__item-img">
-          <div class="directions__item-wrapper">
-            <img src="http://placehold.it/35x25" alt="" class="directions__flag">
-            <h3 class="directions__item-title">Франция</h3>
-            <p class="directions__slogan">Трэ бьен, манифик!</p>
-            <span class="directions__visitors">12518</span>
-          </div>
-        </li>
-        <li class="directions__item">
-          <img src="img/czech-mobile@1x.jpg" alt="" class="directions__item-img">
-          <div class="directions__item-wrapper">
-            <img src="http://placehold.it/35x25" alt="" class="directions__flag">
-            <h3 class="directions__item-title">Чехия</h3>
-            <p class="directions__slogan">Закоулки старой Европы</p>
-            <span class="directions__visitors">5326</span>
-          </div>
-        </li>
-      </ul>
-      <a href="#" class="directions__show-all button">Показать все</a>
+  <div class="directions__wrapper">
+    <div class="directions__text-box">
+      <h2 class="directions__title">Направления</h2>
+      <p class="directions__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда
+        хотели
+        бы отправиться и чем можно там заняться.
+      </p>
+      <a href="#" class="directions__show-all directions__show-all--desktop button">Показать все</a>
     </div>
+    <ul class="directions__list">
+      <li class="directions__item">
+        <img src="img/thailand-mobile@1x.jpg" alt="" class="directions__item-img">
+        <div class="directions__item-wrapper">
+          <div class="directions__card card-direction">
+            <img src="http://placehold.it/35x25" alt="" class="card-direction__flag">
+            <h3 class="card-direction__title">Тайланд</h3>
+            <span class="card-direction__visitors">18321</span>
+            <p class="card-direction__slogan">Джугли зовут!</p>
+          </div>
+        </div>
+      </li>
+      <li class="directions__item">
+        <img src="img/france-mobile@1x.jpg" alt="" class="directions__item-img">
+        <div class="directions__item-wrapper">
+          <div class="directions__item-wrapper">
+            <div class="directions__card card-direction">
+              <img src="http://placehold.it/35x25" alt="" class="card-direction__flag">
+              <h3 class="card-direction__title">Франция</h3>
+              <span class="card-direction__visitors">12518</span>
+              <p class="card-direction__slogan">Трэ бьен, манифик!</p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="directions__item">
+        <img src="img/czech-mobile@1x.jpg" alt="" class="directions__item-img">
+        <div class="directions__item-wrapper">
+          <div class="directions__item-wrapper">
+            <div class="directions__card card-direction">
+              <img src="http://placehold.it/35x25" alt="" class="card-direction__flag">
+              <h3 class="card-direction__title">Чехия</h3>
+              <span class="card-direction__visitors">5326</span>
+              <p class="card-direction__slogan">Закоулки старой Европы</p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <a href="#" class="directions__show-all button">Показать все</a>
+  </div>
 </section>
 <section class="companions">
   <div class="companions__container container">
@@ -137,7 +147,7 @@
       <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен
         пляж и коктейль, а другому маршрут для хайкинга. </p>
       <p class="companions__resume">Теперь можно легко <br> найти единомышленников!</p>
-      <a href="#" class="companions__show-all companions__show-all--desktop button">Показать всеx</a>
+      <a href="#" class="companions__show-all button button--stretch">Показать всеx</a>
     </div>
     <ul class="companions__list">
       <li class="companions__item">
@@ -198,7 +208,6 @@
         </div>
       </li>
     </ul>
-    <a href="#" class="companions__show-all button button--stretch">Показать всеx</a>
   </div>
 </section>
 <section class="profile container">
