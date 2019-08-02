@@ -1,0 +1,256 @@
+.cards-people {
+  margin-top: 40px;
+}
+
+.cards-people__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-people__avatar {
+  float: left;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.cards-people__item {
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 15px 22px 85px;
+  width: 270px;
+
+  border-radius: 20px;
+  background-color: #ffffff;
+
+  color: $grey;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.cards-people__name {
+  @include reset-margin-padding;
+  width: 100px;
+  margin-left: 85px;
+  min-height: 30px;
+  margin-bottom: 5px;
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.cards-people__second-name {
+  display: block;
+}
+
+.cards-people__likes {
+  left: -20px;
+  position: relative;
+  border: none;
+  padding-left: 40px;
+  min-height: 22px;
+  color: #161c35;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.cards-people__counties-list {
+  @include reset-list;
+}
+
+.cards-people__country-name {
+  color: #1d2e5b;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.cards-people__level {
+  height: 33px;
+  color: #1d2e5b;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.cards-people__button {
+  position: absolute;
+  bottom: 22px;
+  width: calc(100% - 40px);
+  color: #161c36;
+}
+
+.cards-people__transport-level-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cards-people__level-title {
+  margin: 0 0 10px;
+}
+
+.cards-people__level-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards-people__transport-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards-people__transport {
+  margin: 0;
+}
+
+.transports-list__item {
+  height: 33px;
+  width: 33px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+
+.cards-people__country-wrapper {
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .cards-people__item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+    padding: 35px 25px 30px 35px;
+    margin-bottom: 40px;
+  }
+
+  .cards-people__name {
+    @include reset-margin-padding;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .cards-people__item-wrapper {
+    display: flex;
+    margin-left: 33px;
+    width: calc(100% - 230px);
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+
+
+  .cards-people__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-people__tags {
+    width: 224px;
+  }
+
+  .cards-people__actions {
+    order: 3;
+    margin-top: auto;
+    display: flex;
+  }
+
+  .cards-people__country-wrapper {
+    order: 1;
+    width: 100%;
+  }
+
+  .cards-people__transport-level-wrapper {
+    position: absolute;
+    top: 38px;
+    right: 48px;
+    display: block;
+  }
+
+  .cards-people__avatar {
+    border-radius: 10px;
+    width: 190px;
+  }
+
+  .cards-people__counties-list {
+    display: flex;
+  }
+
+  .cards-people__transport {
+    display: none;
+  }
+
+  .cards-people__level-title {
+    display: none;
+  }
+
+  .cards-people__button {
+    position: static;
+    width: 150px;
+    color: #161c36;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards-people__item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 950px;
+    padding: 0 45px 0 0;
+    margin-bottom: 30px;
+  }
+
+  .cards-people__avatar {
+    border-radius: 10px 0 0 10px;
+    width: 285px;
+  }
+
+  .cards-people__info {
+    padding: 40px 0 47px;
+  }
+
+  .cards-people__transport {
+    position: static;
+  }
+
+  .cards-people__country-wrapper {
+    display: block;
+    width: 230px;
+  }
+
+  .cards-people__counties-list {
+    display: block;
+  }
+
+  .cards-people__transport-level-wrapper {
+    position: static;
+    display: flex;
+    order: 2;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  .cards-people__item-wrapper {
+    display: flex;
+    width: 335px;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+
+  .cards-people__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 47px;
+  }
+}

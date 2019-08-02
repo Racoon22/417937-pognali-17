@@ -1,0 +1,44 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 270px;
+  padding: 30px 0 28px 34px;
+
+  border-radius: 10px;
+  background-color: $yellow;
+  color: #1d2e5b;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  border: none;
+}
+
+.button--small {
+  width: 230px;
+  padding: 13px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .button {
+    display: block;
+    width: 275px;
+    padding: 30px 0 28px 34px;
+
+    border-radius: 20px;
+  }
+
+  .button--small {
+    width: 230px;
+    padding: 13px 20px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .button--stretch {
+    width: 100%;
+  }
+}

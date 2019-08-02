@@ -25,15 +25,8 @@ body {
   padding: 0 25px;
 }
 
-.container-midnight {
-  background-color: $midnight;
-}
-
-.page-wrapper {
-  background-color: $coconut;
-}
-
-.title {
-  @include reset-margin-padding;
-  color: #ffffff;
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 40px;
+  }
 }

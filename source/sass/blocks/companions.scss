@@ -1,0 +1,155 @@
+.companions {
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -30px;
+  padding-bottom: 112px;
+  background-color: $midnight;
+  background-image: url("../../img/rogovaya-back-mobile@1x.png"), url("../../img/smolov-back-desktop@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, top right;
+  background-size: auto, auto;
+}
+
+.companions__text-wrapper {
+  padding-left: 25px;
+}
+
+.companions__list {
+  @include reset-list;
+}
+
+.companions__countries-list {
+  @include reset-list;
+  display: flex;
+}
+
+.companions__title {
+  @include section-title;
+  margin-bottom: 25px;
+}
+
+.companions__description {
+  @include section-text;
+  @include reset-margin-padding;
+  color: #ffffff;
+  margin-bottom: 27px;
+}
+
+.companions__resume {
+  margin-bottom: 60px;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.companions__info {
+  flex-grow: 1;
+
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
+}
+
+.companions__name {
+  @include reset-margin-padding;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.companions__tags {
+  @include reset-margin-padding;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.companions__item {
+  display: flex;
+  width: 270px;
+  margin-bottom: 10px;
+}
+
+.companions__img {
+  width: 270px;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.companions__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.companions__photo-wrapper {
+  display: block;
+}
+
+.companions__show-all {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  width: calc(100% - 50px);
+}
+
+@media (min-width: $tablet-width) {
+  .companions__resume {
+    margin-bottom: 60px;
+
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  .companions__img {
+    width: 285px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .companions__container {
+    padding: 75px;
+  }
+
+  .companions__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .companions__item {
+    width: 285px;
+    margin-right: 50px;
+  }
+
+  .companions__info {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .companions__item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companions__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .companions__resume {
+    margin-bottom: 60px;
+    width: 256px;
+  }
+
+  .companions__description {
+    width: 423px;
+    margin-bottom: 27px;
+  }
+
+  .companions__show-all {
+    width: 280px;
+  }
+}

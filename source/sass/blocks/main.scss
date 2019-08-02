@@ -1,0 +1,176 @@
+.main {
+  background-color: #161c36;
+  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 223px, center top;
+  background-size: 60%, 100%;
+  text-align: center;
+}
+
+
+.wr {
+  background-color: #161c36;
+  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 223px, center top;
+  background-size: 60%, 100%;
+  text-align: center;
+}
+
+.main__review-wrapper {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 133px;
+  background-color: $midnight;
+}
+
+.main__steps-wrapper {
+  background-color: #192144;
+  padding-bottom: 40px;
+}
+
+.main__button-wrapper {
+  position: relative;
+  margin-top: -65px;
+  margin-bottom: 20px;
+  color: #161c35;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.main__title {
+  margin-top: 0;
+  margin-bottom: 247px;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.main__review {
+  @include section-text;
+  width: 155px;
+  margin: 0;
+  padding: 0 25px;
+  color: #ffffff;
+}
+
+.main__review-author {
+  width: 155px;
+  margin-top: 25px;
+  display: block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+}
+
+.main__steps {
+  margin-top: -77px;
+}
+
+.main__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .main {
+    background-color: #161c36;
+    background-image: url("../../img/traveller-illustration-tablet@1x.png"), url("../../img/globe-back-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 223px, center center;
+    background-size: 60%, 100%;
+    text-align: center;
+  }
+
+  .main__button-wrapper {
+    display: none;
+  }
+
+  .main__title {
+    align-self: center;
+    width: 400px;
+    margin-bottom: 90px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
+  }
+
+  .main__review-wrapper {
+    padding: 0;
+    padding-bottom: 245px;
+    background-color: transparent;
+  }
+
+  .main__review {
+    width: 260px;
+  }
+
+  .main__review-author {
+    width: 260px;
+    margin-top: 52px;
+
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  .main__steps-wrapper {
+    background-color: #192144;
+    padding-bottom: 95px;
+  }
+
+  .main__steps {
+    margin-top: -95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    .main {
+      min-height: 750px;
+      background-color: #161c36;
+      background-image: url("../../img/traveller-illustration-desktop@1x.png"), url("../../img/globe-back-desktop@1x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: center bottom, center center;
+      background-size: 32%, cover;
+      text-align: center;
+    }
+
+    .main__text-wrapper {
+      display: flex;
+      flex-direction: row;
+      padding: 0 70px;
+      margin-bottom: 160px;
+      justify-content: space-between;
+    }
+
+    .main__review-wrapper {
+      padding-bottom: 0px;
+    }
+
+    .main__title {
+      align-self: flex-start;
+      width: 400px;
+      margin-bottom: 0px;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 70px;
+    }
+
+    .main__steps-wrapper {
+      background-color: transparent;
+    }
+
+    .main__steps {
+      margin-top: 0px;
+    }
+  }
+
+
+}
