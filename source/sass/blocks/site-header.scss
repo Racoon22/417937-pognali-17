@@ -1,5 +1,5 @@
 .site-header {
-  padding-top: 20px;
+  padding-top: 27px;
   padding-bottom: 15px;
   background-color: $midnight;
 }
@@ -43,8 +43,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-header__actions {
-    display: block;
+  .main {
+    position: relative;
+  }
+
+  .site-header__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .site-header__burger-icon {
+    margin-left: 33%;
   }
 }
 

@@ -1,14 +1,44 @@
 .actions {
   @include reset-list;
   display: flex;
-  color: #fff;
-}
-
-.actions__item {
-  background-color: $yellow;
+  color: #ffffff;
 }
 
 .actions__link {
+  display: block;
+  background-color: $yellow;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
   color: $midnight;
   text-decoration: none;
+}
+
+.actions__link--auth {
+  box-sizing: border-box;
+  width: 190px;
+  padding: 8px 37px;
+  border-radius: 20px;
+  font-size: 17px;
+  letter-spacing: 0.7px;
+}
+
+@media (min-width: $tablet-width) {
+  .actions__link--call {
+    display: none;
+  }
+
+  .actions__link--email {
+    display: none;
+  }
+
+  .actions__link--auth {
+    box-sizing: border-box;
+    width: 187px;
+    min-height: 50px;
+    padding: 11px 27px;
+    border-radius: 25px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
 }

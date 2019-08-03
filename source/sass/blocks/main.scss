@@ -2,25 +2,14 @@
   background-color: #161c36;
   background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: center 223px, center top;
-  background-size: 60%, 100%;
-  text-align: center;
-}
-
-
-.wr {
-  background-color: #161c36;
-  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center 223px, center top;
+  background-position: 64% 224px, center top;
   background-size: 60%, 100%;
   text-align: center;
 }
 
 .main__review-wrapper {
-  position: relative;
   padding-top: 50px;
-  padding-bottom: 133px;
+  padding-bottom: 107px;
   background-color: $midnight;
 }
 
@@ -31,8 +20,8 @@
 
 .main__button-wrapper {
   position: relative;
-  margin-top: -65px;
-  margin-bottom: 20px;
+  margin-top: -70px;
+  margin-bottom: 27px;
   color: #161c35;
   font-size: 17px;
   font-weight: 700;
@@ -41,10 +30,13 @@
 }
 
 .main__title {
+  align-self: center;
+  width: 234px;
   margin-top: 0;
-  margin-bottom: 247px;
+  margin-bottom: 263px;
   padding: 0;
   color: rgb(255, 255, 255);
+  letter-spacing: 1px;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
@@ -60,13 +52,15 @@
 
 .main__review-author {
   width: 155px;
-  margin-top: 25px;
+  margin-top: 18px;
   display: block;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
   text-align: left;
+  font-style: normal;
+  letter-spacing: 0.7px;
 }
 
 .main__steps {
@@ -74,9 +68,9 @@
 }
 
 .main__text-wrapper {
+  margin-top: 27px;
   display: flex;
   flex-direction: column;
-  margin-top: 35px;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,7 +84,10 @@
   }
 
   .main__button-wrapper {
-    display: none;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    margin-top: 0;
   }
 
   .main__title {

@@ -4,19 +4,16 @@
 
 .steps__item {
   position: relative;
+  text-align: left;
   background-color: #ff8d30;
   margin: 0;
-  padding: 23px 0 25px 25px;
+  padding: 23px 0 31px 25px;
   color: #161c35;
+  letter-spacing: 0.7px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   border-radius: 10px 10px 0 0;
-
-  & span {
-    display: block;
-    width: 150px;
-  }
 
   &:not(:first-child) {
     margin-top: -10px;
@@ -24,6 +21,7 @@
 
   &:last-child {
     border-radius: 10px;
+    padding-bottom: 21px;
   }
 
   &:nth-child(1) {
@@ -52,6 +50,11 @@
     font-weight: 700;
     line-height: 18px;
   }
+}
+
+.steps__title {
+  display: block;
+  width: 140px;
 }
 
 @media (min-width: $tablet-width) {
