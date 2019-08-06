@@ -8,6 +8,11 @@
     display: block;
     margin-bottom: 34px;
   }
+
+  .transports-list--inline {
+    display: flex;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {

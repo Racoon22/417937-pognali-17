@@ -25,6 +25,19 @@ body {
   padding: 0 25px;
 }
 
+.form {
+  position: relative;
+  height: 534px;
+  margin-bottom: -30px;
+  background-color: $midnight;
+  border-radius: 0 0 30px 30px;
+}
+
+.map {
+  height: 538px;
+  background-color: $yellow;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     padding: 0 40px;

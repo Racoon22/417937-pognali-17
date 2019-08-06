@@ -1,9 +1,10 @@
 .companions {
-  border-radius: 0 0 30px 30px;
   position: relative;
   z-index: 10;
   margin-bottom: -30px;
-  padding-bottom: 112px;
+  padding-top: 133px;
+  padding-bottom: 103px;
+  border-radius: 0 0 30px 30px;
   background-color: $midnight;
   background-image: url("../../img/rogovaya-back-mobile@1x.png"), url("../../img/smolov-back-desktop@1x.png");
   background-repeat: no-repeat, no-repeat;
@@ -13,58 +14,29 @@
 
 .companions__text-wrapper {
   padding-left: 25px;
+  width: 222px;
+  margin-bottom: 56px;
 }
+
+.companions__photo-wrapper {
+  position: relative;
+  display: block;
+}
+
+.companions__level {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border-radius: 50%;
+}
+
 
 .companions__list {
   @include reset-list;
-}
-
-.companions__countries-list {
-  @include reset-list;
-  display: flex;
-}
-
-.companions__title {
-  @include section-title;
-  margin-bottom: 25px;
-}
-
-.companions__description {
-  @include section-text;
-  @include reset-margin-padding;
-  color: #ffffff;
-  margin-bottom: 27px;
-}
-
-.companions__resume {
-  margin-bottom: 60px;
-
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 22px;
-}
-
-.companions__info {
-  flex-grow: 1;
-
-  border-radius: 0 0 10px 10px;
-  background-color: #ffffff;
-}
-
-.companions__name {
-  @include reset-margin-padding;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 21px;
-}
-
-.companions__tags {
-  @include reset-margin-padding;
-  color: #444444;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
+  justify-content: center;
 }
 
 .companions__item {
@@ -79,13 +51,86 @@
   border-radius: 10px 10px 0 0;
 }
 
+.companions__countries-list {
+  @include reset-list;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7px;
+  margin-top: -12px;
+}
+
+.companions__countries-item {
+  margin-right: 19px;
+}
+
+.companions__countries-item:last-child {
+  margin-right: 0;
+}
+
+.companions__title {
+  @include section-title;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  width: 215px;
+}
+
+.companions__description {
+  @include section-text;
+  @include reset-margin-padding;
+  color: #ffffff;
+  margin-bottom: 21px;
+}
+
+.companions__resume {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.9px;
+
+  &br {
+    display: none;
+  }
+}
+
+.companions__info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 15px;
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
+}
+
+.companions__name {
+  @include reset-margin-padding;
+  margin-bottom: 16px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.7px;
+}
+
+.companions__tags {
+  @include reset-margin-padding;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 11px;
+  padding: 0 45px;
+  text-align: center;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
 .companions__wrapper {
   display: flex;
   flex-direction: column;
-}
-
-.companions__photo-wrapper {
-  display: block;
 }
 
 .companions__show-all {
@@ -95,18 +140,73 @@
   width: calc(100% - 50px);
 }
 
+.companions__resume br {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .companions {
+    padding-top: 201px;
+    padding-bottom: 239px;
+    border-radius: 0 0 60px 60px;
+    background-image: url("../../img/rogovaya-back-mobile@1x.png"), url("../../img/smolov-back-desktop@1x.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, top right;
+    background-size: auto, auto;
+  }
+
+  .companions__text-wrapper {
+    padding-left: 35px;
+    margin-bottom: 58px;
+    width: 435px;
+  }
+
+  .companions__title {
+    @include section-title;
+    letter-spacing: 1.5px;
+    margin-bottom: 56px;
+    width: 215px;
+  }
+
+  .companions__description {
+    margin-bottom: 40px;
+  }
+
   .companions__resume {
-    margin-bottom: 60px;
+    width: 300px;
 
     color: #ffffff;
     font-size: 21px;
     font-weight: 700;
     line-height: 25px;
+
+    &br {
+      display: block;
+    }
+  }
+
+  .companions__countries-list {
+    margin-bottom: 12px;
+  }
+
+  .companions__name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .companions__tags {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 18px;
+    padding: 0 30px;
   }
 
   .companions__img {
     width: 285px;
+    height: 285px;
     border-radius: 20px 20px 0 0;
   }
 
@@ -116,7 +216,7 @@
 
   .companions__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .companions__item {
@@ -126,30 +226,63 @@
 
   .companions__info {
     border-radius: 0 0 20px 20px;
+    padding-bottom: 22px;
   }
 
   .companions__item:nth-child(2n) {
     margin-right: 0;
   }
+
+  .companions__show-all {
+    position: absolute;
+    bottom: 88px;
+    left: 75px;
+    width: calc(100% - 150px);
+  }
+
+  .companions__resume br {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .companions__container {
+  .companions {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-top: 194px;
+    padding-bottom: 125px;
+    padding-left: 96px;
+  }
+
+  .companions__text-wrapper {
+    margin-bottom: 0;
+  }
+
+  .companions__title {
+    margin-bottom: 51px;
   }
 
   .companions__resume {
-    margin-bottom: 60px;
-    width: 256px;
+    margin-bottom: 87px;
+    width: 270px;
   }
 
   .companions__description {
-    width: 423px;
-    margin-bottom: 27px;
+    width: 440px;
+    margin-bottom: 40px;
   }
 
   .companions__show-all {
     width: 280px;
+    position: static;
+  }
+
+  .companions__list {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .companions__item {
+    margin-right: 61px;
   }
 }
