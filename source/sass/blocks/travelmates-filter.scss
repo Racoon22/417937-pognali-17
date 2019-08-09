@@ -1,0 +1,18 @@
+.travelmates-filter {
+  width: 270px;
+  height: 624px;
+  margin: 0 auto 29px;
+  border-radius: 20px;
+  background-color: #ffd74b;
+}
+
+@media (min-width: $tablet-width) {
+  .travelmates-filter {
+    width: 688px;
+    height: 550px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+}

@@ -1,5 +1,5 @@
 .site-header {
-  padding-top: 27px;
+  padding-top: 20px;
   padding-bottom: 15px;
   background-color: $midnight;
 }
@@ -43,6 +43,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .site-header {
+    padding-top: 57px;
+  }
+
   .main {
     position: relative;
   }
