@@ -70,7 +70,6 @@
 
 .companions__title {
   @include section-title;
-  letter-spacing: 1px;
   margin-bottom: 18px;
   width: 215px;
 }
@@ -87,7 +86,6 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
-  letter-spacing: 0.9px;
 
   &br {
     display: none;
@@ -112,7 +110,6 @@
   font-weight: 700;
   line-height: 21px;
   text-align: center;
-  letter-spacing: 0.7px;
 }
 
 .companions__tags {
@@ -163,7 +160,6 @@
 
   .companions__title {
     @include section-title;
-    letter-spacing: 1.5px;
     margin-bottom: 56px;
     width: 215px;
   }
@@ -279,7 +275,6 @@
 
   .companions__list {
     margin-left: auto;
-    margin-right: 20px;
   }
 
   .companions__item {

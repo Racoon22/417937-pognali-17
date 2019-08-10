@@ -16,7 +16,6 @@
 .directions__title {
   @include section-title;
   margin-bottom: 19px;
-  letter-spacing: 1px;
 }
 
 .directions__description {
@@ -75,7 +74,6 @@
   left: 25px;
   width: calc(100% - 50px);
   padding: 20px 0 26px 22px;
-  letter-spacing: 1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -86,7 +84,6 @@
   }
 
   .directions__title {
-    letter-spacing: 1.5px;
     margin-bottom: 59px;
   }
 
@@ -96,7 +93,6 @@
     background-position: right 10px;
     background-size: 42%;
   }
-;
 
   .directions__text-box {
     margin-left: 40px;
@@ -133,7 +129,6 @@
     left: 75px;
     width: calc(100% - 150px);
     padding: 20px 0 26px 22px;
-    letter-spacing: 1px;
   }
 }
 
@@ -170,7 +165,6 @@
     position: static;
     width: 274px;
     padding: 20px 0 26px 22px;
-    letter-spacing: 1px;
   }
 
   .directions__description {

@@ -29,49 +29,14 @@ body {
   background-color: $coconut;
 }
 
-//TODO разнести в отдельные файлы
-.form {
-  position: relative;
-  height: 534px;
-  margin-bottom: -30px;
-  background-color: $midnight;
-  border-radius: 0 0 30px 30px;
-}
-
-.map {
-  height: 538px;
-  background-color: $yellow;
-}
-
 @media (min-width: $tablet-width) {
   .container {
     padding: 0 40px;
-  }
-
-  .form {
-    height: 772px;
-    margin-bottom: -60px;
-    border-radius: 0 0 60px 60px;
-  }
-
-  .map {
-    height: 846px;
-    background-color: $yellow;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
     padding: 0 60px;
-  }
-
-  .form {
-    height: 810px;
-    border-radius: 0 0 60px 60px;
-  }
-
-  .map {
-    height: 654px;
-    background-color: $yellow;
   }
 }

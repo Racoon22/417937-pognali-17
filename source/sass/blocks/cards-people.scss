@@ -378,7 +378,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 122px;
-    padding: 25px 24px 16px 28px;
+    padding: 25px 24px 18px 28px;
     background-color: #ffffff;
     border-radius: 20px;
   }
@@ -445,6 +445,7 @@
 
   .cards-people__list {
     margin-right: 85px;
+    margin-bottom: 67px;
   }
 
   .cards-people__item {
@@ -512,5 +513,26 @@
   .people-paginator {
     width: 950px;
     box-sizing: border-box;
+    padding-right: 32px;
+    margin-bottom: 137px;
+  }
+
+  .cards-people__paginator-wrapper {
+    margin-bottom: 60px;
+    text-align: left;
+  }
+
+  .cards-people__show-more {
+    margin-left: 396px;
+    margin-bottom: 66px;
+    padding-left: 0;
+  }
+
+  .people-paginator__button--prev::before {
+    right: 16px;
+  }
+
+  .people-paginator__button--next::before {
+    left: 16px;
   }
 }
