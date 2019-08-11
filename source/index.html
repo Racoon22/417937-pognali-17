@@ -16,17 +16,17 @@
       <nav class="site-header__navigation navigation">
         <img src="img/logo-mobile-blue@1x.png" alt="" class="navigation__logo">
         <button type="button" class="navigation__close close-button"></button>
-        <ul class="navigation__list site-navigation">
+        <ul class="navigation__site site-navigation">
           <li class="site-navigation__item"><a href="#" class="site-navigation__link">О сервисе</a></li>
           <li class="site-navigation__item"><a href="#" class="site-navigation__link">Направления</a></li>
           <li class="site-navigation__item"><a href="#" class="site-navigation__link">Попутчики</a></li>
         </ul>
-        <ul class="navigation__list user-navigation">
+        <ul class="navigation__user user-navigation">
           <li class="user-navigation"><a href="" class="user-navigation__link button">Попутчики</a></li>
           <li class="user-navigation"><a href="" class="user-navigation__link">8 800 555-86-28</a></li>
           <li class="user-navigation"><a href="" class="user-navigation__link">mail@htmlacademy.ru</a></li>
         </ul>
-        <ul class="navigation__list social-navigation">
+        <ul class="navigation__social social-navigation">
           <li class="social-navigation">
             <a href="" class="social-navigation__link">
               <span class="social-navigation__name visually-hidden">Фейсбук</span>
@@ -45,58 +45,56 @@
         </ul>
       </nav>
       <button type="button" class="site-header__burger-icon"></button>
-      <ul class="site-header__actions actions">
-        <li class="actions__item"><a href="#" class="actions__link actions__link--call visually-hidden">Позвонить</a>
-        </li>
-        <li class="actions__item"><a href="#" class="actions__link actions__link--email visually-hidden">Написать на
-          почту</a>
-        </li>
-        <li class="actions__item"><a href="#" class="actions__link actions__link--auth">Авторизация</a></li>
-      </ul>
     </div>
   </header>
   <div class="main__text-wrapper">
     <h1 class="main__title">В путешествие с крутыми попутчиками!</h1>
-    <div class="main__review-wrapper container">
+    <div class="main__review-wrapper">
       <ul class="main__button-wrapper actions">
-        <li class="actions__item">1<a href="#" class="actions__link actions__link--call visually-hidden">Позвонить</a>
+        <li class="actions__item">
+          <a href="#" class="actions__link actions__link--call">
+            <span class="visually-hidden">Позвонить</span>
+          </a>
         </li>
-        <li class="actions__item">2<a href="#" class="actions__link actions__link--email visually-hidden">Написать на
-          почту</a>
+        <li class="actions__item">
+          <a href="#" class="actions__link actions__link--email">
+            <span class="visually-hidden">Написать на почту</span>
+          </a>
         </li>
         <li class="actions__item"><a href="#" class="actions__link actions__link--auth">Авторизация</a></li>
       </ul>
       <blockquote class="main__review">
         «Лучшее приложение, что я видел в жизни!»
-        <cite class="main__review-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+        <cite class="main__review-author">Мурат Эльтазин<br> главный редактор газеты «гаджетлайф»</cite>
       </blockquote>
     </div>
   </div>
   <div class="main__steps-wrapper container">
     <ul class="main__steps steps">
-      <li class="steps__item" block-id="1"><span>Выберите направление</span></li>
-      <li class="steps__item" block-id="2"><span>Изучите идеи путешественников</span></li>
-      <li class="steps__item" block-id="3"><span>Находите тех, кто похож на вас</span></li>
-      <li class="steps__item" block-id="4"><span>Путешествуйте вместе!</span></li>
+      <li class="steps__item" block-id="1"><span class="steps__title">Выберите направление</span></li>
+      <li class="steps__item" block-id="2"><span class="steps__title">Изучите идеи путешественников</span></li>
+      <li class="steps__item" block-id="3"><span class="steps__title">Находите тех, кто похож на вас</span></li>
+      <li class="steps__item" block-id="4"><span class="steps__title">Путешествуйте вместе!</span></li>
     </ul>
   </div>
 </section>
 <section class="about">
   <h2 class="about__title">О сервисе</h2>
-  <p class="about__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
-    своими идеями путешествий и черпайте вдохновение в чужих. </p>
-  <p class="about__resume">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+  <p class="about__description">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с тобой! Делитесь
+    своими идеями путешествий и&nbsp;черпайте вдохновение в чужих. </p>
+  <p class="about__resume">А если найдете кого-то близкого по духу — скорее зовите его в совместный трип!</p>
   <a href="#" class="about__button button">Подробнее</a>
 </section>
 <section class="directions">
   <div class="directions__wrapper">
     <div class="directions__text-box">
       <h2 class="directions__title">Направления</h2>
-      <p class="directions__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда
+      <p class="directions__description">Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах,
+        куда
         хотели
         бы отправиться и чем можно там заняться.
       </p>
-      <a href="#" class="directions__show-all directions__show-all--desktop button">Показать все</a>
+      <a href="#" class="directions__show-all button button--stretch">Показать все</a>
     </div>
     <ul class="directions__list">
       <li class="directions__item">
@@ -105,8 +103,8 @@
           <div class="directions__card card-direction">
             <img src="http://placehold.it/35x25" alt="" class="card-direction__flag">
             <h3 class="card-direction__title">Тайланд</h3>
-            <span class="card-direction__visitors">18321</span>
             <p class="card-direction__slogan">Джугли зовут!</p>
+            <span class="card-direction__visitors">18321</span>
           </div>
         </div>
       </li>
@@ -117,8 +115,8 @@
             <div class="directions__card card-direction">
               <img src="http://placehold.it/35x25" alt="" class="card-direction__flag">
               <h3 class="card-direction__title">Франция</h3>
-              <span class="card-direction__visitors">12518</span>
               <p class="card-direction__slogan">Трэ бьен, манифик!</p>
+              <span class="card-direction__visitors">12518</span>
             </div>
           </div>
         </div>
@@ -130,113 +128,134 @@
             <div class="directions__card card-direction">
               <img src="http://placehold.it/35x25" alt="" class="card-direction__flag">
               <h3 class="card-direction__title">Чехия</h3>
-              <span class="card-direction__visitors">5326</span>
               <p class="card-direction__slogan">Закоулки старой Европы</p>
+              <span class="card-direction__visitors">5326</span>
             </div>
           </div>
         </div>
       </li>
     </ul>
-    <a href="#" class="directions__show-all button">Показать все</a>
   </div>
 </section>
-<section class="companions">
-  <div class="companions__container container">
-    <div class="companions__text-wrapper">
-      <h2 class="companions__title">Попутчики</h2>
-      <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен
-        пляж и коктейль, а другому маршрут для хайкинга. </p>
-      <p class="companions__resume">Теперь можно легко <br> найти единомышленников!</p>
-      <a href="#" class="companions__show-all button button--stretch">Показать всеx</a>
-    </div>
-    <ul class="companions__list">
-      <li class="companions__item">
-        <div class="companions__wrapper">
-          <div class="companions__photo-wrapper">
-            <img src="img/firsova-desktop@1x.jpg" width="270" height="270" alt="" class="companions__img">
-            <span class="companions__level"></span>
-          </div>
-          <div class="companions__info">
-            <ul class="companions__countries-list">
-              <li class="companions__countries-item">
-                <img src="http://placehold.it/35x25" alt="" class="companions__countries-img">
-              </li>
-              <li class="companions__countries-item">
-                <img src="http://placehold.it/35x25" alt="" class="companions__countries-img">
-              </li>
-              <li class="companions__countries-item">
-                <img src="http://placehold.it/35x25" alt="" class="companions__countries-img">
-              </li>
-            </ul>
-            <h3 class="companions__name">Таня Фирсова</h3>
-            <p class="companions__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-            <ul class="companions__transports transports-list">
-              <li class="transports-list__item visually-hidden">Самолет</li>
-              <li class="transports-list__item visually-hidden">Автобус</li>
-              <li class="transports-list__item visually-hidden">Велосипед</li>
-              <li class="transports-list__item visually-hidden">Пешком</li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li class="companions__item">
-        <div class="companions__wrapper">
-          <div class="companions__photo-wrapper">
-            <img src="img/demin-desktop@1x.jpg" width="270" height="270" alt="" class="companions__img">
-            <span class="companions__level"></span>
-          </div>
-          <div class="companions__info">
-            <ul class="companions__countries-list">
-              <li class="companions__countries-item">
-              </li>
-              <li class="companions__countries-item">
-                <img src="http://placehold.it/35x25" alt="" class="companions__countries-img">
-              </li>
-              <li class="companions__countries-item">
-                <img src="http://placehold.it/35x25" alt="" class="companions__countries-img">
-              </li>
-            </ul>
-            <h3 class="companions__name">Петя Демин</h3>
-            <p class="companions__tags">#бургер #бар #футбол #концерт #крафт</p>
-            <ul class="companions__transports transports-list">
-              <li class="transports-list__item transports-list__item--plane visually-hidden">Самолет</li>
-              <li class="transports-list__item transports-list__item--bus visually-hidden">Автобус</li>
-              <li class="transports-list__item transports-list__item--bicycle visually-hidden">Велосипед</li>
-              <li class="transports-list__item transports-list__item--afoot visually-hidden">Пешком</li>
-            </ul>
-          </div>
-        </div>
-      </li>
-    </ul>
+<section class="companions container">
+  <div class="companions__text-wrapper">
+    <h2 class="companions__title">Попутчики</h2>
+    <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен
+      пляж и коктейль, а&nbsp;другому маршрут для хайкинга. </p>
+    <p class="companions__resume">Теперь можно легко<br> найти единомышленников!</p>
+    <a href="#" class="companions__show-all button button--stretch">Показать всеx</a>
   </div>
-</section>
-<section class="profile container">
-  <h1 class="profile__title">Добавьте свой профиль</h1>
-  <img src="http://placehold.it/35x25" alt="" class="profile__image">
-  <ul class="profile__price-list">
-    <li class="profile__price-item" data-id="1">
-      <p class="profile__price-description">Базовое размещение</p>
-      <p class="profile__price-amount" data-id="1">Бесплатное</p>
+  <ul class="companions__list">
+    <li class="companions__item">
+      <div class="companions__wrapper">
+        <div class="companions__photo-wrapper">
+          <img src="img/firsova-desktop@1x.jpg" width="270" height="270" alt="" class="companions__img">
+          <span class="companions__level"></span>
+        </div>
+        <div class="companions__info">
+          <ul class="companions__countries-list">
+            <li class="companions__countries-item">
+              <img src="http://placehold.it/33x24" alt="" class="companions__countries-img">
+            </li>
+            <li class="companions__countries-item">
+              <img src="http://placehold.it/33x24" alt="" class="companions__countries-img">
+            </li>
+            <li class="companions__countries-item">
+              <img src="http://placehold.it/33x24" alt="" class="companions__countries-img">
+            </li>
+          </ul>
+          <h3 class="companions__name">Таня Фирсова</h3>
+          <p class="companions__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          <ul class="companions__transports transports-list transports-list--inline">
+            <li class="transports-list__item"><span class="visually-hidden">Самолет</span></li>
+            <li class="transports-list__item"><span class="visually-hidden">Автобус</span></li>
+            <li class="transports-list__item"><span class="visually-hidden">Велосипед</span></li>
+            <li class="transports-list__item"><span class="visually-hidden">Пешком</span></li>
+          </ul>
+        </div>
+      </div>
     </li>
-    <li class="profile__price-item" data-id="2">
-      <p class="profile__price-description">Вывод на первых позициях</p>
-      <p class="profile__price-amount">99 руб./мес</p>
-    </li>
-    <li class="profile__price-item" data-id="3">
-      <p class="profile__price-description">Кастомный цвет карточки</p>
-      <p class="profile__price-amount">59 руб./мес</p>
+    <li class="companions__item">
+      <div class="companions__wrapper">
+        <div class="companions__photo-wrapper">
+          <img src="img/demin-desktop@1x.jpg" width="270" height="270" alt="" class="companions__img">
+          <span class="companions__level"></span>
+        </div>
+        <div class="companions__info">
+          <ul class="companions__countries-list">
+            <li class="companions__countries-item">
+              <img src="http://placehold.it/35x25" alt="" class="companions__countries-img">
+            </li>
+            <li class="companions__countries-item">
+              <img src="http://placehold.it/35x25" alt="" class="companions__countries-img">
+            </li>
+          </ul>
+          <h3 class="companions__name">Петя Демин</h3>
+          <p class="companions__tags">#бургер #бар #футбол #концерт #крафт</p>
+          <ul class="companions__transports transports-list transports-list--inline">
+            <li class="transports-list__item"><span class="visually-hidden">Самолет</span></li>
+            <li class="transports-list__item"><span class="visually-hidden">Автобус</span></li>
+            <li class="transports-list__item"><span class="visually-hidden">Велосипед</span></li>
+            <li class="transports-list__item"><span class="visually-hidden">Пешком</span></li>
+          </ul>
+        </div>
+      </div>
     </li>
   </ul>
-  <a href="#" class="profile___modal-link">Показать тарифы для бизнеса</a>
+</section>
+<section class="profile">
+  <div class="profile__container container">
+    <h1 class="profile__title">Добавьте свой профиль!</h1>
+    <div class="profile__wrapper">
+      <ul class="profile__price-list">
+        <li class="profile__price-item" data-id="1">
+          <div class="profile__price-wrapper">
+            <p class="profile__price-description">Базовое размещение</p>
+            <p class="profile__price-amount" data-id="1">Бесплатно</p>
+          </div>
+        </li>
+        <li class="profile__price-item" data-id="2">
+          <div class="profile__price-wrapper">
+            <p class="profile__price-description">Вывод на первых позициях</p>
+            <p class="profile__price-amount">99 руб./мес</p>
+          </div>
+        </li>
+        <li class="profile__price-item" data-id="3">
+          <div class="profile__price-wrapper">
+            <p class="profile__price-description">Кастомный цвет карточки</p>
+            <p class="profile__price-amount">59 руб./мес</p>
+          </div>
+        </li>
+      </ul>
+      <img src="http://placehold.it/100x100" alt="" class="profile__image">
+    </div>
+    <a href="#" class="profile___modal-link">Показать тарифы для бизнеса</a>
+  </div>
+</section>
+<section class="form">
+</section>
+<section class="map">
 </section>
 <footer class="site-footer container">
   <img src="img/logo-mobile-blue@1x.png" alt="" class="site-footer__logo">
-  <ul class="site-footer__social-list">
-    <li class="site-footer__social-item"><a href="#" class="site-footer__social-link visually-hidden">Фейсбук</a></li>
-    <li class="site-footer__social-item"><a href="#" class="site-footer__social-link visually-hidden">Вконтакте</a></li>
-    <li class="site-footer__social-item"><a href="#" class="site-footer__social-link visually-hidden">Инстаграмм</a>
+  <ul class="site-footer__social-list social-footer">
+    <li class="social-footer__item">
+      <a href="" class="social-footer__link">
+        <span class="social-footer__name visually-hidden">Фейсбук</span>
+      </a>
+    </li>
+    <li class="social-footer__item">
+      <a href="" class="social-footer__link">
+        <span class="social-footer__name visually-hidden">Вконтакте</span>
+      </a>
+    </li>
+    <li class="social-footer__item">
+      <a href="" class="social-footer__link">
+        <span class="social-footer__name visually-hidden">Инстаграм</span>
+      </a>
     </li>
   </ul>
+
   <div class="site-footer__copyright-wrapper">
     <p class="site-footer__copyright">Разработано</p>
     <img src="img/htmlacademy.svg" width="27" height="34" alt="" class="site-footer__copyright-logo">

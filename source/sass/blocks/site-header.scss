@@ -1,5 +1,10 @@
 .site-header {
-  padding-top: 20px;
+  padding-top: 27px;
+  padding-bottom: 15px;
+}
+
+.site-header--inner {
+  padding-top: 27px;
   padding-bottom: 15px;
   background-color: $midnight;
 }
@@ -43,13 +48,43 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-header__actions {
-    display: block;
+  .site-header {
+    padding-top: 57px;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .site-header__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .site-header__burger-icon {
+    margin-left: 33%;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .site-header {
+    padding-top: 65px;
+  }
+
+  .site-header__navigation {
+    padding-left: 133px;
+  }
+
   .site-header__actions {
     display: block;
+  }
+
+  .site-header__navigation {
+    display: block;
+  }
+
+  .site-header__burger-icon {
+    display: none;
   }
 }

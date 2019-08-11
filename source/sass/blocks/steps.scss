@@ -4,19 +4,15 @@
 
 .steps__item {
   position: relative;
+  text-align: left;
   background-color: #ff8d30;
   margin: 0;
-  padding: 23px 0 25px 25px;
+  padding: 23px 0 31px 25px;
   color: #161c35;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   border-radius: 10px 10px 0 0;
-
-  & span {
-    display: block;
-    width: 150px;
-  }
 
   &:not(:first-child) {
     margin-top: -10px;
@@ -24,6 +20,7 @@
 
   &:last-child {
     border-radius: 10px;
+    padding-bottom: 21px;
   }
 
   &:nth-child(1) {
@@ -54,6 +51,11 @@
   }
 }
 
+.steps__title {
+  display: block;
+  width: 140px;
+}
+
 @media (min-width: $tablet-width) {
   .steps {
     display: flex;
@@ -62,61 +64,85 @@
   }
 
   .steps__item {
-    padding: 34px 0 62px 34px;
+    padding: 31px 0 62px 34px;
     margin-top: 0;
     flex-grow: 1;
     flex-basis: 315px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
 
     &:not(:first-child) {
       margin-top: 0;
     }
 
+    &:nth-child(1n) {
+      flex-basis: 353px;
+      border-radius: 20px 20px 0 0;
+    }
+
     &:nth-child(2n) {
-      margin-left: -15px;
-      border-radius: 10px 10px 0 0;
+      flex-basis: 300px;
+      margin-left: -53px;
+      border-radius: 20px 20px 0 0;
     }
 
     &:nth-child(2) {
-      border-radius: 10px 10px 0 0;
+      border-radius: 20px 20px 0 0;
     }
 
     &:last-child {
-      border-radius: 0 0 10px 10px;
+      border-radius: 0 0 20px 20px;
     }
 
     &:nth-child(n + 3) {
-      margin-top: -10px;
+      border-radius: 0 20px 0 20px;
+     }
+
+    &:nth-child(n + 4) {
+      border-radius: 0 0 20px 20px;
     }
 
     &::after {
       position: absolute;
       right: auto;
       top: auto;
-      bottom: -25px;
+      bottom: 23px;
       left: 33px;
       content: attr(block-id);
       color: #ffffff;
       font-size: 30px;
       font-weight: 700;
-      line-height: 120px;
+      line-height: 30px;
     }
+  }
+
+  .steps__title {
+    width: 190px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .steps__item {
-    padding: 34px 0 31px 34px;
+    padding: 30px 0 30px 34px;
     margin-top: 0;
     flex-grow: 1;
-    flex-basis: 260px;
 
     &:nth-child(n) {
+      flex-basis: 300px;
       margin-top: 0;
     }
 
     &:not(:first-child) {
       margin-left: -15px;
       border-radius: 10px 10px 0 0;
+    }
+
+    &:nth-child(4n) {
+      box-sizing: border-box;
+      width: 315px;
+      flex-grow: 0;
+      margin-top: 0;
     }
 
     &::after {

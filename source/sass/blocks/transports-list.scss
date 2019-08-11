@@ -5,14 +5,23 @@
 
 @media (min-width: $tablet-width) {
   .transports-list {
-    display: block;
-    margin-bottom: 34px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    flex-direction: column;
+  }
+
+  .transports-list--inline {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .transports-list {
     display: flex;
+    flex-direction: row;
     margin-bottom: 0;
   }
 }

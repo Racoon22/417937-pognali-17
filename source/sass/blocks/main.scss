@@ -2,25 +2,13 @@
   background-color: #161c36;
   background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: center 223px, center top;
-  background-size: 60%, 100%;
-  text-align: center;
-}
-
-
-.wr {
-  background-color: #161c36;
-  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center 223px, center top;
-  background-size: 60%, 100%;
-  text-align: center;
+  background-position: 62% 224px, center top;
 }
 
 .main__review-wrapper {
-  position: relative;
   padding-top: 50px;
-  padding-bottom: 133px;
+  padding-bottom: 107px;
+  padding-left: 26px;
   background-color: $midnight;
 }
 
@@ -31,8 +19,8 @@
 
 .main__button-wrapper {
   position: relative;
-  margin-top: -65px;
-  margin-bottom: 20px;
+  margin-top: -70px;
+  margin-bottom: 27px;
   color: #161c35;
   font-size: 17px;
   font-weight: 700;
@@ -41,32 +29,37 @@
 }
 
 .main__title {
+  align-self: center;
+  width: 244px;
   margin-top: 0;
-  margin-bottom: 247px;
+  margin-bottom: 263px;
   padding: 0;
   color: rgb(255, 255, 255);
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
+  text-align: center;
 }
 
 .main__review {
   @include section-text;
   width: 155px;
   margin: 0;
-  padding: 0 25px;
+  padding: 0 20px;
   color: #ffffff;
 }
 
 .main__review-author {
-  width: 155px;
-  margin-top: 25px;
+  width: 170px;
+  margin-top: 18px;
   display: block;
+  padding-left: 5px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
   text-align: left;
+  font-style: normal;
 }
 
 .main__steps {
@@ -74,29 +67,35 @@
 }
 
 .main__text-wrapper {
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
-  margin-top: 35px;
 }
 
 @media (min-width: $tablet-width) {
   .main {
-    background-color: #161c36;
+    background-color: #182044;
     background-image: url("../../img/traveller-illustration-tablet@1x.png"), url("../../img/globe-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: center 223px, center center;
-    background-size: 60%, 100%;
-    text-align: center;
+    background-position: 72% 401px;
+    background-size: 49%, auto;
+  }
+
+  .main__text-wrapper {
+    margin-top: 65px;
   }
 
   .main__button-wrapper {
-    display: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    margin-top: 0;
   }
 
   .main__title {
     align-self: center;
     width: 400px;
-    margin-bottom: 90px;
+    margin-bottom: 86px;
     font-size: 60px;
     font-weight: 700;
     line-height: 70px;
@@ -104,18 +103,21 @@
   }
 
   .main__review-wrapper {
-    padding: 0;
-    padding-bottom: 245px;
+    padding-top: 0;
+    padding-left: 34px;
+    padding-bottom: 428px;
     background-color: transparent;
   }
 
   .main__review {
     width: 260px;
+    margin-left: 34px;
+    padding-left: 0;
   }
 
   .main__review-author {
     width: 260px;
-    margin-top: 52px;
+    margin-top: 43px;
 
     font-size: 21px;
     font-weight: 700;
@@ -124,53 +126,67 @@
 
   .main__steps-wrapper {
     background-color: #192144;
-    padding-bottom: 95px;
+    padding-bottom: 0;
+    margin-bottom: -53px;
   }
 
   .main__steps {
-    margin-top: -95px;
+    position: relative;
+    top: -140px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main {
+    min-height: 750px;
+    background-color: #161c36;
+    background-image: url("../../img/traveller-illustration-desktop@1x.png"), url("../../img/globe-back-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 405px bottom, center center;
+    background-size: auto, cover;
+    text-align: center;
+    padding-bottom: 1px; //TODO если поставить 0 то все схлопывается. Почему так?
   }
 
-  @media (min-width: $desktop-width) {
-    .main {
-      min-height: 750px;
-      background-color: #161c36;
-      background-image: url("../../img/traveller-illustration-desktop@1x.png"), url("../../img/globe-back-desktop@1x.jpg");
-      background-repeat: no-repeat, no-repeat;
-      background-position: center bottom, center center;
-      background-size: 32%, cover;
-      text-align: center;
-    }
-
-    .main__text-wrapper {
-      display: flex;
-      flex-direction: row;
-      padding: 0 70px;
-      margin-bottom: 160px;
-      justify-content: space-between;
-    }
-
-    .main__review-wrapper {
-      padding-bottom: 0px;
-    }
-
-    .main__title {
-      align-self: flex-start;
-      width: 400px;
-      margin-bottom: 0px;
-      font-size: 60px;
-      font-weight: 700;
-      line-height: 70px;
-    }
-
-    .main__steps-wrapper {
-      background-color: transparent;
-    }
-
-    .main__steps {
-      margin-top: 0px;
-    }
+  .main__text-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0 70px;
+    margin-top: 100px;
+    margin-bottom: 99px;
+    justify-content: space-between;
   }
 
+  .main__review-wrapper {
+    padding-bottom: 0px;
+  }
 
+  .main__title {
+    align-self: flex-start;
+    width: 400px;
+    margin-bottom: 0px;
+    margin-left: 55px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+  }
+
+  .main__review {
+    margin-top: 11px;
+  }
+
+  .main__steps-wrapper {
+    background-color: transparent;
+  }
+
+  .main__steps {
+    position: static;
+    margin-top: 0px;
+  }
+
+  .main__button-wrapper {
+    top: 49px;
+    right: 61px;
+  }
 }
