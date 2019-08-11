@@ -12,31 +12,29 @@
       <a href="/" class="site-header__logo">
         <img src="img/logo-mobile-white@1x.png" alt="" class="site-header__logo-img">
       </a>
-      <nav class="site-header__navigation navigation">
+      <nav id="navigation" class="site-header__navigation navigation">
         <img src="img/logo-mobile-blue@1x.png" alt="" class="navigation__logo">
-        <button type="button" class="navigation__close close-button"></button>
+        <button id="closeMenuModal" type="button" class="navigation__close close-button"></button>
         <ul class="navigation__site site-navigation">
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">О сервисе</a></li>
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">Направления</a></li>
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">Попутчики</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link">О сервисе</a></li>
+          <li class="site-navigation__item"><a href="form.html" class="site-navigation__link">Направления</a></li>
+          <li class="site-navigation__item"><a href="catalog.html" class="site-navigation__link">Попутчики</a></li>
         </ul>
-        <ul class="navigation__user user-navigation">
-          <li class="user-navigation"><a href="" class="user-navigation__link button">Попутчики</a></li>
-          <li class="user-navigation"><a href="" class="user-navigation__link">8 800 555-86-28</a></li>
-          <li class="user-navigation"><a href="" class="user-navigation__link">mail@htmlacademy.ru</a></li>
-        </ul>
+        <a href="" class="navigation__auth">Авторизация</a>
+        <a href="" class="navigation__contact navigation__contact--phone">8 800 555-86-28</a>
+        <a href="" class="navigation__contact navigation__contact--email">mail@htmlacademy.ru</a>
         <ul class="navigation__social social-navigation">
-          <li class="social-navigation">
+          <li class="social-navigation__item">
             <a href="" class="social-navigation__link">
               <span class="social-navigation__name visually-hidden">Фейсбук</span>
             </a>
           </li>
-          <li class="social-navigation">
+          <li class="social-navigation__item">
             <a href="" class="social-navigation__link">
               <span class="social-navigation__name visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="social-navigation">
+          <li class="social-navigation__item">
             <a href="" class="social-navigation__link">
               <span class="social-navigation__name visually-hidden">Инстаграм</span>
             </a>
@@ -46,8 +44,9 @@
       <button type="button" class="site-header__burger-icon"></button>
     </div>
   </header>
-  <div class="container container-midnight">
-    <h1 class="title">Направления</h1>
+  <div class="title container">
+    <h1 class="title__text">Направления</h1>
+    <a href="/" class="title__link">На главную</a>
   </div>
   <footer class="site-footer container">
     <img src="img/logo-mobile-blue@1x.png" alt="" class="site-footer__logo">
@@ -64,5 +63,6 @@
     </div>
   </footer>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>

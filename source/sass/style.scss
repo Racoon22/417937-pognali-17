@@ -2,15 +2,15 @@
 @import "config/varibels";
 @import "config/mixins";
 @import "base/scaffolding";
+@import "blocks/close-button";
 @import "blocks/button";
 @import "blocks/actions";
 @import "blocks/transports-list";
 @import "blocks/steps";
 @import "blocks/site-header";
-@import "blocks/navigation";
 @import "blocks/site-navigation";
-@import "blocks/user-navigation";
 @import "blocks/social-navigation";
+@import "blocks/navigation";
 @import "blocks/title";
 @import "blocks/main";
 @import "blocks/about";

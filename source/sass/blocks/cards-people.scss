@@ -75,6 +75,7 @@
 }
 
 .cards-people__country-name {
+  margin-left: 14px;
   color: #1d2e5b;
   font-size: 15px;
   font-weight: 500;
@@ -100,7 +101,6 @@
   bottom: 20px;
   width: calc(100% - 40px);
   color: #161c36;
-  letter-spacing: 0;
 }
 
 .cards-people__preferences-wrapper {
@@ -148,10 +148,6 @@
 
 .cards-people__country-wrapper {
   margin-bottom: 12px;
-}
-
-.cards-people__country-name {
-  margin-left: 14px;
 }
 
 .cards-people__country-item {

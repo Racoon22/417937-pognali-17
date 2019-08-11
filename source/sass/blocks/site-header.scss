@@ -16,6 +16,15 @@
 }
 
 .site-header__navigation {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.site-header__navigation--close {
   display: none;
 }
 
@@ -73,14 +82,11 @@
   }
 
   .site-header__navigation {
+    display: block;
     padding-left: 133px;
   }
 
   .site-header__actions {
-    display: block;
-  }
-
-  .site-header__navigation {
     display: block;
   }
 

@@ -97,7 +97,7 @@
 
     &:nth-child(n + 3) {
       border-radius: 0 20px 0 20px;
-     }
+    }
 
     &:nth-child(n + 4) {
       border-radius: 0 0 20px 20px;
@@ -131,11 +131,11 @@
     &:nth-child(n) {
       flex-basis: 300px;
       margin-top: 0;
+      border-radius: 10px 0 0 10px;
     }
 
     &:not(:first-child) {
       margin-left: -15px;
-      border-radius: 10px 10px 0 0;
     }
 
     &:nth-child(4n) {
@@ -143,6 +143,7 @@
       width: 315px;
       flex-grow: 0;
       margin-top: 0;
+      border-radius: 10px;
     }
 
     &::after {
