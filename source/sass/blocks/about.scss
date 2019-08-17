@@ -6,10 +6,15 @@
 
   border-radius: 0 0 30px 30px;
   background-color: $midnight;
-  background-image: url("../../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/about-mobile@2x.png");
+  }
+  background-image: url("../../img/about-mobile@1x.png");
+
 }
 
 .about__title {

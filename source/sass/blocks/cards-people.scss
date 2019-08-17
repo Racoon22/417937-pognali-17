@@ -142,8 +142,14 @@
 .transports-list__item {
   height: 33px;
   width: 33px;
-  background-color: black;
   border-radius: 50%;
+  color: $midnight;
+  opacity: 0.15;
+
+  & svg {
+    display: block;
+    margin: auto;
+  }
 }
 
 .cards-people__country-wrapper {

@@ -39,9 +39,12 @@
   line-height: 21px;
 }
 
+.directions__item-picture {
+  width: 100%;
+}
+
 .directions__item-img {
   width: 100%;
-  background-size: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -111,9 +114,14 @@
     display: flex;
   }
 
-  .directions__item-img {
+  .directions__item-picture {
+    display: block;
     width: 186px;
     order: 2;
+  }
+
+  .directions__item-img {
+    display: block;
     border-radius: 0 20px 20px 0;
   }
 

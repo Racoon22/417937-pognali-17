@@ -1,62 +1,7 @@
 .navigation {
-  box-sizing: border-box;
-  padding: 27px 25px 40px;
-  background-color: #ffffff;
-}
-
-.navigation__logo {
-  margin-bottom: 63px;
-}
-
-.navigation__close {
-  position: absolute;
-  top: 34px;
-  right: 32px;
-}
-
-.navigation__site {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.navigation__contact {
-  position: relative;
-  display: block;
-  color: #192144;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 22px;
-  padding: 13px 10px  10px 61px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.navigation__auth {
-  display: block;
-  box-sizing: border-box;
   width: 100%;
-  padding: 10px 20px 10px;
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 30px;
-  color: #192144;
-  background-color: $yellow;
-  border-radius: 25px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.navigation__contact::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 45px;
-  height: 45px;
-  background-color: $midnight;
-  border-radius: 50%;
+  box-sizing: border-box;
+  margin: 64px 0 50px;
 }
 
 .navigation__social {
@@ -66,48 +11,10 @@
 
 @media (min-width: $tablet-width) {
   .navigation {
-    display: flex;
-    align-items: center;
     box-sizing: border-box;
-    padding: 56px 40px 72px;
-    background-color: #ffffff;
-  }
-
-  .navigation__logo {
-    margin-bottom: 101px;
-  }
-
-  .navigation__auth {
-    position: absolute;
-    width: 189px;
-    top: 41px;
-    right: 40px;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
-  }
-
-  .navigation__close {
-    top: 65px;
-    left: calc(50% - 13px);
-  }
-
-  .navigation__contact {
-    margin-left: 58px;
-    padding: 23px 10px 16px 89px;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 28px;
-  }
-
-  .navigation__contact::before {
-    width: 68px;
-    height: 68px;
-  }
-
-  .navigation__social {
-    margin-left: 58px;
-    margin-top: 135px;
+    margin-top: 90px;
+    margin-bottom: 113px;
+    margin-left: 41px;
   }
 }
 
@@ -116,30 +23,13 @@
     position: static;
     background-color: transparent;
     padding: 0;
-  }
-
-  .navigation__logo {
-    display: none;
-  }
-
-  .navigation__site {
     color: #ffffff;
     margin-bottom: 0;
   }
 
-  .navigation__close {
-    display: none;
-  }
-
-  .navigation__auth {
-    display: none;
-  }
-
-  .navigation__contact {
-    display: none;
-  }
-
-  .navigation__social {
-    display: none;
+  .navigation__site {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
   }
 }

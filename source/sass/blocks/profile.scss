@@ -43,6 +43,10 @@
   text-decoration: none;
 }
 
+.profile___modal-img {
+  display: none;
+}
+
 .profile__price-item {
   @include section-text;
 
@@ -91,7 +95,6 @@
 }
 
 .profile__image {
-  border-radius: 50%;
   position: absolute;
   top: -15px;
   right: 25px;
@@ -174,6 +177,19 @@
     line-height: 67px;
     border-radius: 50%;
     background-color: #e2e5f2;
+  }
+
+  .profile___modal-img {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+    top: -4px;
+    right: auto;
+    left: -67px;
+    line-height: 67px;
+    color: #132576;
   }
 }
 

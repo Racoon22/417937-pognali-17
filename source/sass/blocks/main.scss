@@ -67,7 +67,7 @@
 }
 
 .main__text-wrapper {
-  margin-top: 25px;
+  padding-top: 18px;
   display: flex;
   flex-direction: column;
 }
@@ -82,7 +82,7 @@
   }
 
   .main__text-wrapper {
-    margin-top: 65px;
+    padding-top: 45px;
   }
 
   .main__button-wrapper {
@@ -138,21 +138,19 @@
 
 @media (min-width: $desktop-width) {
   .main {
-    min-height: 750px;
     background-color: #161c36;
     background-image: url("../../img/traveller-illustration-desktop@1x.png"), url("../../img/globe-back-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: right 405px bottom, center center;
     background-size: auto, cover;
     text-align: center;
-    padding-bottom: 1px; //TODO если поставить 0 то все схлопывается. Почему так?
+    padding-bottom: 175px;
   }
 
   .main__text-wrapper {
     display: flex;
     flex-direction: row;
-    padding: 0 70px;
-    margin-top: 100px;
+    padding: 80px 70px 0;
     margin-bottom: 99px;
     justify-content: space-between;
   }
