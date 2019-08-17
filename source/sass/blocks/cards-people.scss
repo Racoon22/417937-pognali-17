@@ -193,6 +193,10 @@
   border: none;
 }
 
+.people-paginator__buttons {
+  display: flex;
+}
+
 .people-paginator__button--prev {
   margin-right: 1px;
   border-top-left-radius: 20px;
@@ -224,6 +228,10 @@
 .people-paginator__button--next::before {
   left: 63px;
   border-left: 10px solid $midnight;
+}
+
+.people-paginator-list {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

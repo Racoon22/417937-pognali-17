@@ -4,6 +4,8 @@
 
 .steps__item {
   position: relative;
+  box-sizing: border-box;
+  width: 100%;
   text-align: left;
   background-color: #ff8d30;
   margin: 0;
@@ -76,14 +78,18 @@
       margin-top: 0;
     }
 
-    &:nth-child(1n) {
-      flex-basis: 353px;
-      border-radius: 20px 20px 0 0;
+    &:nth-child(n + 1) {
+      flex-basis: 52%;
+      border-radius: 20px 0 0 0;
+    }
+
+    &:nth-child(n + 3) {
+      border-radius: 0 0 0 20px;
     }
 
     &:nth-child(2n) {
-      flex-basis: 300px;
-      margin-left: -53px;
+      flex-basis: 47%;
+      margin-left: -5%;
       border-radius: 20px 20px 0 0;
     }
 
@@ -93,10 +99,6 @@
 
     &:last-child {
       border-radius: 0 0 20px 20px;
-    }
-
-    &:nth-child(n + 3) {
-      border-radius: 0 20px 0 20px;
     }
 
     &:nth-child(n + 4) {
@@ -129,9 +131,9 @@
     flex-grow: 1;
 
     &:nth-child(n) {
-      flex-basis: 300px;
+      flex-basis: 315px;
       margin-top: 0;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       border-radius: 10px 0 0 10px;
     }
 
@@ -141,7 +143,6 @@
 
     &:nth-child(4n) {
       box-sizing: border-box;
-      width: 315px;
       flex-grow: 0;
       margin-top: 0;
       border-radius: 10px;

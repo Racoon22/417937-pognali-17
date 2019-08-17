@@ -3,45 +3,94 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <div class="page-wrapper">
-  <header class="site-header site-header--inner container">
+  <header id="site-header" class="site-header site-header--inner container">
     <div class="site-header__wrapper">
-      <a href="/" class="site-header__logo">
-        <img src="img/logo-mobile-white@1x.png" alt="" class="site-header__logo-img">
+      <a href="/" class="site-header__logo-white">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+          <img src="img/logo-mobile-white@1x.png" alt="Лого&quot;&quot;" class="site-header__logo-img">
+        </picture>
       </a>
+      <a href="/" class="site-header__logo-blue">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+          <img src="img/logo-mobile-blue@1x.png" alt="">
+        </picture>
+      </a>
+      <button id="toggleMenu" type="button" class="site-header__toggle"></button>
       <nav id="navigation" class="site-header__navigation navigation">
-        <img src="img/logo-mobile-blue@1x.png" alt="" class="navigation__logo">
-        <button id="closeMenuModal" type="button" class="navigation__close close-button"></button>
         <ul class="navigation__site site-navigation">
           <li class="site-navigation__item"><a class="site-navigation__link">О сервисе</a></li>
           <li class="site-navigation__item"><a href="form.html" class="site-navigation__link">Направления</a></li>
           <li class="site-navigation__item"><a href="catalog.html" class="site-navigation__link">Попутчики</a></li>
         </ul>
-        <a href="" class="navigation__auth">Авторизация</a>
-        <a href="" class="navigation__contact navigation__contact--phone">8 800 555-86-28</a>
-        <a href="" class="navigation__contact navigation__contact--email">mail@htmlacademy.ru</a>
-        <ul class="navigation__social social-navigation">
-          <li class="social-navigation__item">
-            <a href="" class="social-navigation__link">
-              <span class="social-navigation__name visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="social-navigation__item">
-            <a href="" class="social-navigation__link">
-              <span class="social-navigation__name visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social-navigation__item">
-            <a href="" class="social-navigation__link">
-              <span class="social-navigation__name visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-        </ul>
       </nav>
-      <button type="button" class="site-header__burger-icon"></button>
+      <div class="site-header__actions actions">
+        <a href="#" class="actions__link actions__link--call">
+          <svg class="actions__img" width="18" height="18">
+            <use xlink:href="#spr-topmenu-phone"></use>
+          </svg>
+          <span class="visually-hidden">Позвонить</span>
+        </a>
+        <a href="#" class="actions__link actions__link--email">
+          <svg class="actions__img" width="18" height="18">
+            <use xlink:href="#spr-topmenu-mail"></use>
+          </svg>
+          <span class="visually-hidden">Написать на почту</span>
+        </a>
+        <a href="#" class="site-header__auth">Авторизация</a>
+        <a href="#" class="actions__auth">Авторизация</a>
+      </div>
+      <!--    <a href="" class="site-header__auth">Авторизация</a>-->
+      <ul class="site-header__contacts">
+        <li>
+          <a href="">
+          <span class="site-header__contacts-wrapper">
+            <svg class="site-header__contacts-img" width="18" height="18" viewBox="0 0 36 36">
+              <use xlink:href="#spr-contacts-phone"></use>
+            </svg>
+      </span>8 800 555-86-28</a>
+        </li>
+        <li>
+          <a href="">
+          <span class="site-header__contacts-wrapper">
+            <svg class="site-header__contacts-img" width="11" height="21" viewBox="0 0 36 26">
+              <use xlink:href="#spr-contacts-mail"></use>
+            </svg>
+      </span>mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+      <ul class="site-header__social social-header">
+        <li class="social-header__item">
+          <a href="" class="social-header__link">
+            <svg class="social-header__img social-header__img--fb" width="11" height="21">
+              <use xlink:href="#spr-facebook"></use>
+            </svg>
+            <span class="social-header__name visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social-header__item">
+          <a href="" class="social-header__link">
+            <svg class="social-header__img social-header__img--vk" width="23" height="12">
+              <use xlink:href="#spr-vk"></use>
+            </svg>
+            <span class="social-header__name visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-header__item">
+          <a href="" class="social-header__link">
+            <svg class="social-header__img social-header__img--instagram" width="18" height="18">
+              <use xlink:href="#spr-instagram"></use>
+            </svg>
+            <span class="social-header__name visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+      </ul>
     </div>
   </header>
   <div class="title container">
@@ -49,17 +98,43 @@
     <a href="/" class="title__link">На главную</a>
   </div>
   <footer class="site-footer container">
-    <img src="img/logo-mobile-blue@1x.png" alt="" class="site-footer__logo">
-    <ul class="site-footer__social-list">
-      <li class="site-footer__social-item"><a href="#" class="site-footer__social-link visually-hidden">Фейсбук</a></li>
-      <li class="site-footer__social-item"><a href="#" class="site-footer__social-link visually-hidden">Вконтакте</a>
+    <a href="/" class="site-footer__logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+        <img src="img/logo-mobile-blue@1x.png" alt="Лого&quot;&quot;" class="site-footer__logo-img">
+      </picture>
+    </a>
+    <ul class="site-footer__social-list social-footer">
+      <li class="social-footer__item">
+        <a href="" class="social-footer__link">
+          <svg class="social-footer__img social-footer__img--fb" width="11" height="21">
+            <use xlink:href="#spr-facebook"></use>
+          </svg>
+          <span class="social-footer__name visually-hidden">Фейсбук</span>
+        </a>
       </li>
-      <li class="site-footer__social-item"><a href="#" class="site-footer__social-link visually-hidden">Инстаграмм</a>
+      <li class="social-footer__item">
+        <a href="" class="social-footer__link">
+          <svg class="social-footer__img social-footer__img--vk" width="23" height="12">
+            <use xlink:href="#spr-vk"></use>
+          </svg>
+          <span class="social-footer__name visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social-footer__item">
+        <a href="" class="social-footer__link">
+          <svg class="social-footer__img social-footer__img--instagram" width="18" height="18">
+            <use xlink:href="#spr-instagram"></use>
+          </svg>
+          <span class="social-footer__name visually-hidden">Инстаграм</span>
+        </a>
       </li>
     </ul>
+
     <div class="site-footer__copyright-wrapper">
       <p class="site-footer__copyright">Разработано</p>
-      <img src="img/htmlacademy.svg" width="27" height="34" alt="" class="site-footer__copyright-logo">
+      <img src="img/htmlacademy.svg" alt=""  width="27" height="34" class="site-footer__copyright-logo">
     </div>
   </footer>
 </div>

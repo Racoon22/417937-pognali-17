@@ -3,12 +3,6 @@
   padding-bottom: 23px;
 }
 
-.site-header--inner {
-  padding-top: 27px;
-  padding-bottom: 15px;
-  background-color: $midnight;
-}
-
 .site-header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -23,28 +17,12 @@
 .site-header__toggle {
   display: none;
   width: 26px;
-  height: 19px;
+  height: 12px;
+  margin-left: 21px;
 }
 
 .site-header__logo-white {
   display: none;
-}
-
-.site-header__auth {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 10px 20px 10px;
-  margin-bottom: 33px;
-  text-align: center;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 30px;
-  color: #192144;
-  background-color: $yellow;
-  border-radius: 25px;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .site-header__contacts {
@@ -83,20 +61,33 @@
   text-decoration: none;
 }
 
-//
-//.site-header__contacts a::before {
-//  content: "";
-//  position: absolute;
-//  top: 0;
-//  left: 0;
-//  width: 45px;
-//  height: 45px;
-//  background-color: $midnight;
-//  border-radius: 50%;
-//}
+.site-header__auth {
+  display: none;
+}
+
+.site-header .actions__link {
+  display: none;
+}
 
 .site-header__actions {
-  display: none;
+  width: 100%;
+  margin-bottom: 33px;
+}
+
+.site-header .actions__auth {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 20px 8px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #192144;
+  background-color: $yellow;
+  border-radius: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .social-header__img {
@@ -105,7 +96,7 @@
 
 .site-header__toggle--open {
   display: block;
-  background-image: url(../../img/menu.svg);
+  background-image: url("../../img/menu.svg");
   background-repeat: no-repeat;
   border: none;
   background-color: transparent;
@@ -115,7 +106,7 @@
   display: block;
   width: 22px;
   height: 19px;
-  background-image: url(../../img/menu-close.svg);
+  background-image: url("../../img/menu-close.svg");
   background-repeat: no-repeat;
   border: none;
   background-color: transparent;
@@ -141,44 +132,34 @@
     display: none;
   }
 
-  & .site-header__auth {
+  & .site-header__social {
     display: none;
   }
 
-  & .site-header__social {
+  & .site-header__actions {
+    display: none;
+  }
+
+  & .actions__auth {
     display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
   .site-header {
-    padding-top: 45px;
+    padding-top: 42px;
     padding-bottom: 73px;
   }
 
   .site-header__wrapper {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-  }
-
-  .site-header__toggle {
-    position: absolute;
-    top: 61px;
-    left: calc(50% - 13px);
-  }
-
-  .site-header__toggle--close {
-    top: 55px;
-    left: calc(50% - 10px);
-  }
-
-  .site-header__auth {
-    display: none;
   }
 
   .site-header__contacts {
     margin-bottom: 117px;
+    order: 5;
   }
 
   .site-header__contacts a {
@@ -187,6 +168,27 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 28px;
+  }
+
+  .site-header .actions__auth {
+    width: 188px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .site-header__actions {
+    order: 3;
+    width: 188px;
+    margin-bottom: 0;
+  }
+
+  .site-header__navigation {
+    order: 4;
+  }
+
+  .site-header__social {
+    order: 6;
   }
 
   .site-header__contacts-wrapper {
@@ -202,8 +204,20 @@
   }
 
   .site-header--closed {
-    padding-bottom: 23px;
+    padding-bottom: 27px;
     background-color: #182044;
+
+    &.site-header--inner {
+      background-color: $midnight;
+    }
+
+    & .site-header__actions {
+      display: block;
+    }
+
+    & .actions__auth {
+      display: block;
+    }
   }
 }
 
@@ -211,6 +225,10 @@
   .site-header {
     padding-top: 47px;
     background: $midnight;
+  }
+
+  .site-header__wrapper {
+    justify-content: flex-start;
   }
 
   .site-header__logo-white {
@@ -234,15 +252,16 @@
     width: 60px;
     height: 2px;
     background-color: #ffffff;
-
-  }
-
-  .site-header__auth {
-    display: none;
   }
 
   .site-header__actions {
     display: block;
+    margin-left: auto;
+    width: auto;
+  }
+
+  .site-header .actions__link {
+    display: flex;
   }
 
   .site-header__toggle {
@@ -251,5 +270,13 @@
 
   .site-header__contacts {
     display: none;
+  }
+
+  .site-header__navigation {
+    order: 2;
+  }
+
+  .site-header--closed .site-header__actions {
+    display: flex;
   }
 }

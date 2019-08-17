@@ -1,7 +1,6 @@
 var header = document.querySelector('#site-header');
 var toggleMenu = header.querySelector('#toggleMenu');
 
-
 header.classList.add('site-header--closed');
 toggleMenu.classList.add('site-header__toggle--open');
 
@@ -18,4 +17,3 @@ toggleMenu.addEventListener('click', function () {
   this.classList.add('site-header__toggle--open');
   header.classList.add('site-header--closed')
 });
-
