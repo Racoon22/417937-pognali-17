@@ -376,7 +376,21 @@
       </span>mail@htmlacademy.ru</a>
   </div>
 </section>
-<section class="map">
+<section class="location container">
+  <div class="location__wrapper">
+    <div class="location__address">
+          <span class="location__address-wrapper">
+            <svg class="location__address-img" width="14" height="22" viewBox="0 0 28 43">
+              <use xlink:href="#spr-contacts-location"></use>
+            </svg>
+      </span>
+      <p class="location__text">ул. Большая Конюшенная, 19/8</p>
+    </div>
+    <button class="location__button">Проложить маршрут</button>
+  </div>
+</section>
+<section id="map" class="map">
+
 </section>
 <footer class="site-footer container">
   <a href="/" class="site-footer__logo">
@@ -412,12 +426,30 @@
       </a>
     </li>
   </ul>
-
   <div class="site-footer__copyright-wrapper">
     <p class="site-footer__copyright">Разработано</p>
     <img src="img/htmlacademy.svg" alt="" width="27" height="34" class="site-footer__copyright-logo">
   </div>
 </footer>
 <script src="js/script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcPIZ5xAqSsOvWa1CH1qUKN52HfN2ODo4&callback=initMap" async
+        defer></script>
+<script type="text/javascript">
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      disableDefaultUI: true,
+      center: {lat: 59.938691, lng: 30.323097},
+      zoom: 18
+    });
+
+    var marker = new google.maps.Marker({
+      position: map.getCenter(),
+      icon: new google.maps.MarkerImage('img/map-marker.svg',
+        null, null, null, new google.maps.Size(41,41)),
+      draggable: false,
+      map: map
+    });
+  };
+</script>
 </body>
 </html>

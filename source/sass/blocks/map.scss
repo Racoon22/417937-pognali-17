@@ -1,18 +1,17 @@
 .map {
-  height: 538px;
-  background-color: $yellow;
+  height: 335px;
+  background-color: grey;
+  background-image: url("../../img/map-background.png");
 }
 
 @media (min-width: $tablet-width) {
   .map {
-    height: 909px;
-    background-color: $yellow;
+    height: 583px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
-    height: 713px;
-    background-color: $yellow;
+    height: 514px;
   }
 }

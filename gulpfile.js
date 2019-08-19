@@ -111,6 +111,7 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
+  "flags",
   "html"
 ));
 
