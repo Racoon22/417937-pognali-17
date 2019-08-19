@@ -1,0 +1,250 @@
+.cta {
+  position: relative;
+  margin-bottom: -30px;
+  background-color: $midnight;
+  border-radius: 0 0 30px 30px;
+  padding-top: 100px;
+  padding-bottom: 28px;
+}
+
+.cta__title {
+  color: $orange;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.cta__text,
+.cta__question {
+  width: 215px;
+  margin: 0 auto 28px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: center;
+}
+
+.cta__question {
+  margin-bottom: 18px;
+}
+
+.cta__auth-link {
+  color: $yellow;
+  text-decoration: underline;
+}
+
+.cta__form {
+  display: flex;
+  margin-bottom: 29px;
+}
+
+.cta__input {
+  box-sizing: border-box;
+  min-width: 220px;
+  flex-grow: 1;
+  height: 62px;
+  border-radius: 10px 0 0 10px;
+  text-indent: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border: 4px solid #ffffff;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+
+  &:active,
+  &:focus {
+    background-color: transparent;
+    color: #ffffff;
+    outline: none;
+  }
+}
+
+.cta__submit {
+  padding: 0;
+  flex-shrink: 0;
+  position: relative;
+  margin-left: -10px;
+  width: 60px;
+  border-radius: 10px;
+  border: none;
+  height: 62px;
+  font-size: 0;
+  background-color: $yellow;
+}
+
+.cta__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cta__contacts-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  background-color: $midnight;
+  border-radius: 50%;
+}
+
+.cta__contacts-img {
+  margin: auto;
+  fill: $yellow;
+  width: 18px;
+  height: 18px;
+}
+
+.cta__contacts a {
+  position: relative;
+  display: block;
+  color: $yellow;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 13px 10px 10px 61px;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .cta {
+    margin-bottom: -60px;
+    padding-bottom: 62px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .cta__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 55px;
+  }
+
+  .cta__text,
+  .cta__question {
+    width: 610px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+    margin-bottom: 63px;
+  }
+
+  .cta__question {
+    margin-bottom: 39px;
+  }
+
+  .cta__form {
+    padding: 0 35px;
+    margin-bottom: 58px;
+  }
+
+  .cta__input {
+    box-sizing: border-box;
+    min-width: 220px;
+    flex-grow: 1;
+    height: 81px;
+    border-radius: 20px 0 0 20px;
+    text-indent: 29px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .cta__text br,
+  .cta__question br {
+    display: none;
+  }
+
+  .cta__submit {
+    width: 82px;
+    height: 81px;
+    margin-left: -20px;
+    background-color: $yellow;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .cta__contacts {
+    margin-left: 36px;
+  }
+
+  .cta__contacts-wrapper {
+    width: 68px;
+    height: 68px;
+  }
+
+  .cta__contacts-img {
+    margin: auto;
+    fill: $yellow;
+    width: 27px;
+    height: 27px;
+  }
+
+  .cta__contacts a {
+    position: relative;
+    display: block;
+    color: $yellow;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding: 23px 10px 16px 89px;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cta {
+    border-radius: 0 0 60px 60px;
+    padding-top: 127px;
+    padding-bottom: 118px;
+  }
+
+  .cta__form {
+    padding: 0 72px;
+    margin-bottom: 67px;
+  }
+
+  .cta__text {
+    margin-bottom: 58px;
+  }
+
+  .cta__submit {
+    width: 324px;
+    padding-left: 35px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .cta__question {
+    margin-bottom: 44px;
+  }
+
+  .cta__contacts {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 868px;
+  }
+
+  .cta__contacts-wrapper {
+    width: 90px;
+    height: 90px;
+  }
+
+  .cta__contacts-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .cta__contacts a {
+    padding: 31px 10px 16px 117px;
+  }
+}

@@ -75,6 +75,13 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"))
 })
 
+gulp.task("flags", function () {
+  return gulp.src("source/img/**/flag-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("flags-sprite.svg"))
+    .pipe(gulp.dest("build/img"))
+})
+
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([

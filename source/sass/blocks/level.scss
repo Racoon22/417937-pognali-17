@@ -1,0 +1,50 @@
+.level {
+  text-align: center;
+  box-sizing: border-box;
+  height: 45px;
+  width: 45px;
+  color: #1d2e5b;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 47px;
+  border-radius: 50%;
+  border: 2px solid $orange;
+}
+
+.level::after {
+  content: "level";
+  position: absolute;
+  display: none;
+  top: 34px;
+  left: 15px;
+  border-top: 1px solid;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.level--black {
+  color: #ffffff;
+  position: relative;
+  height: 60px;
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+
+.level--black::after {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .level {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border: 3px solid #ff8d30;
+  }
+
+  .level::after {
+    display: block;
+  }
+}
