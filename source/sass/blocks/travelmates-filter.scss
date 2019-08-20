@@ -1,9 +1,199 @@
 .travelmates-filter {
-  width: 270px;
-  height: 624px;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0 auto 29px;
+  padding: 26px 26px 25px 25px;
   border-radius: 20px;
   background-color: #ffd74b;
+}
+
+.travelmates-filter__title {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22.49px;
+}
+
+.travelmates-filter__fieldset-wrapper {
+  display: flex;
+}
+
+.travelmates-filter__fieldset--hidden .travelmates-filter__fieldset-wrapper {
+  display: none;
+}
+
+.travelmates-filter__fieldset--hidden .travelmates-filter__fieldset-title {
+  margin-bottom: 5px;
+}
+
+.travelmates-filter__fieldset {
+  margin-bottom: 9px;
+  padding-top: 12px;
+  border-top: 1px solid #f3c72b;
+}
+
+.travelmates-filter__fieldset-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.travelmates-filter__fieldset-label {
+  position: relative;
+  display: block;
+  padding-left: 26px;
+  margin-bottom: 8px;
+}
+
+.travelmates-filter__checkbox-fake {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.travelmates-filter__checkbox:checked ~ .travelmates-filter__checkbox-fake {
+  background-color: red;
+}
+
+.travelmates-filter__transport-wrapper {
+  display: flex;
+  margin-top: 14px;
+  margin-bottom: 18px;
+}
+
+.travelmates-filter__transport-label {
+  display: block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.travelmates-filter__transport-fake {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+}
+
+.travelmates-filter__transport-checkbox:checked ~ .travelmates-filter__transport-fake {
+  opacity: 1;
+}
+
+.travelmates-filter__transport-fake--plane {
+  background-image: url("../../img/spr-plane.svg");
+}
+
+.travelmates-filter__transport-fake--bus {
+  background-image: url("../../img/spr-bus.svg");
+}
+
+.travelmates-filter__transport-fake--bike {
+  background-image: url("../../img/spr-bike.svg");
+}
+
+.travelmates-filter__transport-fake--run {
+  background-image: url("../../img/spr-run.svg");
+}
+
+.travelmates-filter__level-values {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 19px;
+}
+
+.travelmates-filter__level-value {
+  flex-grow: 1;
+  width: 50%;
+  padding: 5px;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #cbced9;
+}
+
+.travelmates-filter__level-values::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 10px;
+  background-color: #ffffff;
+}
+
+.travelmates-filter__level-values::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: calc(50% - 10px);
+  width: 16px;
+  height: 1px;
+  background-color: #cbced9;
+}
+
+.travelmates-filter__level-value--from {
+  border-radius: 4px 0 0 4px;
+  margin-right: -1px;
+}
+
+.travelmates-filter__level-value--to {
+  border-radius: 0 4px 4px 0;
+}
+
+.travelmates-filter__level-range {
+  position: relative;
+  height: 10px;
+  margin-bottom: 17px;
+}
+
+.travelmates-filter__level-range::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #1d2e5b;
+  opacity: 0.2;
+}
+
+.travelmates-filter__level-range::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: auto;
+  right: 0;
+  width: 69%;
+  height: 2px;
+  background-color: #1d2e5b;
+}
+
+.travelmates-filter__level-toggle {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 31%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1d2e5b;
+}
+
+.travelmates-filter__level-toggle--max {
+  left: auto;
+  right: 0;
 }
 
 @media (min-width: $tablet-width) {

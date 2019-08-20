@@ -15,7 +15,8 @@
     <div class="site-header__wrapper">
       <a href="/" class="site-header__logo-white">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+          <source media="(min-width: 1200px)"
+                  srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
           <img src="img/logo-mobile-white@1x.png" alt="Лого&quot;&quot;" class="site-header__logo-img">
         </picture>
@@ -102,7 +103,110 @@
   </div>
   <section class="filter container"></section>
   <section class="cards-people container">
-    <div class="cards-people__filter travelmates-filter"></div>
+    <div class="cards-people__filter travelmates-filter">
+      <h2 class="travelmates-filter__title">Подберите идеального попутчика</h2>
+      <form class="travelmates-filter__form">
+        <div class="travelmates-filter__fieldset">
+          <h3 class="travelmates-filter__fieldset-title">Хобби</h3>
+          <div class="travelmates-filter__fieldset-wrapper">
+            <label class="travelmates-filter__fieldset-label">Спортзал
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
+              <span class="travelmates-filter__checkbox-fake"></span>
+            </label>
+          </div>
+          <div class="travelmates-filter__fieldset-wrapper">
+            <label class="travelmates-filter__fieldset-label">Кальян
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
+              <span class="travelmates-filter__checkbox-fake"></span>
+            </label>
+          </div>
+          <div class="travelmates-filter__fieldset-wrapper">
+            <label class="travelmates-filter__fieldset-label">Диван
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
+              <span class="travelmates-filter__checkbox-fake"></span>
+            </label>
+          </div>
+        </div>
+        <div
+          class="travelmates-filter__fieldset travelmates-filter__fieldset--active">
+          <h3 class="travelmates-filter__fieldset-title">Музыка</h3>
+          <div class="travelmates-filter__fieldset-wrapper">
+            <label class="travelmates-filter__fieldset-label">Тяжелый рок
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
+              <span class="travelmates-filter__checkbox-fake"></span>
+            </label>
+          </div>
+          <div class="travelmates-filter__fieldset-wrapper">
+            <label class="travelmates-filter__fieldset-label">Русский рэп
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
+              <span class="travelmates-filter__checkbox-fake"></span>
+            </label>
+          </div>
+          <div class="travelmates-filter__fieldset-wrapper">
+            <label class="travelmates-filter__fieldset-label">Евроденс
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
+              <span class="travelmates-filter__checkbox-fake"></span>
+            </label>
+          </div>
+        </div>
+        <div class="travelmates-filter__fieldset">
+          <h3 class="travelmates-filter__fieldset-title">Еда</h3>
+          <div class="travelmates-filter__fieldset-wrapper">
+            <label class="travelmates-filter__fieldset-label">Мясоед
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
+              <span class="travelmates-filter__checkbox-fake"></span>
+            </label>
+          </div>
+          <div class="travelmates-filter__fieldset-wrapper">
+            <label class="travelmates-filter__fieldset-label">Сидит на ПП
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
+              <span class="travelmates-filter__checkbox-fake"></span>
+            </label>
+          </div>
+          <div class="travelmates-filter__fieldset-wrapper">
+            <label class="travelmates-filter__fieldset-label">Веган-сыроед
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
+              <span class="travelmates-filter__checkbox-fake"></span>
+            </label>
+          </div>
+        </div>
+        <div class="travelmates-filter__fieldset travelmates-filter__fieldset--active">
+          <h3 class="travelmates-filter__fieldset-title">Транспорт</h3>
+          <div class="travelmates-filter__transport-wrapper">
+            <label class="travelmates-filter__transport-label">
+              <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" checked>
+              <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--plane"></span>
+            </label>
+            <label class="travelmates-filter__transport-label">
+              <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" checked>
+              <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--bus"></span>
+            </label>
+            <label class="travelmates-filter__transport-label">
+              <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden">
+              <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--bike"></span>
+            </label>
+            <label class="travelmates-filter__transport-label">
+              <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" checked>
+              <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--run"></span>
+            </label>
+          </div>
+        </div>
+        <div class="travelmates-filter__fieldset travelmates-filter__fieldset--active">
+          <h3 class="travelmates-filter__fieldset-title">Левел</h3>
+          <div class="travelmates-filter__level-wrapper">
+            <div class="travelmates-filter__level-values">
+              <div class="travelmates-filter__level-value travelmates-filter__level-value--from">30</div>
+              <div class="travelmates-filter__level-value travelmates-filter__level-value--to">100</div>
+            </div>
+            <div class="travelmates-filter__level-range">
+              <div class="travelmates-filter__level-toggle travelmates-filter__level-toggle--min"></div>
+              <div class="travelmates-filter__level-toggle travelmates-filter__level-toggle--max"></div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="button button--small button--white button--stretch">Показать</button>
+      </form>
+    </div>
     <div class="cards-people__wrapper">
       <ul class="cards-people__list">
         <li class="cards-people__item">
@@ -450,7 +554,7 @@
 
     <div class="site-footer__copyright-wrapper">
       <p class="site-footer__copyright">Разработано</p>
-      <img src="img/htmlacademy.svg" alt=""  width="27" height="34" class="site-footer__copyright-logo">
+      <img src="img/htmlacademy.svg" alt="" width="27" height="34" class="site-footer__copyright-logo">
     </div>
   </footer>
 </div>
