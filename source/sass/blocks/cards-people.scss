@@ -446,6 +446,7 @@
 @media (min-width: $desktop-width) {
   .cards-people {
     display: flex;
+    align-items: flex-start;
   }
 
   .cards-people__filter {

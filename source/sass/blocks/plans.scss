@@ -1,0 +1,199 @@
+.plans {
+  position: relative;
+  background-color: #dfe3f0;
+  border-radius: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.plans__title {
+  margin: 0 0 30px;
+  color: #1d2e5b;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.plans__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plans__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 23px 25px 21px;
+  color: #1d2e5b;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.plans__number {
+  margin-right: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.plans__route {
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.plans__travelmates {
+  margin: 0 0 5px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.plans__dates {
+  margin: 0 0 22px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.plans__change {
+  padding: 0;
+  color: #000000;
+  font-family: $bloggersans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  opacity: 0.3;
+  background-color: transparent;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .plans {
+    padding: 50px 75px 75px;
+  }
+
+  .plans__title {
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  .plans__item {
+    position: relative;
+    justify-content: flex-start;
+    padding: 28px 35px 16px;
+  }
+
+  .plans__number {
+    position: absolute;
+    top: 45px;
+    right: 29px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .plans__route {
+    position: relative;
+    width: 100%;
+    padding-bottom: 21px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  .plans__route::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -36px;
+    width: calc(100% + 72px);
+    height: 1px;
+    border-bottom: 1px solid #eff0f4;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .plans__travelmates {
+    width: 184px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .plans__dates {
+    width: auto;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .plans__change {
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plans {
+    padding: 49px 60px 63px 124px;
+  }
+
+  .plans__title {
+    margin-left: 5px;
+  }
+
+  .plans__item {
+    align-items: baseline;
+    justify-content: flex-start;
+    padding: 25px 41px 23px 43px;
+    margin-bottom: 15px;
+  }
+
+  .plans__number {
+    position: static;
+    margin-right: 38px;
+  }
+
+  .plans__route {
+    width: 533px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  .plans__route::after {
+    content: none;
+  }
+
+  .plans__travelmates {
+    width: 177px;
+  }
+
+  .plans__change {
+    margin-left: auto;
+  }
+}

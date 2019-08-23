@@ -2,7 +2,7 @@
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto 29px;
-  padding: 26px 26px 25px 25px;
+  padding: 26px 26px 22px 25px;
   border-radius: 20px;
   background-color: #ffd74b;
 }
@@ -117,7 +117,7 @@
 .travelmates-filter__level-value {
   flex-grow: 1;
   width: 50%;
-  padding: 13px 0;
+  padding: 5px 0;
   background-color: #ffffff;
   text-align: center;
   border: 1px solid #cbced9;
@@ -155,7 +155,7 @@
 .travelmates-filter__level-range {
   position: relative;
   height: 10px;
-  margin-bottom: 17px;
+  margin-bottom: 22px;
 }
 
 .travelmates-filter__level-range::before {
@@ -213,7 +213,7 @@
   .travelmates-filter__fieldset {
     display: flex;
     align-items: baseline;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     border-top: none;
     padding-top: 0;
 
@@ -227,6 +227,10 @@
       margin-bottom: 36px;
       padding-bottom: 36px;
     }
+  }
+
+  .travelmates-filter__fieldset--hidden .travelmates-filter__fieldset-wrapper {
+    display: block;
   }
 
   .travelmates-filter__fieldset-title {
@@ -288,6 +292,7 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 18px;
+    padding: 13px;
   }
 
   .travelmates-filter__fieldset--transport {
@@ -314,11 +319,10 @@
     width: 15px;
     height: 15px;
   }
+
   .travelmates-filter__level-toggle--max {
     top: -4px;
     left: auto;
-    width: 15px;
-    height: 15px;
   }
 
   .travelmates-filter__level-values::after,
@@ -326,9 +330,101 @@
     top: 14px;
     height: 16px;
   }
+
   .travelmates-filter__level-values::after {
     top: 21px;
     height: 1px;
     width: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travelmates-filter {
+    width: 285px;
+    padding: 47px;
+  }
+
+  .travelmates-filter__fieldset:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .travelmates-filter__fieldset--hidden .travelmates-filter__fieldset-wrapper {
+    display: none;
+  }
+
+  .travelmates-filter__fieldset {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .travelmates-filter__fieldset:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .travelmates-filter__title {
+    margin-bottom: 30px;
+  }
+
+  .travelmates-filter__fieldset-title {
+    width: 100%;
+    margin-bottom: 23px;
+  }
+
+  .travelmates-filter__fieldset--transport .travelmates-filter__fieldset-title {
+    margin-bottom: 14px;
+  }
+
+  .travelmates-filter__fieldset--level .travelmates-filter__fieldset-title {
+    margin-bottom: 12px;
+  }
+
+  .travelmates-filter__fieldset--transport {
+    margin-bottom: 30px;
+  }
+
+  .travelmates-filter__fieldset-label {
+    padding-bottom: 12px;
+  }
+
+  .travelmates-filter__level-wrapper {
+    display: block;
+    padding-left: 0;
+  }
+
+  .travelmates-filter__level-values {
+    margin-bottom: 35px;
+    width: 100%;
+  }
+
+  .travelmates-filter__level-range {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .travelmates-filter__fieldset--level {
+    margin-bottom: 12px;
+  }
+
+  .travelmates-filter__level-toggle {
+    top: -4px;
+    left: 24%;
+    width: 13px;
+    height: 13px;
+  }
+
+  .travelmates-filter__level-toggle--max {
+    top: -4px;
+    left: auto;
+  }
+
+  .travelmates-filter__level-range::before {
+    top: 1px;
+  }
+
+  .travelmates-filter__level-range::after {
+    width: 73%;
+    top: 2px;
   }
 }
