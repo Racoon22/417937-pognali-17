@@ -1,0 +1,1087 @@
+.plan-form {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  border-radius: 30px;
+  background-color: #d4d9eb;
+}
+
+.plan-form-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 29px;
+}
+
+.plan-form__navigation {
+  display: flex;
+  margin: 0 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plan-form__navigation-item {
+  opacity: 0.3;
+}
+
+.plan-form__navigation-item {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #1d2e5b;
+}
+
+.plan-form__navigation-item:not(:last-child) {
+  margin-right: 17px;
+}
+
+.plan-form__navigation-item--active {
+  opacity: 1;
+}
+
+.plan-form__title {
+  margin: 0;
+  color: #1d2e5b;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.plan-form__step {
+  padding: 24px 25px 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.plan-form__step-title {
+  margin: 0 auto 15px;
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.plan-form__step-description {
+  margin: 0 auto 17px;
+}
+
+.plan-form__input-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.plan-form__label {
+  display: block;
+  margin-bottom: 6px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.plan-form__qty {
+  position: absolute;
+  flex-shrink: 0;
+  width: 41px;
+  height: calc(100% - 2px);
+  border: none;
+  background-color: #ffffff;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+
+.plan-form__qty--minus {
+  left: 1px;
+  top: 1px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-image: url("../../img/qty-minus-mobile.svg");
+}
+
+.plan-form__qty--plus {
+  right: 1px;
+  top: 1px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-image: url("../../img/qty-plus-mobile.svg");
+}
+
+.plan-form__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 32px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  border: 1px solid #cbced9;
+}
+
+.plan-form__units {
+  margin-left: auto;
+  text-transform: uppercase;
+  opacity: 0.3;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.plan-form__input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.plan-form__children {
+  margin-bottom: 25px;
+  position: relative;
+  padding-left: 40px;
+  display: block;
+  padding-top: 11px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.plan-form__checkbox:checked ~ .plan-form__checkbox-fake::before {
+  content: " ";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  background: url("../../img/tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  box-sizing: border-box;
+}
+
+
+.plan-form__checkbox-fake {
+  position: absolute;
+  box-sizing: border-box;
+  top: 4px;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+}
+
+.plan-form__months {
+  display: flex;
+  margin-bottom: 16px;
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+}
+
+.plan-form__months-title {
+  flex-grow: 1;
+  margin: 0;
+  padding: 11px 0;
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.plan-form__month-btn {
+  border: none;
+  flex-shrink: 0;
+  width: 41px;
+  background-color: #ffffff;
+  background-image: url("../../img/month-arrow-left.svg");
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 25%;
+}
+
+.plan-form__month-btn--next {
+  background-image: url("../../img/month-arrow-right.svg");
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 25%;
+}
+
+.plan-form__calendar {
+  margin-bottom: 22px;
+  width: 100%;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  border-collapse: collapse;
+}
+
+.plan-form__weekday {
+  font-weight: 400;
+}
+
+.plan-form__weekday small {
+  display: none;
+}
+
+.plan-form__day {
+  text-align: center;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid #cbced9;
+  background-color: $coconut;
+}
+
+.plan-form__day--disabled {
+  opacity: 0.3;
+  background-color: #ffffff;
+}
+
+.plan-form__weekends {
+  color: #ff5c23;
+}
+
+.plan-form__button {
+  display: block;
+  width: 100%;
+  margin-bottom: 13px;
+  padding: 7px 0 3px 0;
+  color: #161c35;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: $yellow;
+}
+
+.plan-form__button--prev {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan-form__step-navigation {
+  display: none;
+}
+
+.plan-form__route {
+  padding-top: 4px;
+}
+
+.plan-form__country-wrapper {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 22px;
+}
+
+.plan-form__country-wrapper::after {
+  margin-top: 21px;
+  display: flex;
+  align-items: stretch;
+}
+
+.plan-form__country-wrapper::before {
+  content: "";
+  box-sizing: border-box;
+  z-index: 5;
+  position: absolute;
+  right: 48px;
+  top: calc(50% - 4px);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #1d2e5b;
+}
+
+.plan-form__country-wrapper::after {
+  content: "";
+  box-sizing: border-box;
+  z-index: 5;
+  position: absolute;
+  right: 48px;
+  top: 68%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.3;
+  background-image: url("../../img/spr-small-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+.plan-form__country-wrapper--empty::before {
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+}
+
+.plan-form__country-wrapper--add::before {
+  background-color: #edeff6;
+  border: 1px solid #cbced9;
+}
+
+
+.plan-form__country-name {
+  position: relative;
+  flex-grow: 1;
+  padding: 11px;
+  color: #1d2e5b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.plan-form__country-wrapper--add .plan-form__country-name {
+  background: $coconut;
+  padding: 13px;
+  border: none;
+}
+
+.plan-form__country-name::after {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 38%);
+}
+
+.plan-form__country-wrapper--add .plan-form__country-name::after {
+  content: none;
+}
+
+.plan-form__country-wrapper--add .plan-form__country-name::before {
+  width: 14px;
+  height: 14px;
+  background-image: url("../../img/show-more-plus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  opacity: 0.3;
+  border: none;
+  transform: none;
+}
+
+.plan-form__country-wrapper--active {
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.plan-form__country-wrapper--active .plan-form__country-name {
+  color: #ffffff;
+  background: $midnight;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+}
+
+.plan-form__country-wrapper--active::before,
+.plan-form__country-wrapper--active .plan-form__country-name::before,
+.plan-form__country-wrapper--active .plan-form__country-name::after {
+  content: none;
+}
+
+.plan-form__country-name::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 8px;
+  height: 8px;
+  top: calc(50% - 7px);
+  right: 15px;
+  border-left: 1px solid rgba(#000000, 0.3);
+  border-bottom: 1px solid rgba(#000000, 0.3);
+  transform: rotate(-45deg);
+}
+
+.plan-form__country-flag {
+  position: relative;
+  margin-left: -1px;
+  display: flex;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+}
+
+.plan-form__country-delete {
+  position: absolute;
+  display: flex;
+  right: -11px;
+  top: -10px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #edeff6;
+}
+
+.plan-form__country-wrapper--active .plan-form__country-delete {
+  right: 11px;
+  top: 10px;
+  background-color: transparent;
+}
+
+.plan-form__country-delete svg {
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  opacity: 0.3;
+}
+
+.plan-form__country-wrapper--active svg {
+  fill: white;
+  opacity: 1;
+}
+
+
+.plan-form__country-modal {
+  display: none;
+}
+
+.plan-form__country-block {
+  width: 100%;
+}
+
+.plan-form__country-wrapper--active .plan-form__country-modal {
+  position: absolute;
+  z-index: 10;
+  top: 41px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+}
+
+.plan-form__country-alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 1px;
+}
+
+.plan-form__country-alphabet div {
+  width: calc(20% + 1px);
+  margin-top: -1px;
+  margin-left: -1px;
+  color: #161c36;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #cbced9;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.plan-form__country-list {
+  margin: 0 0 -2px;
+  padding: 14px 20px;
+  border: 1px solid #cbced9;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: none;
+  background: #ffffff;
+  list-style: none;
+}
+
+.plan-form__country-list a {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .plan-form {
+    padding: 50px 75px 104px;
+  }
+
+  .plan-form-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  .plan-form__navigation {
+    margin: 0;
+  }
+
+  .plan-form__navigation-item:not(:last-child) {
+    margin-right: 29px;
+  }
+
+  .plan-form__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  .plan-form__step {
+    width: 618px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 46px 41px 43px 44px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+  }
+
+  .plan-form__step-title {
+    margin-bottom: 31px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+
+  .plan-form__step-description {
+    margin-bottom: 39px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .plan-form__input-block {
+    width: 100%;
+    padding-top: 25px;
+    margin-bottom: 26px;
+    border-top: 1px solid #d6d9e6;
+  }
+
+  .plan-form__label {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+  }
+
+  .plan-form__units {
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+
+  .plan-form__input {
+    padding: 22px 32px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .plan-form__qty {
+    width: 60px;
+    background-image: url("../../img/qty-minus.svg");
+  }
+
+  .plan-form__qty--plus {
+    width: 60px;
+    background-image: url("../../img/qty-plus.svg");
+  }
+
+  .plan-form__step-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+  }
+
+  .plan-form__children {
+    margin-bottom: 33px;
+    padding-left: 60px;
+    order: 1;
+    color: #1d2e5b;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .plan-form__input-block--duration {
+    order: 2;
+  }
+
+  .plan-form__checkbox-fake {
+    top: 0;
+    width: 37px;
+    height: 37px;
+  }
+
+  .plan-form__checkbox:checked ~ .plan-form__checkbox-fake::before {
+    width: 30px;
+    height: 30px;
+    top: calc(50% - 15px);
+    left: calc(51% - 15px);
+  }
+
+  .plan-form__months {
+    margin-bottom: 32px;
+  }
+
+  .plan-form__months-title {
+    color: #1d2e5b;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    padding: 29px 0 20px;
+  }
+
+  .plan-form__month-btn {
+    width: 50px;
+    background-position: center;
+    background-size: 40%;
+  }
+
+  .plan-form__month-btn--next {
+    width: 50px;
+    background-position: center;
+    background-size: 40%;
+  }
+
+  .plan-form__weekday {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1.8px;
+  }
+
+  .plan-form__weekday small {
+    display: inline;
+    text-transform: lowercase;
+  }
+
+  .plan-form__day {
+    height: 66px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .plan-form__calendar {
+    margin-bottom: 45px;
+  }
+
+  .plan-form__button {
+    position: relative;
+    width: 285px;
+    box-sizing: border-box;
+    padding: 29px 46px 28px 33px;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: none;
+    text-align: left;
+  }
+
+  .plan-form__button--prev {
+    background: none;
+    padding-right: 0;
+    padding-left: 40px;
+    text-align: right;
+    width: 192px;
+  }
+
+  .plan-form__button::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 26px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid #1d2e5b;
+  }
+
+  .plan-form__button--prev::after {
+    top: calc(50% - 8px);
+    right: auto;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #1d2e5b;
+  }
+
+  .plan-form__step-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plan-form__route {
+    position: relative;
+    padding-top: 42px;
+    border-top: 1px solid #cbced9;
+    margin-bottom: 51px;
+  }
+
+  .plan-form__route::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 136px;
+    height: calc(100% + 20px);
+    width: 1px;
+    border-left: 1px solid #d6d9e6;
+  }
+
+  .plan-form__country-name {
+    padding: 27px 24px 22px;
+    margin-right: 53px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .plan-form__country-name::before {
+    right: 31px;
+  }
+
+  .plan-form__step--route .plan-form__step-description {
+    margin-bottom: 33px;
+  }
+
+  .plan-form__country-wrapper {
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .plan-form__country-wrapper::before {
+    width: 15px;
+    height: 15px;
+    top: calc(50% - 8px);
+    right: 130px;
+  }
+
+  .plan-form__country-wrapper::after {
+    display: none;
+  }
+
+  .plan-form__country-flag {
+    border: none;
+    padding: 0;
+    width: 70px;
+    height: 47px;
+  }
+
+  .cards-people__country-image {
+    width: 70px;
+    height: 47px;
+  }
+
+  .plan-form__country-delete {
+    position: static;
+    background: none;
+  }
+
+  .plan-form__country-delete {
+    width: 19px;
+    height: 19px;
+    margin-left: 23px;
+    opacity: 0.2;
+  }
+
+  .plan-form__country-delete svg {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .plan-form__country-wrapper--empty .plan-form__country-name {
+    margin-right: 122px;
+  }
+
+  .plan-form__country-wrapper--add .plan-form__country-name {
+    margin-right: 164px;
+    padding: 28px 25px 20px;
+  }
+
+  .plan-form__country-wrapper--active .plan-form__country-modal {
+    width: 575px;
+    z-index: 10;
+    top: 67px;
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+
+  .plan-form__country-alphabet {
+    width: 369px;
+    flex-shrink: 0;
+    padding: 35px 28px;
+    background-color: #ffffff;
+    border: 1px solid #cbced9;
+    border-bottom-left-radius: 10px;
+  }
+
+  .plan-form__country-alphabet div {
+    width: calc(16.65% + 1px);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 68px;
+  }
+
+  .plan-form__country-block {
+    width: 205px;
+    border-top: 1px solid #cbced9;
+    border-bottom: 1px solid #cbced9;
+    background-color: #ffffff;
+    border-bottom-right-radius: 10px;
+  }
+
+  .plan-form__country-list {
+    margin: 0;
+    width: auto;
+    padding: 33px 25px;
+    border: none;
+  }
+
+  .plan-form__country-list a {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plan-form {
+    padding: 50px 60px 104px;
+  }
+
+  .plan-form__navigation {
+    display: none;
+  }
+
+  .plan-form__step {
+    width: 1320px;
+    padding: 100px 160px 93px;
+    border-radius: 60px;
+    margin-bottom: 43px;
+  }
+
+  .plan-form__step-description {
+    width: 580px;
+    margin: 0;
+  }
+
+  .plan-form__step-title br {
+    display: none;
+  }
+
+  .plan-form__title {
+    margin-left: 70px;
+  }
+
+  .plan-form__input-block {
+    align-items: baseline;
+    width: 50%;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border: none;
+  }
+
+  .plan-form__children {
+    margin-left: auto;
+    padding-left: 63px;
+  }
+
+  .plan-form__units {
+    margin-left: 0;
+    order: 1;
+    opacity: 1;
+    letter-spacing: 2px;
+  }
+
+  .plan-form__label {
+    width: 220px;
+  }
+
+  .plan-form__input-wrapper {
+    width: 181px;
+    margin-right: 38px;
+  }
+
+  .plan-form__step-wrapper {
+    align-items: baseline;
+    margin-top: 30px;
+    margin-bottom: 18px;
+  }
+
+  .plan-form__step-header {
+    padding-bottom: 44px;
+    border-bottom: 1px solid #d6d9e6;
+  }
+
+  .plan-form__month-btn {
+    background-position: left;
+  }
+
+  .plan-form__month-btn--next {
+    background-position: right;
+  }
+
+  .plan-form__weekday {
+    height: 42px;
+    padding-left: 15px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .plan-form__months {
+    margin-bottom: 11px;
+  }
+
+  .plan-form__day {
+    height: 62px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    vertical-align: top;
+    padding: 8px 0 0 15px;
+  }
+
+  .plan-form__calendar {
+    margin-bottom: 57px;
+  }
+
+
+  .plan-form__step-navigation {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding-right: 45px;
+  }
+
+  .plan-form__step-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plan-form__step-navigation-link {
+    position: relative;
+    display: block;
+    padding-left: 42px;
+    color: #000000;
+    opacity: 0.6;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 42px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+
+  .plan-form__step-navigation-link--active {
+    opacity: 1;
+  }
+
+  .plan-form__step-navigation-link::before {
+    position: absolute;
+    top: calc(50% - 5px);
+    opacity: 0.3;
+    left: 0;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #1d2e5b;
+  }
+
+  .plan-form__step-navigation-link--active::before {
+    opacity: 1;
+  }
+
+  .plan-form__country-delete {
+    margin-left: auto;
+  }
+
+  .plan-form__country-name {
+    box-sizing: border-box;
+    width: 730px;
+    flex-grow: 0;
+    margin-right: 86px;
+    letter-spacing: 2.5px;
+  }
+
+  .plan-form__route {
+    margin-bottom: 58px;
+    padding-top: 63px;
+  }
+
+  .plan-form__route::after {
+    right: 224px;
+    height: calc(100% + 70px);
+  }
+
+  .plan-form__country-wrapper::before {
+    right: 218px;
+  }
+
+  .plan-form__step--route .plan-form__step-description {
+    margin-bottom: 0;
+  }
+
+  .plan-form__country-alphabet {
+    width: 489px;
+    padding: 39px 28px 19px;
+  }
+
+  .plan-form__country-block {
+    width: 240px;
+    border-right: 1px solid #cbced9;
+  }
+
+  .plan-form__country-wrapper--active .plan-form__country-modal {
+    width: 730px;
+  }
+
+  .plan-form__country-alphabet div {
+    width: 60px;
+    margin-right: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+
+  .plan-form__country-alphabet div:nth-child(6n) {
+    margin-right: 0;
+  }
+
+  .plan-form__country-wrapper--active .plan-form__country-delete {
+    position: absolute;
+    right: 296px;
+    opacity: 1;
+    top: 24px;
+  }
+}

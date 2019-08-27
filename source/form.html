@@ -15,7 +15,8 @@
     <div class="site-header__wrapper">
       <a href="/" class="site-header__logo-white">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+          <source media="(min-width: 1200px)"
+                  srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
           <img src="img/logo-mobile-white@1x.png" alt="Лого" class="site-header__logo-img">
         </picture>
@@ -29,7 +30,7 @@
       <button id="toggleMenu" type="button" class="site-header__toggle"></button>
       <nav id="navigation" class="site-header__navigation navigation">
         <ul class="navigation__site site-navigation">
-          <li class="site-navigation__item"><a  href="index.html" class="site-navigation__link">О сервисе</a></li>
+          <li class="site-navigation__item"><a href="index.html" class="site-navigation__link">О сервисе</a></li>
           <li class="site-navigation__item"><a class="site-navigation__link">Направления</a></li>
           <li class="site-navigation__item"><a href="catalog.html" class="site-navigation__link">Попутчики</a></li>
         </ul>
@@ -121,6 +122,404 @@
       </li>
     </ul>
   </section>
+  <section class="plan-form container">
+    <div class="plan-form-title-wrapper">
+      <h2 class="plan-form__title">Добавить план:</h2>
+      <ul class="plan-form__navigation">
+        <li class="plan-form__navigation-item plan-form__navigation-item--active"><a href=""></a></li>
+        <li class="plan-form__navigation-item"><a href=""></a></li>
+        <li class="plan-form__navigation-item"><a href=""></a></li>
+      </ul>
+    </div>
+    <div class="plan-form__step">
+      <div class="plan-form__step-header">
+        <div class="plan-form__step-info">
+          <h3 class="plan-form__step-title">Шаг 1. <br>Даты пребывания</h3>
+          <p class="plan-form__step-description">Укажите предпочтительное количество попутчиков, которых
+            вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+        </div>
+        <ul class="plan-form__step-navigation">
+          <li><a class="plan-form__step-navigation-link plan-form__step-navigation-link--active" href="">Даты</a></li>
+          <li><a class="plan-form__step-navigation-link" href="">Маршрут</a></li>
+          <li><a class="plan-form__step-navigation-link" href="">Развлечения</a></li>
+        </ul>
+      </div>
+      <div class="plan-form__step-wrapper">
+        <div class="plan-form__input-block plan-form__input-block--travelmates">
+          <label for="travelmates-qty" class="plan-form__label">
+            ищу попутчиков:
+          </label>
+          <span class="plan-form__units">
+          чел.
+      </span>
+          <div class="plan-form__input-wrapper">
+            <button type="button" class="plan-form__qty plan-form__qty--minus"></button>
+            <input id="travelmates-qty" type="text" class="plan-form__input" value="2">
+            <button type="button" class="plan-form__qty plan-form__qty--plus"></button>
+          </div>
+        </div>
+        <div class="plan-form__input-block plan-form__input-block--duration">
+          <label for="duration-qty" class="plan-form__label">
+            Длительность:
+          </label>
+          <span class="plan-form__units">
+          дн.
+      </span>
+          <div class="plan-form__input-wrapper">
+            <button type="button" class="plan-form__qty plan-form__qty--minus"></button>
+            <input id="duration-qty" type="text" class="plan-form__input" value="2">
+            <button type="button" class="plan-form__qty plan-form__qty--plus"></button>
+          </div>
+        </div>
+        <label class="plan-form__children">
+          Можно с детьми
+          <input type="checkbox" class="visually-hidden plan-form__checkbox">
+          <span class="plan-form__checkbox-fake"></span>
+        </label>
+      </div>
+      <div class="plan-form__months">
+        <button class="plan-form__month-btn plan-form__month-btn--prev"></button>
+        <p class="plan-form__months-title">
+          Март 2019
+        </p>
+        <button class="plan-form__month-btn plan-form__month-btn--next"></button>
+      </div>
+      <table class="plan-form__calendar">
+        <thead>
+        <tr>
+          <th class="plan-form__weekday">П
+            <small>н</small>
+          </th>
+          <th class="plan-form__weekday">В
+            <small>т</small>
+          </th>
+          <th class="plan-form__weekday">С
+            <small>р</small>
+          </th>
+          <th class="plan-form__weekday">Ч
+            <small>т</small>
+          </th>
+          <th class="plan-form__weekday">П
+            <small>т</small>
+          </th>
+          <th class="plan-form__weekday plan-form__weekends">С
+            <small>б</small>
+          </th>
+          <th class="plan-form__weekday plan-form__weekends">В
+            <small>с</small>
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="plan-form__day plan-form__day--disabled">23</td>
+          <td class="plan-form__day plan-form__day--disabled">24</td>
+          <td class="plan-form__day plan-form__day--disabled">25</td>
+          <td class="plan-form__day plan-form__day--disabled">26</td>
+          <td class="plan-form__day plan-form__day--disabled">27</td>
+          <td class="plan-form__day plan-form__day--disabled">28</td>
+          <td class="plan-form__day plan-form__day--disabled">1</td>
+        </tr>
+        <tr>
+          <td class="plan-form__day plan-form__day--disabled">2</td>
+          <td class="plan-form__day plan-form__day--disabled">3</td>
+          <td class="plan-form__day plan-form__day--disabled">4</td>
+          <td class="plan-form__day plan-form__day--disabled">5</td>
+          <td class="plan-form__day plan-form__day--disabled">6</td>
+          <td class="plan-form__day plan-form__day--disabled">7</td>
+          <td class="plan-form__day plan-form__day--disabled">8</td>
+        </tr>
+        <tr>
+          <td class="plan-form__day plan-form__day--disabled">9</td>
+          <td class="plan-form__day plan-form__day--disabled">10</td>
+          <td class="plan-form__day plan-form__day--disabled">11</td>
+          <td class="plan-form__day plan-form__day--disabled">12</td>
+          <td class="plan-form__day plan-form__day--disabled">13</td>
+          <td class="plan-form__day plan-form__day--disabled">14</td>
+          <td class="plan-form__day plan-form__day--disabled">15</td>
+        </tr>
+        <tr>
+          <td class="plan-form__day plan-form__day--disabled">16</td>
+          <td class="plan-form__day plan-form__day--disabled">17</td>
+          <td class="plan-form__day plan-form__day--disabled">18</td>
+          <td class="plan-form__day plan-form__day--disabled">19</td>
+          <td class="plan-form__day plan-form__day--disabled">20</td>
+          <td class="plan-form__day plan-form__day--disabled">21</td>
+          <td class="plan-form__day plan-form__day--disabled">22</td>
+        </tr>
+        <tr>
+          <td class="plan-form__day plan-form__day--disabled">23</td>
+          <td class="plan-form__day plan-form__day--disabled">24</td>
+          <td class="plan-form__day plan-form__day--disabled">25</td>
+          <td class="plan-form__day">26</td>
+          <td class="plan-form__day">27</td>
+          <td class="plan-form__day">28</td>
+          <td class="plan-form__day">29</td>
+        </tr>
+        <tr>
+          <td class="plan-form__day">30</td>
+          <td class="plan-form__day">31</td>
+          <td class="plan-form__day">1</td>
+          <td class="plan-form__day">2</td>
+          <td class="plan-form__day">3</td>
+          <td class="plan-form__day">4</td>
+          <td class="plan-form__day">5</td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="plan-form__step-footer">
+        <a href="" class="plan-form__button ">Следующий шаг</a>
+      </div>
+    </div>
+    <div class="plan-form__step plan-form__step--route">
+      <div class="plan-form__step-header">
+        <div class="plan-form__step-info">
+          <h3 class="plan-form__step-title">Шаг 2. <br>Маршрут</h3>
+          <p class="plan-form__step-description">Укажите страны, которые вы хотели по посетить.
+            Это может быть одна или сразу несколько.</p>
+        </div>
+        <ul class="plan-form__step-navigation">
+          <li><a class="plan-form__step-navigation-link" href="">Даты</a></li>
+          <li><a class="plan-form__step-navigation-link plan-form__step-navigation-link--active" href="">Маршрут</a>
+          </li>
+          <li><a class="plan-form__step-navigation-link" href="">Развлечения</a></li>
+        </ul>
+      </div>
+      <div class="plan-form__route">
+        <div class="plan-form__country-wrapper">
+          <div class="plan-form__country-name">Босния и герцегов</div>
+          <div class="plan-form__country-flag">
+            <svg class="cards-people__country-image" width="35" height="24" viewBox="0 0 71 48">
+              <use xlink:href="img/flags-sprite.svg#flag-bosnia"></use>
+            </svg>
+          </div>
+          <span class="plan-form__country-delete">
+            <svg width="9" height="9" viewBox="0 0 9 9">
+              <use xlink:href="#spr-small-cross"></use>
+            </svg>
+          </span>
+        </div>
+        <div class="plan-form__country-wrapper">
+          <div class="plan-form__country-name">Чехословакия</div>
+          <div class="plan-form__country-flag">
+            <svg class="cards-people__country-image" width="35" height="24" viewBox="0 0 71 48">
+              <use xlink:href="img/flags-sprite.svg#flag-czech"></use>
+            </svg>
+          </div>
+          <span class="plan-form__country-delete">
+            <svg width="9" height="9" viewBox="0 0 9 9">
+              <use xlink:href="#spr-small-cross"></use>
+            </svg>
+          </span>
+        </div>
+        <div class="plan-form__country-wrapper plan-form__country-wrapper--empty plan-form__country-wrapper--active">
+          <div class="plan-form__country-name">Выберите страну</div>
+          <span class="plan-form__country-delete">
+            <svg width="9" height="9" viewBox="0 0 9 9">
+              <use xlink:href="#spr-small-cross"></use>
+            </svg>
+          </span>
+          <div class="plan-form__country-modal">
+            <div class="plan-form__country-alphabet">
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+              <div>A</div>
+            </div>
+            <div class="plan-form__country-block">
+              <ul class="plan-form__country-list">
+                <li><a href="">Афганистан</a></li>
+                <li><a href="">Албания</a></li>
+                <li><a href="">Алгерия</a></li>
+                <li><a href="">Андорра</a></li>
+                <li><a href="">Аргентина</a></li>
+                <li><a href="">Армения</a></li>
+                <li><a href="">Австралия</a></li>
+                <li><a href="">Австрия</a></li>
+                <li><a href="">Азербайджанм</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="plan-form__country-wrapper plan-form__country-wrapper--add">
+          <div class="plan-form__country-name">Добавить страну</div>
+        </div>
+        <div class="plan-form__route-line"></div>
+      </div>
+      <div class="plan-form__step-footer">
+        <a href="" class="plan-form__button ">Следующий шаг</a>
+        <a href="" class="plan-form__button plan-form__button--prev">На шаг назад</a>
+      </div>
+    </div>
+    <div class="plan-form__step">
+      <div class="plan-form__step-header">
+        <div class="plan-form__step-info">
+          <h3 class="plan-form__step-title">Шаг 3. <br>Развлечения</h3>
+          <p class="plan-form__step-description">Наконец, расскажите о своих планах времяпровождения.
+            Можно писать в свободной форме и ставить тэги.</p>
+        </div>
+        <ul class="plan-form__step-navigation">
+          <li><a class="plan-form__step-navigation-link" href="">Даты</a></li>
+          <li><a class="plan-form__step-navigation-link" href="">Маршрут</a></li>
+          <li><a class="plan-form__step-navigation-link plan-form__step-navigation-link--active"
+                 href="">Развлечения</a></li>
+        </ul>
+      </div>
+      <div class="plan-form__step-wrapper">
+        <div class="plan-form__input-block plan-form__input-block--travelmates">
+          <label for="travelmates-qty" class="plan-form__label">
+            ищу попутчиков:
+          </label>
+          <span class="plan-form__units">
+          чел.
+      </span>
+          <div class="plan-form__input-wrapper">
+            <button type="button" class="plan-form__qty plan-form__qty--minus"></button>
+            <input id="travelmates-qty" type="text" class="plan-form__input" value="2">
+            <button type="button" class="plan-form__qty plan-form__qty--plus"></button>
+          </div>
+        </div>
+        <div class="plan-form__input-block plan-form__input-block--duration">
+          <label for="duration-qty" class="plan-form__label">
+            Длительность:
+          </label>
+          <span class="plan-form__units">
+          дн.
+      </span>
+          <div class="plan-form__input-wrapper">
+            <button type="button" class="plan-form__qty plan-form__qty--minus"></button>
+            <input id="duration-qty" type="text" class="plan-form__input" value="2">
+            <button type="button" class="plan-form__qty plan-form__qty--plus"></button>
+          </div>
+        </div>
+        <label class="plan-form__children">
+          Можно с детьми
+          <input type="checkbox" class="visually-hidden plan-form__checkbox">
+          <span class="plan-form__checkbox-fake"></span>
+        </label>
+      </div>
+      <div class="plan-form__months">
+        <button class="plan-form__month-btn plan-form__month-btn--prev"></button>
+        <p class="plan-form__months-title">
+          Март 2019
+        </p>
+        <button class="plan-form__month-btn plan-form__month-btn--next"></button>
+      </div>
+      <table class="plan-form__calendar">
+        <thead>
+        <tr>
+          <th class="plan-form__weekday">П
+            <small>н</small>
+          </th>
+          <th class="plan-form__weekday">В
+            <small>т</small>
+          </th>
+          <th class="plan-form__weekday">С
+            <small>р</small>
+          </th>
+          <th class="plan-form__weekday">Ч
+            <small>т</small>
+          </th>
+          <th class="plan-form__weekday">П
+            <small>т</small>
+          </th>
+          <th class="plan-form__weekday plan-form__weekends">С
+            <small>б</small>
+          </th>
+          <th class="plan-form__weekday plan-form__weekends">В
+            <small>с</small>
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="plan-form__day plan-form__day--disabled">23</td>
+          <td class="plan-form__day plan-form__day--disabled">24</td>
+          <td class="plan-form__day plan-form__day--disabled">25</td>
+          <td class="plan-form__day plan-form__day--disabled">26</td>
+          <td class="plan-form__day plan-form__day--disabled">27</td>
+          <td class="plan-form__day plan-form__day--disabled">28</td>
+          <td class="plan-form__day plan-form__day--disabled">1</td>
+        </tr>
+        <tr>
+          <td class="plan-form__day plan-form__day--disabled">2</td>
+          <td class="plan-form__day plan-form__day--disabled">3</td>
+          <td class="plan-form__day plan-form__day--disabled">4</td>
+          <td class="plan-form__day plan-form__day--disabled">5</td>
+          <td class="plan-form__day plan-form__day--disabled">6</td>
+          <td class="plan-form__day plan-form__day--disabled">7</td>
+          <td class="plan-form__day plan-form__day--disabled">8</td>
+        </tr>
+        <tr>
+          <td class="plan-form__day plan-form__day--disabled">9</td>
+          <td class="plan-form__day plan-form__day--disabled">10</td>
+          <td class="plan-form__day plan-form__day--disabled">11</td>
+          <td class="plan-form__day plan-form__day--disabled">12</td>
+          <td class="plan-form__day plan-form__day--disabled">13</td>
+          <td class="plan-form__day plan-form__day--disabled">14</td>
+          <td class="plan-form__day plan-form__day--disabled">15</td>
+        </tr>
+        <tr>
+          <td class="plan-form__day plan-form__day--disabled">16</td>
+          <td class="plan-form__day plan-form__day--disabled">17</td>
+          <td class="plan-form__day plan-form__day--disabled">18</td>
+          <td class="plan-form__day plan-form__day--disabled">19</td>
+          <td class="plan-form__day plan-form__day--disabled">20</td>
+          <td class="plan-form__day plan-form__day--disabled">21</td>
+          <td class="plan-form__day plan-form__day--disabled">22</td>
+        </tr>
+        <tr>
+          <td class="plan-form__day plan-form__day--disabled">23</td>
+          <td class="plan-form__day plan-form__day--disabled">24</td>
+          <td class="plan-form__day plan-form__day--disabled">25</td>
+          <td class="plan-form__day">26</td>
+          <td class="plan-form__day">27</td>
+          <td class="plan-form__day">28</td>
+          <td class="plan-form__day">29</td>
+        </tr>
+        <tr>
+          <td class="plan-form__day">30</td>
+          <td class="plan-form__day">31</td>
+          <td class="plan-form__day">1</td>
+          <td class="plan-form__day">2</td>
+          <td class="plan-form__day">3</td>
+          <td class="plan-form__day">4</td>
+          <td class="plan-form__day">5</td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="plan-form__step-footer">
+        <a href="" class="plan-form__button ">Следующий шаг</a>
+        <a href="" class="plan-form__button plan-form__button--prev">На шаг назад</a>
+      </div>
+    </div>
+  </section>
   <footer class="site-footer container">
     <a href="/" class="site-footer__logo">
       <picture>
@@ -158,7 +557,7 @@
 
     <div class="site-footer__copyright-wrapper">
       <p class="site-footer__copyright">Разработано</p>
-      <img src="img/htmlacademy.svg" alt=""  width="27" height="34" class="site-footer__copyright-logo">
+      <img src="img/htmlacademy.svg" alt="" width="27" height="34" class="site-footer__copyright-logo">
     </div>
   </footer>
 </div>
