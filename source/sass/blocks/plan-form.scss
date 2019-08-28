@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 30px;
   padding-bottom: 60px;
-  border-radius: 30px;
+  border-radius: 30px 30px 0 0;
   background-color: #d4d9eb;
 }
 
@@ -517,14 +517,14 @@
 
 @media (min-width: $tablet-width) {
   .plan-form {
-    padding: 50px 75px 104px;
+    padding: 47px 75px 83px;
   }
 
   .plan-form-title-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   .plan-form__navigation {
@@ -736,6 +736,7 @@
   .plan-form__step-footer {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 
   .plan-form__route {
@@ -766,6 +767,10 @@
 
   .plan-form__country-name::before {
     right: 31px;
+  }
+
+  .plan-form__step--route {
+    margin-bottom: 50px;
   }
 
   .plan-form__step--route .plan-form__step-description {
@@ -875,7 +880,8 @@
 
 @media (min-width: $desktop-width) {
   .plan-form {
-    padding: 50px 60px 104px;
+    border-radius: 60px 60px 0 0;
+    padding: 47px 60px 87px;
   }
 
   .plan-form__navigation {

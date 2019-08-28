@@ -1,11 +1,11 @@
 .title {
   position: relative;
-  z-index: 100;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: -30px;
-  padding-top: 10px;
+  padding-top: 0;
   background-color: $midnight;
   border-radius: 0 0 20px 20px;
 }
@@ -16,7 +16,7 @@
   padding: 0 0 5px;
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 43px;
   color: #ffffff;
   border-bottom: 6px solid #ff8d30;
 }
@@ -27,7 +27,7 @@
 
 @media (min-width: $tablet-width) {
   .title {
-    padding: 70px 144px 0 77px;
+    padding: 46px 144px 0 73px;
     align-items: center;
     margin-bottom: -60px;
     border-radius: 0 0 60px 60px;
@@ -52,14 +52,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .title__text {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 70px;
-  }
-
   .title {
-    padding: 48px 120px 0;
+    padding: 30px 120px 0;
     border-radius: 0 0 60px 60px;
   }
+
+  .title__text {
+    margin-top: 0;
+    padding: 65px 7px 65px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 55px;
+  }
+
 }

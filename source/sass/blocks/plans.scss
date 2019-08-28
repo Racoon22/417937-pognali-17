@@ -84,6 +84,15 @@
   border: none;
 }
 
+.plans__change:hover {
+  opacity: 1;
+}
+
+.plans__change:active {
+  opacity: 0.1;
+  outline: none;
+}
+
 @media (min-width: $tablet-width) {
   .plans {
     padding: 50px 75px 104px;
@@ -162,6 +171,7 @@
 
 @media (min-width: $desktop-width) {
   .plans {
+    border-radius: 60px 60px 0 0;
     padding: 49px 60px 92px 124px;
   }
 

@@ -1,4 +1,254 @@
 .info {
-  height: 485px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 52px;
+  padding-bottom: 33px;
   background-color: $coconut;
+}
+
+.info__avatar {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: 17px;
+  border-radius: 50%;
+}
+
+.info__avatar img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.info__level {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.info__change {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 33px;
+  padding: 6px 0 3px;
+  border-radius: 20px;
+  background-color: #dfe3f0;
+  font-family: $bloggersans;
+  color: #161c35;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.info__change:hover {
+  background-color: #d1d7e9;
+}
+
+.info__change:active {
+  background-color: #d1d7e9;
+  color: rgba(#161c35, 0.3);
+}
+
+.info__tag-wrapper {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.info__tag-label {
+  position: absolute;
+  top: -8px;
+  left: calc(50% - 33px);
+  padding: 0 15px;
+  background-color: $coconut;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.info__tag {
+  width: 100%;
+  min-height: 88px;
+  padding: 24px 24px 18px;
+  box-sizing: border-box;
+  font-family: $bloggersans;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  border-radius: 10px;
+  border: 1px solid #cbced9;
+  background-color: #edeff6;
+  resize: none;
+}
+
+.info__tag:hover {
+  border: 1px solid #aeb4cb;
+}
+
+.info__tag:focus {
+  border: 1px solid #161c35;
+  outline: none;
+}
+
+.info__transport-wrapper {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #cbced9;
+}
+
+.info__transport-label {
+  position: absolute;
+  top: -8px;
+  left: calc(50% - 56px);
+  padding: 0 15px;
+  background-color: $coconut;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.info__transport {
+  justify-content: center;
+  padding: 16px 0 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    position: relative;
+    padding: 123px 75px 35px;
+  }
+
+  .info__avatar {
+    width: 94px;
+    height: 94px;
+    order: 2;
+    margin: 0;
+  }
+
+  .info__avatar img {
+    border-radius: 5px;
+  }
+
+  .info__change {
+    order: 3;
+    padding: 23px 10px 20px;
+    margin-bottom: 51px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+  }
+
+  .info__transport-wrapper {
+    margin: 0 auto 51px;
+    order: 1;
+    width: 308px;
+  }
+
+  .info__transport-label {
+    top: auto;
+    bottom: -11px;
+    left: calc(50% - 73px);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .info__tag-label {
+    top: auto;
+    bottom: -4px;
+    left: calc(50% - 37px);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .info__tag {
+    padding: 34px 38px 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .info__transport {
+    padding: 23px 0 26px;
+  }
+
+  .info__tag-wrapper {
+    order: 4;
+  }
+
+  .info__level {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    padding: 132px 60px 41px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .info__level {
+    position: absolute;
+    z-index: 2;
+    top: -88px;
+    right: 390px;
+  }
+
+  .info__avatar {
+    position: absolute;
+    z-index: 2;
+    top: -131px;
+    right: 155px;
+    width: 190px;
+    height: 190px;
+  }
+
+  .info__avatar img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .info__change {
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    right: 155px;
+    width: 190px;
+    padding: 15px 0 12px;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .info__change span {
+    display: none;
+  }
+
+  .info__transport-wrapper {
+    order: 4;
+    width: 382px;
+    margin: 0;
+  }
+
+  .info__tag-wrapper {
+    order: 3;
+    width: 730px;
+    margin-left: 64px;
+  }
+
+  .info__tag-label {
+    left: 24px;
+  }
 }

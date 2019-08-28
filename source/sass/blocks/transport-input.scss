@@ -1,0 +1,79 @@
+.transport-input {
+  display: flex;
+}
+
+.transport-input__label {
+  display: block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.transport-input__fake {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+}
+
+.transport-input__label:active {
+  background-color: #e2e5f1;
+}
+
+.transport-input__label:checked:active .transport-input__fake {
+  opacity: 0.3;
+}
+
+.transport-input__label:not(:checked):active .transport-input__fake {
+  opacity: 0.15;
+}
+
+.transport-input__label:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.transport-input__label:checked:hover .transport-input__fake {
+  opacity: 0.3;
+}
+
+.transport-input__checkbox:checked ~ .transport-input__fake {
+  opacity: 1;
+}
+
+.transport-input__fake--plane {
+  background-image: url("../../img/spr-plane.svg");
+}
+
+.transport-input__fake--bus {
+  background-image: url("../../img/spr-bus.svg");
+}
+
+.transport-input__fake--bike {
+  background-image: url("../../img/spr-bike.svg");
+}
+
+.transport-input__fake--run {
+  background-image: url("../../img/spr-run.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .transport-input__label {
+    width: 43px;
+    height: 43px;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .transport-input__label:not(:last-child) {
+    margin-right: 0;
+  }
+}

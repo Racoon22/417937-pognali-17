@@ -1,4 +1,5 @@
 .level {
+  position: relative;
   text-align: center;
   box-sizing: border-box;
   height: 45px;
@@ -17,10 +18,28 @@
   display: none;
   top: 34px;
   left: 15px;
-  border-top: 1px solid;
+  color: #444444;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+  border-top: 1px solid;
+}
+
+.level--big {
+  width: 100px;
+  height: 100px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 86px;
+}
+
+.level--big::after {
+  display: block;
+  top: 58px;
+  left: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.17px;
 }
 
 .level--black {
@@ -46,5 +65,32 @@
 
   .level::after {
     display: block;
+  }
+
+  .level--big {
+    width: 94px;
+    height: 94px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 77px;
+  }
+
+  .level--big::after {
+    display: block;
+    top: 56px;
+    left: 28px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .level--big {
+    color: #ffffff
+  }
+
+  .level--big::after {
+    color: #ffffff
   }
 }
