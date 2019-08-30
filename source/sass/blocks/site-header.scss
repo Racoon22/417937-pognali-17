@@ -1,6 +1,6 @@
 .site-header {
-  padding-top: 33px;
-  padding-bottom: 23px;
+  padding-top: 26px;
+  padding-bottom: 30px;
 }
 
 .site-header__wrapper {
@@ -21,8 +21,17 @@
   margin-left: 21px;
 }
 
-.site-header__logo-white {
-  display: none;
+.site-header__logo {
+  width: 100px;
+  height: 19px;
+  background: url('../../img/sprite-logo.png') no-repeat;
+  background-position: -5px -208px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url('../../img/sprite-logo@2x.png') no-repeat;
+    background-position: -3px -200px;
+    background-size: 208%;
+  }
 }
 
 .site-header__contacts {
@@ -116,12 +125,13 @@
 .site-header--closed {
   background-color: $midnight;
 
-  & .site-header__logo-blue {
-    display: none;
-  }
+  & .site-header__logo {
+    background-position: -5px -232px;
 
-  & .site-header__logo-white {
-    display: block;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-position: -3px -221px;
+      background-size: 208%;
+    }
   }
 
   & .site-header__navigation {
@@ -203,6 +213,17 @@
     height: 27px;
   }
 
+  .site-header__logo {
+    width: 166px;
+    height: 42px;
+    background-position: -5px -114px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-position: -2px -110px;
+      background-size: 124%;
+    }
+  }
+
   .site-header--closed {
     padding-bottom: 27px;
     background-color: #182044;
@@ -217,6 +238,13 @@
 
     & .actions__auth {
       display: block;
+    }
+
+    & .site-header__logo {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-position: -2px -153px;
+        background-size: 124%;
+      }
     }
   }
 }
@@ -276,7 +304,23 @@
     order: 2;
   }
 
-  .site-header--closed .site-header__actions {
-    display: flex;
+
+  .site-header--closed {
+    & .site-header__actions {
+      display: flex;
+    }
+
+    & .site-header__logo {
+      background-position: -5px -57px;
+      width: 200px;
+      height: 52px;
+      margin-right: 40px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url('../../img/sprite-logo@2x.png') no-repeat;
+        background-position: -3px -55px;
+        background-size: 104%;
+      }
+    }
   }
 }

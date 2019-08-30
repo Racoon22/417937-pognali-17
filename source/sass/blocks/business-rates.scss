@@ -1,0 +1,128 @@
+.business-rates {
+  width: 100%;
+  margin: auto 25px;
+  padding-top: 34px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.business-rates__title {
+  margin-top: 0;
+  margin-bottom: 27px;
+  color: $orange;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.business-rates__list {
+  @include reset-list;
+  margin-bottom: 35px;
+  padding: 0 25px;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.business-rates__item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 9px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.business-rates__item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.business-rates__description {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+}
+
+.business-rates__amount {
+  margin: 0;
+}
+
+.business-rates__close {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 17px 0 12px;
+  border-radius: 0 0 20px 20px;
+  background-color: #dfe3f0;
+  font-family: $bloggersans;
+  color: #161c35;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .business-rates {
+    width: 688px;
+    margin: auto;
+    padding-top: 50px;
+    border-radius: 30px;
+  }
+
+  .business-rates__title {
+    margin-bottom: 45px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+  }
+
+  .business-rates__list {
+    margin-bottom: 50px;
+    padding: 0 91px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  .business-rates__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .business-rates__item:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .business-rates__description {
+    width: auto;
+  }
+
+  .business-rates__close {
+    padding: 43px;
+    border-radius: 0 0 30px 30px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .business-rates {
+    width: 750px;
+  }
+
+  .business-rates__list {
+    padding: 0 59px;
+  }
+}
