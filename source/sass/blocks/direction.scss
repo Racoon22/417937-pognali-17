@@ -1,7 +1,7 @@
 .directions {
   position: relative;
   z-index: 15;
-  padding: 102px 25px 105px;
+  padding: 102px 25px 109px;
   background-color: $coconut;
   border-radius: 0 0 30px 30px;
   margin-bottom: -60px;
@@ -51,7 +51,7 @@
 
 .directions__item-wrapper {
   position: relative;
-  margin-top: -20px;
+  margin-top: -17px;
 
   border-radius: 10px;
   background-color: #ffffff;
@@ -73,10 +73,9 @@
 
 .directions__show-all {
   position: absolute;
-  bottom: 25px;
+  bottom: 29px;
   left: 25px;
   width: calc(100% - 50px);
-  padding: 20px 0 26px 22px;
 }
 
 @media (min-width: $tablet-width) {
@@ -84,17 +83,14 @@
     padding: 102px 60px 200px 34px;
     background-color: $coconut;
     border-radius: 0 0 60px 60px;
+    background-image: url("../../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 36px top 113px;
+    background-size: 38%;
   }
 
   .directions__title {
     margin-bottom: 59px;
-  }
-
-  .directions__wrapper {
-    background-image: url("../../img/flags-back@1x.png");
-    background-repeat: no-repeat;
-    background-position: right 10px;
-    background-size: 42%;
   }
 
   .directions__text-box {
@@ -107,7 +103,20 @@
   }
 
   .directions__list {
+    position: relative;
+    z-index: 5;
     padding: 40px 15px 0 40px;
+  }
+
+  .directions__list::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    width: 141px;
+    height: 141px;
+    border-radius: 20px;
+    background-color: #e2e5f2;
   }
 
   .directions__item {
@@ -133,28 +142,30 @@
 
   .directions__show-all {
     position: absolute;
-    bottom: 80px;
+    display: block;
+    bottom: 85px;
     left: 75px;
     width: calc(100% - 150px);
-    padding: 20px 0 26px 22px;
+    padding: 10px 0 0 34px;
+    line-height: 68px;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .directions {
-    padding: 191px 60px 72px 130px;
+    padding: 191px 60px 75px 130px;
     background-color: $coconut;
     border-radius: 0 0 60px 60px;
+    background-image: url("../../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 60px top 120px;
+    background-size: 20%;
   }
 
   .directions__wrapper {
     display: flex;
     padding: 0;
-    background-image: url("../../img/flags-back@1x.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 20%;
   }
 
   .directions__text-box {
@@ -170,12 +181,19 @@
   }
 
   .directions__show-all {
-    position: static;
+    position: relative;
+    left: auto;
+    bottom: auto;
     width: 274px;
-    padding: 30px 0 26px 37px;
+    padding: 6px 0 4px 37px;
   }
 
   .directions__description {
     margin-bottom: 98px;
+  }
+
+  .directions__list::before {
+    top: -68px;
+    left: -70px;
   }
 }

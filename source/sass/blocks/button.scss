@@ -1,8 +1,9 @@
 .button {
+  position: relative;
   display: block;
   box-sizing: border-box;
   width: 270px;
-  padding: 26px 0 20px 24px;
+  padding: 22px 0 20px 24px;
 
   border-radius: 10px;
   background-color: $yellow;
@@ -10,9 +11,8 @@
   color: #1d2e5b;
   font-size: 18px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 21px;
   text-decoration: none;
-  text-transform: uppercase;
   border: none;
 }
 
@@ -33,6 +33,33 @@
 
 .button--grey {
   background-color: #d6daed;
+}
+
+.button-link {
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 9px);
+    right: 13px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 10px solid #1d2e5b;
+  }
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.button-link:active span {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,6 +90,10 @@
 
   .button--high {
     padding: 34px;
+  }
+
+  .button-link::after {
+    right: 25px;
   }
 }
 

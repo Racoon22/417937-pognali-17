@@ -5,10 +5,10 @@
   padding: 31px 50px 79px;
 
   border-radius: 0 0 30px 30px;
-  background-color: $midnight;
+  background-color: #192144;
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100%;
+  background-size: 90%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/about-mobile@2x.png");
@@ -18,11 +18,16 @@
 
 .about__title {
   @include section-title;
+  position: relative;
+  z-index: 1;
   margin-bottom: 21px;
 }
 
+
 .about__description {
   @include reset-margin-padding;
+  position: relative;
+  z-index: 1;
   width: 222px;
   margin-bottom: 20px;
   color: #ffffff;
@@ -83,6 +88,7 @@
 @media (min-width: $desktop-width) {
   .about {
     padding: 134px 60px 163px 132px;
+    background-color: #192144;
     background-image: url("../../img/about-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 750px 82px;
@@ -97,6 +103,18 @@
   .about__title {
     width: 610px;
     margin-bottom: 57px;
+  }
+
+  .about__title::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -61px;
+    left: -71px;
+    width: 213px;
+    height: 213px;
+    border-radius: 20px;
+    background-color: #141b3b;
   }
 
   .about__resume {

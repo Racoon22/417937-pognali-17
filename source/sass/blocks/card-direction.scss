@@ -4,7 +4,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 31px 28px 23px 25px;
+  align-items: baseline;
+  padding: 27px 25px 21px;
 }
 
 .card-direction__title {
@@ -26,7 +27,7 @@
   color: rgba($grey, 0.3);
   font-size: 16px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 20px;
 }
 
 .card-direction__visitors {
@@ -40,7 +41,7 @@
 .card-direction__visitors-img {
   position: absolute;
   top: 3px;
-  left: -14px;
+  left: -18px;
   width: 12px;
   height: 12px;
   opacity: 0.1;
@@ -54,7 +55,7 @@
 
   .card-direction__flag {
     position: absolute;
-    top: 19px;
+    top: 16px;
     right: -36px;
     width: 70px;
     height: 47px;
@@ -97,5 +98,9 @@
 
   .card-direction__slogan {
     margin-bottom: 22px;
+  }
+
+  .card-direction__flag {
+    top: 24px;
   }
 }

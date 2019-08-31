@@ -56,6 +56,23 @@
   text-align: left;
 }
 
+.location__button:hover {
+  background-color: #192144;
+  color: #ffffff;
+}
+
+.location__button:hover::after {
+  border-left-color: #ffffff;
+}
+
+.location__button:active::after {
+  opacity: 0.3;
+}
+
+.location__button:active span {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .location {
     position: relative;

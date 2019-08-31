@@ -16,7 +16,7 @@
 
 .profile__price-list {
   @include reset-list;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   margin-left: 25px;
 }
 
@@ -24,7 +24,7 @@
   @include section-title;
   width: 100px;
   margin-left: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .profile__price-number {
@@ -43,30 +43,39 @@
   text-decoration: none;
 }
 
+.profile___modal-link:hover svg,
+.profile___modal-link:hover span {
+  opacity: 0.7;
+}
+
+.profile___modal-link:active svg,
+.profile___modal-link:active span {
+  opacity: 0.3;
+}
+
 .profile___modal-img {
   display: none;
 }
 
 .profile__price-item {
   @include section-text;
-
   position: relative;
-  padding-top: 15px;
 }
 
-.profile__price-item:first-child .profile__price-wrapper {
+.profile__price-item:last-child .profile__price-wrapper {
   border-bottom: 1px solid #e1e3ea;
 }
 
 .profile__price-wrapper {
   width: 80%;
   border-bottom: 1px solid #e1e3ea;
-  padding-bottom: 6px;
+  padding-top: 11px;
+  padding-bottom: 10px;
 }
 
 .profile__price-item::after {
   position: absolute;
-  top: 8px;
+  top: 5px;
   right: 0;
   width: 34px;
   height: 34px;
@@ -112,6 +121,7 @@
   }
 
   .profile__image {
+    z-index: 2;
     top: auto;
     bottom: -118px;
     right: 11px;
@@ -132,8 +142,21 @@
   }
 
   .profile__price-list {
+    position: relative;
+    z-index: 2;
     margin-bottom: 59px;
     margin-left: 10px;
+  }
+
+  .profile__price-list::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -35px;
+    width: 198px;
+    height: calc(100% + 84px);
+    border-radius: 20px;
+    background-color: #e2e5f2;
   }
 
   .profile__price-item {
@@ -183,8 +206,7 @@
     display: block;
     position: absolute;
     z-index: 2;
-    width: 22px;
-    height: 22px;
+    width: 75px;
     top: -4px;
     right: auto;
     left: -67px;
@@ -215,5 +237,12 @@
     height: 198px;
     bottom: 0;
     right: -100px;
+  }
+
+  .profile__price-list::before {
+    top: -50px;
+    right: -160px;
+    width: 445px;
+    height: calc(100% + 100px);
   }
 }
