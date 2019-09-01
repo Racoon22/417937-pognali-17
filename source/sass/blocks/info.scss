@@ -1,9 +1,12 @@
 .info {
-  display: flex;
-  flex-wrap: wrap;
   padding-top: 52px;
   padding-bottom: 33px;
   background-color: $coconut;
+}
+
+.info__container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .info__avatar {
@@ -196,7 +199,10 @@
 
 @media (min-width: $desktop-width) {
   .info {
-    padding: 132px 60px 41px;
+    padding: 132px 0 41px;
+  }
+
+  .info__container {
     justify-content: space-between;
     align-items: flex-start;
   }

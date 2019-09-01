@@ -37,6 +37,8 @@ body {
 
 
 .container {
+  min-width: 320px;
+  box-sizing: border-box;
   padding: 0 25px;
 }
 
@@ -52,6 +54,8 @@ body {
 
 @media (min-width: $desktop-width) {
   .container {
+    width: 1440px;
+    margin: 0 auto;
     padding: 0 60px;
   }
 }

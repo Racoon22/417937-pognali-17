@@ -18,9 +18,10 @@
 
 .button--small {
   width: 230px;
-  padding: 12px 20px;
+  padding: 11px 20px 9px;
   border-radius: 20px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .button--stretch {
@@ -29,11 +30,37 @@
 
 .button--white {
   background-color: #ffffff;
+  outline: none;
+
+  &:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: #f3c72b;
+    box-shadow: none;
+  }
+}
+
+.button--white:active span {
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .button--grey {
   background-color: #d6daed;
+
+  &:hover {
+    background-color: #c8cee8;
+  }
 }
+
+.button--grey:active span {
+  opacity: 0.3;
+}
+
 
 .button-link {
   &::after {
@@ -56,6 +83,18 @@
   &:active::after {
     opacity: 0.3;
   }
+}
+
+.button--yellow {
+  background-color: $yellow;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+}
+
+.button--yellow:active span {
+  opacity: 0.3;
 }
 
 .button-link:active span {

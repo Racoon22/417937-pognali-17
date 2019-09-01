@@ -3,6 +3,10 @@
   padding-bottom: 22px;
 }
 
+.site-header__container {
+  padding-top: 26px;
+}
+
 .site-header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -27,11 +31,11 @@
 .site-header__logo {
   width: 100px;
   height: 19px;
-  background: url('../../img/sprite-logo.png') no-repeat;
+  background: url("../../img/sprite-logo.png") no-repeat;
   background-position: -5px -208px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url('../../img/sprite-logo@2x.png') no-repeat;
+    background: url("../../img/sprite-logo@2x.png") no-repeat;
     background-position: -3px -200px;
     background-size: 208%;
   }
@@ -130,11 +134,6 @@
   background-image: url("../../img/menu-close.svg");
 }
 
-.site-header__toggle--scroll {
-  display: block;
-  background-image: url("../../img/menu-scroll.svg");
-}
-
 .site-header--opened {
   position: absolute;
   z-index: 50;
@@ -146,7 +145,7 @@
   background-color: $midnight;
 
   & .site-header__logo {
-    background-position: -5px -157px;
+    background-position: -5px -232px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-position: -3px -221px;
@@ -175,11 +174,19 @@
   }
 }
 
+.site-header--closed.site-header--inner {
+  padding-top: 18px;
+}
+
 .site-header--scroll {
   position: fixed;
   z-index: 50;
   width: 100%;
   background-color: #ffffff;
+
+  .site-header__toggle {
+    background-image: url("../../img/menu-scroll.svg");
+  }
 
   & .site-header__navigation {
     display: none;
@@ -197,17 +204,16 @@
     display: none;
   }
 
-  & .actions__auth {
+  & .site-header__auth {
     display: none;
   }
 
-
   .site-header__logo {
-    background: url('../../img/sprite-logo.png') no-repeat;
+    background: url("../../img/sprite-logo.png") no-repeat;
     background-position: -5px -208px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url('../../img/sprite-logo@2x.png') no-repeat;
+      background: url("../../img/sprite-logo@2x.png") no-repeat;
       background-position: -3px -200px;
       background-size: 208%;
     }
@@ -290,12 +296,16 @@
   }
 
   .site-header--closed {
-    padding-top: 41px;
-    padding-bottom: 27px;
     background-color: #182044;
+
+    &.site-header__container {
+      padding-top: 41px;
+      padding-bottom: 27px;
+    }
 
     &.site-header--inner {
       background-color: $midnight;
+      padding-top: 42px;
     }
 
     & .site-header__actions {
@@ -307,8 +317,10 @@
     }
 
     & .site-header__logo {
+      background-position: -5px -159px;
+
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-position: -2px -153px;
+        background-position: -5px -157px;
         background-size: 124%;
       }
     }
@@ -330,10 +342,6 @@
     }
 
     & .site-header__actions {
-      display: none;
-    }
-
-    & .actions__auth {
       display: none;
     }
 
@@ -360,15 +368,6 @@
     margin-right: 40px;
   }
 
-  .site-header .site-header__navigation {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: auto;
-    margin: auto 0;
-    padding-left: 106px;
-  }
-
   .site-header__navigation::before {
     position: absolute;
     top: 12px;
@@ -377,12 +376,6 @@
     width: 60px;
     height: 2px;
     background-color: #ffffff;
-  }
-
-  .site-header__actions {
-    display: block;
-    margin-left: auto;
-    width: auto;
   }
 
   .site-header__toggle {
@@ -457,6 +450,18 @@
   }
 
   .site-header--closed {
+    background-color: #161c36;
+
+    & .site-header__navigation {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: auto;
+      margin: auto 0;
+      padding-left: 106px;
+    }
+
+
     & .site-header__contacts {
       display: flex;
       order: 3;
@@ -476,10 +481,40 @@
       margin-right: 40px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url('../../img/sprite-logo@2x.png') no-repeat;
+        background: url("../../img/sprite-logo@2x.png") no-repeat;
         background-position: -3px -55px;
         background-size: 104%;
       }
     }
+  }
+
+  .site-header--scroll {
+    background-color: #ffffff;
+
+    & .site-header__navigation::before {
+      background-color: #192144;
+    }
+
+    & .site-navigation__link {
+      color: #192144;
+    }
+
+    & .site-header__logo {
+      background-position: -5px -0;
+      width: 200px;
+      height: 52px;
+      margin-right: 40px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../../img/sprite-logo@2x.png") no-repeat;
+        background-position: -3px 0;
+        background-size: 104%;
+      }
+    }
+  }
+
+  .site-header--closed.site-header--inner {
+    background-color: #161c36;
+    padding-top: 51px;
   }
 }

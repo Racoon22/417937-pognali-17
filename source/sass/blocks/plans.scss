@@ -2,9 +2,12 @@
   position: relative;
   background-color: #dfe3f0;
   border-radius: 30px 30px 0 0;
+  margin-bottom: -30px;
+}
+
+.plans__container {
   padding-top: 30px;
   padding-bottom: 60px;
-  margin-bottom: -30px;
 }
 
 .plans__title {
@@ -95,6 +98,10 @@
 
 @media (min-width: $tablet-width) {
   .plans {
+    border-radius: 60px 60px 0 0;
+  }
+
+  .plans__container {
     padding: 50px 75px 104px;
   }
 
@@ -170,8 +177,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .plans {
-    border-radius: 60px 60px 0 0;
+  .plans__container {
     padding: 49px 60px 92px 124px;
   }
 

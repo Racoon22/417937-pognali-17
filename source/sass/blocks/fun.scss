@@ -66,6 +66,18 @@
   border: 1px solid #cbced9;
   background-color: #ffffff;
   resize: none;
+
+  &:hover {
+    border: 1px solid #959bb2;
+  }
+
+  &:focus {
+    border: 1px solid #161c35;
+  }
+}
+
+.fun__description--invalid {
+  border: 1px solid #f47e7e;
 }
 
 .fun__label::before {

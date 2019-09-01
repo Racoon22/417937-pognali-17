@@ -31,4 +31,3 @@ tariffsButton.addEventListener('click', function (e) {
 closeTariffs.addEventListener('click', function (e) {
   tariffsModal.classList.remove('modal--show');
 });
-

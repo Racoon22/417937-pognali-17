@@ -11,6 +11,8 @@
   padding-bottom: 107px;
   padding-left: 26px;
   background-color: $midnight;
+  margin-left: -25px;
+  width: calc(100% + 25px);
 }
 
 .main__steps-wrapper {
@@ -106,6 +108,8 @@
   }
 
   .main__review-wrapper {
+    width: auto;
+    margin-left: 0;
     padding-top: 0;
     padding-left: 34px;
     padding-bottom: 428px;

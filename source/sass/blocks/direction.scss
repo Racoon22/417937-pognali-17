@@ -1,10 +1,13 @@
 .directions {
   position: relative;
   z-index: 15;
-  padding: 102px 25px 109px;
   background-color: $coconut;
   border-radius: 0 0 30px 30px;
   margin-bottom: -60px;
+}
+
+.directions__container {
+  padding: 102px 25px 109px;
 }
 
 .directions__text-box {
@@ -80,9 +83,11 @@
 
 @media (min-width: $tablet-width) {
   .directions {
-    padding: 102px 60px 200px 34px;
-    background-color: $coconut;
     border-radius: 0 0 60px 60px;
+  }
+
+  .directions__container {
+    padding: 102px 60px 197px 34px;
     background-image: url("../../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position: right 36px top 113px;
@@ -111,7 +116,7 @@
   .directions__list::before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 6px;
     width: 141px;
     height: 141px;
@@ -151,12 +156,9 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
-  .directions {
+  .directions__container {
     padding: 191px 60px 75px 130px;
-    background-color: $coconut;
-    border-radius: 0 0 60px 60px;
     background-image: url("../../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position: right 60px top 120px;

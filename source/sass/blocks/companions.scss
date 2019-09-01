@@ -2,14 +2,17 @@
   position: relative;
   z-index: 10;
   margin-bottom: -30px;
-  padding-top: 133px;
-  padding-bottom: 103px;
   border-radius: 0 0 30px 30px;
   background-color: #192144;
+}
+
+.companions__container {
+  padding-top: 133px;
+  padding-bottom: 103px;
   background-image: url("../../img/rogovaya-back-mobile@1x.png"), url("../../img/smolov-back-desktop@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-position: top 371px right 259px, top 99px left 152px;
-  background-size: 20%,auto;
+  background-size: 20%, auto;
 }
 
 .companions__text-wrapper {
@@ -28,7 +31,6 @@
   top: 17px;
   left: 17px;
 }
-
 
 .companions__list {
   @include reset-list;
@@ -169,19 +171,23 @@
 
 @media (min-width: $tablet-width) {
   .companions {
-    padding-top: 200px;
-    padding-bottom: 239px;
     border-radius: 0 0 60px 60px;
     background-color: #192144;
+  }
+
+  .companions__container {
+    padding-top: 200px;
+    padding-bottom: 239px;
     background-image: url("../../img/rogovaya-back-desktop@1x.png"), url("../../img/smolov-back-desktop@1x.png");
     background-repeat: no-repeat, no-repeat;
     background-position: top 138px right 75px, top 485px left 41px;
     background-size: 37%, auto;
   }
 
+
   .companions__text-wrapper {
     padding-left: 35px;
-    margin-bottom: 56px;
+    margin-bottom: 59px;
     width: 435px;
   }
 
@@ -244,10 +250,6 @@
     border-radius: 20px 20px 0 0;
   }
 
-  .companions__container {
-    padding: 75px;
-  }
-
   .companions__list {
     display: flex;
     justify-content: center;
@@ -280,14 +282,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .companions {
+  .companions__container {
     display: flex;
     justify-content: space-around;
     padding-top: 191px;
     padding-bottom: 125px;
     padding-left: 96px;
-    background-position: top 444px left 193px,top 192px left 547px;
-    background-size: auto,auto;
+    background-position: top 444px left 193px, top 192px left 547px;
+    background-size: auto, auto;
   }
 
   .companions__text-wrapper {
