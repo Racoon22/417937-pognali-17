@@ -880,19 +880,6 @@
     width: 192px;
   }
 
-  .plan-form__button::after {
-    content: "";
-    position: absolute;
-    top: calc(50% - 8px);
-    right: 26px;
-    width: 0;
-    height: 0;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-right: 10px solid transparent;
-    border-left: 10px solid #1d2e5b;
-  }
-
   .plan-form__button--prev::after {
     top: calc(50% - 8px);
     right: auto;
