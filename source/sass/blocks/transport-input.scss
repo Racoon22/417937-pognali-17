@@ -46,19 +46,19 @@
 }
 
 .transport-input__fake--plane {
-  background-image: url("../../img/spr-plane.svg");
+  background-image: url("../img/spr-plane.svg");
 }
 
 .transport-input__fake--bus {
-  background-image: url("../../img/spr-bus.svg");
+  background-image: url("../img/spr-bus.svg");
 }
 
 .transport-input__fake--bike {
-  background-image: url("../../img/spr-bike.svg");
+  background-image: url("../img/spr-bike.svg");
 }
 
 .transport-input__fake--run {
-  background-image: url("../../img/spr-run.svg");
+  background-image: url("../img/spr-run.svg");
 }
 
 @media (min-width: $tablet-width) {

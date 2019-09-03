@@ -3,6 +3,28 @@
   display: flex;
 }
 
+
+.transports-list__item {
+  display: flex;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  color: #161c36;
+  background-color: #edeff6;
+}
+
+.transports-list__item svg {
+  display: block;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  opacity: 0.15;
+}
+
+.transports-list__item--active svg {
+  opacity: 1;
+}
+
 @media (min-width: $tablet-width) {
   .transports-list {
     display: flex;
@@ -15,6 +37,10 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 0;
+  }
+
+  .transports-list__item {
+    background-color: transparent;
   }
 }
 

@@ -1,9 +1,12 @@
 .plan-form {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 60px;
   border-radius: 30px 30px 0 0;
   background-color: #d4d9eb;
+}
+
+.plan-form__container {
+  padding-top: 30px;
+  padding-bottom: 66px;
 }
 
 .plan-form-title-wrapper {
@@ -107,7 +110,7 @@
   top: 1px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  background-image: url("../../img/qty-minus-mobile.svg");
+  background-image: url("../img/qty-minus-mobile.svg");
 }
 
 .plan-form__qty--plus {
@@ -115,7 +118,7 @@
   top: 1px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  background-image: url("../../img/qty-plus-mobile.svg");
+  background-image: url("../img/qty-plus-mobile.svg");
 }
 
 .plan-form__input {
@@ -172,7 +175,7 @@
   left: 0;
   width: 26px;
   height: 26px;
-  background: url("../../img/tick.svg");
+  background: url("../img/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -226,7 +229,7 @@
   flex-shrink: 0;
   width: 41px;
   background-color: #ffffff;
-  background-image: url("../../img/month-arrow-left.svg");
+  background-image: url("../img/month-arrow-left.svg");
   opacity: 0.3;
   background-repeat: no-repeat;
   background-position: left center;
@@ -242,7 +245,7 @@
 }
 
 .plan-form__month-btn--next {
-  background-image: url("../../img/month-arrow-right.svg");
+  background-image: url("../img/month-arrow-right.svg");
   opacity: 0.3;
   background-repeat: no-repeat;
   background-position: right center;
@@ -280,7 +283,7 @@
   &:hover {
     color: #ffffff;
     background-color: #1d2e5b;
-    border: 4px solid #ff5c23;
+    box-shadow: inset 0 0 0 2px #ff5c23;
   }
 }
 
@@ -317,6 +320,12 @@
   background-color: #ffffff;
 }
 
+.plan-form__day.plan-form__day--disabled:hover {
+  color: #444444;
+  box-shadow: none;
+  background-color: #ffffff;
+}
+
 .plan-form__weekends {
   color: #ff5c23;
 }
@@ -327,6 +336,7 @@
   margin-bottom: 13px;
   padding: 7px 0 3px 0;
   color: #161c35;
+  font-family: $bloggersans;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
@@ -352,12 +362,20 @@
   }
 }
 
+.plan-form__button::after {
+  display: none;
+}
+
 .plan-form__step-navigation {
   display: none;
 }
 
 .plan-form__route {
   padding-top: 4px;
+}
+
+.plan-form__step--fun {
+  padding-bottom: 7px;
 }
 
 .plan-form__country-wrapper {
@@ -394,7 +412,7 @@
   align-items: stretch;
   border-radius: 50%;
   opacity: 0.3;
-  background-image: url("../../img/spr-small-arrow.svg");
+  background-image: url("../img/spr-small-arrow.svg");
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
@@ -445,7 +463,6 @@
     transform: rotate(-45deg);
   }
 
-
   &:hover {
     border: 1px solid #959bb2;
   }
@@ -491,7 +508,7 @@
 .plan-form__country-wrapper--add .plan-form__country-name::before {
   width: 14px;
   height: 14px;
-  background-image: url("../../img/show-more-plus.svg");
+  background-image: url("../img/show-more-plus.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 120%;
@@ -743,12 +760,12 @@
 
   .plan-form__qty {
     width: 60px;
-    background-image: url("../../img/qty-minus.svg");
+    background-image: url("../img/qty-minus.svg");
   }
 
   .plan-form__qty--plus {
     width: 60px;
-    background-image: url("../../img/qty-plus.svg");
+    background-image: url("../img/qty-plus.svg");
   }
 
   .plan-form__step-wrapper {
@@ -828,6 +845,10 @@
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 2px;
+
+    &:hover {
+      box-shadow: inset 0 0 0 4px #ff5c23;
+    }
   }
 
   .plan-form__calendar {
@@ -845,6 +866,10 @@
     line-height: 24px;
     text-transform: none;
     text-align: left;
+  }
+
+  .plan-form__button::after {
+    display: block;
   }
 
   .plan-form__button--prev {
@@ -950,8 +975,8 @@
   }
 
   .cards-people__country-image {
-    width: 70px;
-    height: 47px;
+    width: 35px;
+    height: 24px;
   }
 
   .plan-form__country-delete {
@@ -1127,7 +1152,11 @@
     padding: 8px 0 0 15px;
   }
 
-  .plan-form__day:hover::before {
+  .plan-form__day--first::before {
+    display: block;
+  }
+
+  .plan-form__day--last::after {
     display: block;
   }
 
@@ -1249,5 +1278,10 @@
     opacity: 1;
     top: 24px;
     fill: #ffffff;
+  }
+
+  .plan-form__country-image {
+    width: 70px;
+    height: 47px;
   }
 }

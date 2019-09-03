@@ -101,7 +101,7 @@
   top: 0;
   left: 0;
   background-color: #ffffff;
-  background-image: url("../../img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -137,19 +137,19 @@
 }
 
 .travelmates-filter__transport-fake--plane {
-  background-image: url("../../img/spr-plane.svg");
+  background-image: url("../img/spr-plane.svg");
 }
 
 .travelmates-filter__transport-fake--bus {
-  background-image: url("../../img/spr-bus.svg");
+  background-image: url("../img/spr-bus.svg");
 }
 
 .travelmates-filter__transport-fake--bike {
-  background-image: url("../../img/spr-bike.svg");
+  background-image: url("../img/spr-bike.svg");
 }
 
 .travelmates-filter__transport-fake--run {
-  background-image: url("../../img/spr-run.svg");
+  background-image: url("../img/spr-run.svg");
 }
 
 .travelmates-filter__level-values {
@@ -289,7 +289,7 @@
   .travelmates-filter__fieldset {
     display: flex;
     align-items: baseline;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     border-top: none;
     padding-top: 0;
 
@@ -301,7 +301,7 @@
     &:last-of-type {
       border-bottom: 1px solid #f3c72b;
       margin-bottom: 36px;
-      padding-bottom: 31px;
+      padding-bottom: 37px;
     }
   }
 
@@ -384,7 +384,7 @@
 
   .travelmates-filter__fieldset--transport {
     align-items: center;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
   }
 
   .travelmates-filter__level-range {

@@ -131,33 +131,49 @@
     flex-grow: 1;
 
     &:nth-child(n) {
-      flex-basis: 315px;
+      flex-basis: 340px;
       margin-top: 0;
       margin-bottom: 0;
-      border-radius: 10px 0 0 10px;
+      border-radius: 20px 0 0 20px;
     }
 
     &:not(:first-child) {
-      margin-left: -15px;
+      margin-left: -22px;
+    }
+
+    &:first-child {
+      max-width: 335px;
+    }
+
+    &:last-child {
+      max-width: 315px;
     }
 
     &:nth-child(4n) {
       box-sizing: border-box;
       flex-grow: 0;
       margin-top: 0;
-      border-radius: 10px;
+      border-radius: 20px;
     }
 
     &::after {
       position: absolute;
       bottom: auto;
       left: 270px;
-      top: -14px;
+      top: -16px;
       content: attr(data-block-id);
       color: #ffffff;
       font-size: 24px;
       font-weight: 700;
       line-height: 120px;
+    }
+
+    &:nth-child(2)::after {
+      left: 300px;
+    }
+
+    &:nth-child(3)::after {
+      left: 300px;
     }
   }
 }

@@ -88,7 +88,7 @@
     width: 13px;
     height: 11px;
     opacity: 0.3;
-    background-image: url("../../img/spr-heart.svg");
+    background-image: url("../img/spr-heart.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -111,7 +111,7 @@
 
   &::after {
     opacity: 1;
-    background-image: url("../../img/spr-heart-active.svg");
+    background-image: url("../img/spr-heart-active.svg");
   }
 
   &:hover {
@@ -173,7 +173,7 @@
 
 .cards-people__country-wanted {
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .cards-people__transport-level-wrapper {
@@ -201,27 +201,6 @@
 .cards-people__transport {
   margin: 0;
   margin-bottom: 14px;
-}
-
-.transports-list__item {
-  display: flex;
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  color: #161c36;
-  background-color: #edeff6;
-}
-
-.transports-list__item svg {
-  display: block;
-  margin: auto;
-  width: 16px;
-  height: 16px;
-  opacity: 0.15;
-}
-
-.transports-list__item--active svg {
-  opacity: 1;
 }
 
 .cards-people__country-wrapper {
@@ -259,7 +238,7 @@
     width: 18px;
     height: 22px;
     left: -5px;
-    background-image: url("../../img/show-more-plus.svg");
+    background-image: url("../img/show-more-plus.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -283,7 +262,7 @@
     flex-wrap: wrap;
     align-items: center;
     width: 688px;
-    padding: 35px 25px 9px 35px;
+    padding: 33px 25px 9px 35px;
     margin-bottom: 40px;
   }
 
@@ -296,7 +275,7 @@
     width: auto;
     font-weight: 700;
     font-size: 30px;
-    line-height: 27px;
+    line-height: 31px;
   }
 
   .cards-people__item-wrapper {
@@ -422,10 +401,6 @@
 
   .cards-people__transport {
     display: none;
-  }
-
-  .transports-list__item {
-    background-color: transparent;
   }
 
   .cards-people__level-title {

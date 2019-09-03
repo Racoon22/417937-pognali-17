@@ -1,12 +1,12 @@
 .info {
-  padding-top: 52px;
-  padding-bottom: 33px;
   background-color: $coconut;
 }
 
 .info__container {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 52px;
+  padding-bottom: 33px;
 }
 
 .info__avatar {
@@ -75,7 +75,7 @@
 .info__tag {
   width: 100%;
   min-height: 88px;
-  padding: 24px 24px 18px;
+  padding: 22px 25px 18px;
   box-sizing: border-box;
   font-family: $bloggersans;
   color: #444444;
@@ -125,6 +125,9 @@
 @media (min-width: $tablet-width) {
   .info {
     position: relative;
+  }
+
+  .info__container {
     padding: 123px 75px 35px;
   }
 
@@ -198,11 +201,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .info {
-    padding: 132px 0 41px;
-  }
-
   .info__container {
+    position: relative;
+    padding: 132px 60px 41px;
     justify-content: space-between;
     align-items: flex-start;
   }

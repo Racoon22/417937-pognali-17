@@ -15,7 +15,7 @@
     <div class="site-header__container container">
       <div class="site-header__wrapper">
         <a href="/" class="site-header__logo"></a>
-        <button id="toggleMenu" type="button" class="site-header__toggle"></button>
+        <button type="button" id="toggleMenu" class="site-header__toggle"></button>
         <nav id="navigation" class="site-header__navigation navigation">
           <ul class="navigation__site site-navigation">
             <li class="site-navigation__item">
@@ -38,19 +38,19 @@
         <a href="#" class="site-header__auth">Авторизация</a>
         <div class="site-header__contacts">
           <a href="/" class="site-header__contacts-link site-header__contacts-link--phone">
-          <span class="site-header__contacts-wrapper">
-            <svg class="site-header__contacts-img" width="18" height="18" viewBox="0 0 36 36">
-              <use xlink:href="#spr-contacts-phone"></use>
-            </svg>
-          </span>
+            <span class="site-header__contacts-wrapper">
+              <svg class="site-header__contacts-img" width="18" height="18" viewBox="0 0 36 36">
+                <use xlink:href="#spr-contacts-phone"></use>
+              </svg>
+            </span>
             <span class="site-header__contacts-text">8 800 555-86-28</span>
           </a>
           <a href="/" class="site-header__contacts-link site-header__contacts-link--mail">
-          <span class="site-header__contacts-wrapper">
-            <svg class="site-header__contacts-img" width="11" height="21" viewBox="0 0 36 26">
-              <use xlink:href="#spr-contacts-mail"></use>
-            </svg>
-      </span>
+            <span class="site-header__contacts-wrapper">
+              <svg class="site-header__contacts-img" width="11" height="21" viewBox="0 0 36 26">
+                <use xlink:href="#spr-contacts-mail"></use>
+              </svg>
+            </span>
             <span class="site-header__contacts-text">mail@htmlacademy.ru</span>
           </a>
         </div>
@@ -90,14 +90,12 @@
   </div>
   <section class="info">
     <div class="info__container container">
-    <span class="info__level level level--big">
-        80
-    </span>
+    <span class="info__level level level--big">80</span>
       <picture class="info__avatar">
         <source media="(min-width: 1200px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
         <img src="img/demin-tablet@1x.jpg" srcset="img/demin-tablet@1x.jpg 2x" alt="Demin">
       </picture>
-      <button type="submit" class="info__change"><span>Сменить</span>фото</button>
+      <button type="button" class="info__change"><span>Сменить </span>фото</button>
       <div class="info__tag-wrapper">
         <label for="tags" class="info__tag-label">тэги</label>
         <textarea id="tags" cols="30" class="info__tag">#бургер #бар #футбол #концерт #крафт</textarea>
@@ -134,14 +132,14 @@
           <p class="plans__route">Франция, Италия</p>
           <p class="plans__travelmates">3 попутчика</p>
           <p class="plans__dates">26 мар — 29 мар</p>
-          <button type="button" class="plans__change">Изменить</button>
+          <a href="/" class="plans__change">Изменить</a>
         </li>
         <li class="plans__item">
           <span class="plans__number">2.</span>
           <p class="plans__route">Тайланд, Индонезия</p>
           <p class="plans__travelmates">1 попутчик</p>
           <p class="plans__dates">1 июл — 15 июл</p>
-          <button type="button" class="plans__change">Изменить</button>
+          <a href="/" class="plans__change">Изменить</a>
         </li>
       </ul>
     </div>
@@ -152,9 +150,15 @@
         <div class="plan-form-title-wrapper">
           <h2 class="plan-form__title">Добавить план:</h2>
           <ul class="plan-form__navigation">
-            <li class="plan-form__navigation-item plan-form__navigation-item--active"><a href=""></a></li>
-            <li class="plan-form__navigation-item"><a href=""></a></li>
-            <li class="plan-form__navigation-item"><a href=""></a></li>
+            <li class="plan-form__navigation-item plan-form__navigation-item--active">
+              <a href=""></a>
+            </li>
+            <li class="plan-form__navigation-item">
+              <a href=""></a>
+            </li>
+            <li class="plan-form__navigation-item">
+              <a href=""></a>
+            </li>
           </ul>
         </div>
         <div id="step1" class="plan-form__step">
@@ -165,10 +169,15 @@
                 вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.</p>
             </div>
             <ul class="plan-form__step-navigation">
-              <li><a class="plan-form__step-navigation-link plan-form__step-navigation-link--active" href="">Даты</a>
+              <li>
+                <a class="plan-form__step-navigation-link plan-form__step-navigation-link--active" href="">Даты</a>
               </li>
-              <li><a class="plan-form__step-navigation-link" href="">Маршрут</a></li>
-              <li><a class="plan-form__step-navigation-link" href="">Развлечения</a></li>
+              <li>
+                <a class="plan-form__step-navigation-link" href="">Маршрут</a>
+              </li>
+              <li>
+                <a class="plan-form__step-navigation-link" href="">Развлечения</a>
+              </li>
             </ul>
           </div>
           <div class="plan-form__step-wrapper">
@@ -176,9 +185,7 @@
               <label for="travelmates-qty" class="plan-form__label">
                 ищу попутчиков:
               </label>
-              <span class="plan-form__units">
-          чел.
-      </span>
+              <span class="plan-form__units">чел.</span>
               <div class="plan-form__input-wrapper">
                 <button type="button" class="plan-form__qty plan-form__qty--minus"></button>
                 <input id="travelmates-qty" type="text" class="plan-form__input" value="2">
@@ -189,9 +196,7 @@
               <label for="duration-qty" class="plan-form__label">
                 Длительность:
               </label>
-              <span class="plan-form__units">
-          дн.
-      </span>
+              <span class="plan-form__units">дн.</span>
               <div class="plan-form__input-wrapper">
                 <button type="button" class="plan-form__qty plan-form__qty--minus"></button>
                 <input id="duration-qty" type="text" class="plan-form__input" value="2">
@@ -205,36 +210,20 @@
             </label>
           </div>
           <div class="plan-form__months">
-            <button class="plan-form__month-btn plan-form__month-btn--prev"></button>
-            <p class="plan-form__months-title">
-              Март 2019
-            </p>
-            <button class="plan-form__month-btn plan-form__month-btn--next"></button>
+            <button type="button" class="plan-form__month-btn plan-form__month-btn--prev"></button>
+            <p class="plan-form__months-title">Март 2019</p>
+            <button type="button" class="plan-form__month-btn plan-form__month-btn--next"></button>
           </div>
           <table class="plan-form__calendar">
             <thead>
             <tr>
-              <th class="plan-form__weekday">П
-                <small>н</small>
-              </th>
-              <th class="plan-form__weekday">В
-                <small>т</small>
-              </th>
-              <th class="plan-form__weekday">С
-                <small>р</small>
-              </th>
-              <th class="plan-form__weekday">Ч
-                <small>т</small>
-              </th>
-              <th class="plan-form__weekday">П
-                <small>т</small>
-              </th>
-              <th class="plan-form__weekday plan-form__weekends">С
-                <small>б</small>
-              </th>
-              <th class="plan-form__weekday plan-form__weekends">В
-                <small>с</small>
-              </th>
+              <th class="plan-form__weekday">П<small>н</small></th>
+              <th class="plan-form__weekday">В<small>т</small></th>
+              <th class="plan-form__weekday">С<small>р</small></th>
+              <th class="plan-form__weekday">Ч<small>т</small></th>
+              <th class="plan-form__weekday">П<small>т</small></th>
+              <th class="plan-form__weekday plan-form__weekends">С<small>б</small></th>
+              <th class="plan-form__weekday plan-form__weekends">В<small>с</small></th>
             </tr>
             </thead>
             <tbody>
@@ -278,9 +267,9 @@
               <td class="plan-form__day plan-form__day--disabled">23</td>
               <td class="plan-form__day plan-form__day--disabled">24</td>
               <td class="plan-form__day plan-form__day--disabled">25</td>
-              <td class="plan-form__day plan-form__day--chosen">26</td>
+              <td class="plan-form__day plan-form__day--chosen plan-form__day--first">26</td>
               <td class="plan-form__day plan-form__day--chosen">27</td>
-              <td class="plan-form__day plan-form__day--chosen">28</td>
+              <td class="plan-form__day plan-form__day--chosen plan-form__day--last">28</td>
               <td class="plan-form__day">29</td>
             </tr>
             <tr>
@@ -316,17 +305,17 @@
           </div>
           <div class="plan-form__route">
             <div class="plan-form__country-wrapper">
-              <div class="plan-form__country-name">Босния и герцегов</div>
+              <div class="plan-form__country-name">Босния и герцеговина</div>
               <div class="plan-form__country-flag">
                 <svg class="plan-form__country-image" width="35" height="24" viewBox="0 0 71 48">
                   <use xlink:href="img/flags-sprite.svg#flag-bosnia"></use>
                 </svg>
               </div>
               <span class="plan-form__country-delete">
-            <svg width="9" height="9" viewBox="0 0 9 9">
-              <use xlink:href="#spr-small-cross"></use>
-            </svg>
-          </span>
+                <svg width="9" height="9" viewBox="0 0 9 9">
+                  <use xlink:href="#spr-small-cross"></use>
+                </svg>
+              </span>
             </div>
             <div class="plan-form__country-wrapper">
               <div class="plan-form__country-name">Чехословакия</div>
@@ -336,51 +325,50 @@
                 </svg>
               </div>
               <span class="plan-form__country-delete">
-            <svg width="9" height="9" viewBox="0 0 9 9">
-              <use xlink:href="#spr-small-cross"></use>
-            </svg>
-          </span>
+                <svg width="9" height="9" viewBox="0 0 9 9">
+                  <use xlink:href="#spr-small-cross"></use>
+                </svg>
+              </span>
             </div>
-            <!--        plan-form__country-wrapper&#45;&#45;active-->
             <div class="plan-form__country-wrapper plan-form__country-wrapper--empty">
               <div class="plan-form__country-name">Выберите страну</div>
               <span class="plan-form__country-delete">
-            <svg width="9" height="9" viewBox="0 0 9 9">
-              <use xlink:href="#spr-small-cross"></use>
-            </svg>
-          </span>
+                <svg width="9" height="9" viewBox="0 0 9 9">
+                  <use xlink:href="#spr-small-cross"></use>
+                </svg>
+              </span>
               <div class="plan-form__country-modal">
                 <div class="plan-form__country-alphabet">
                   <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
-                  <div>A</div>
+                  <div>Б</div>
+                  <div>В</div>
+                  <div>Г</div>
+                  <div>Д</div>
+                  <div>Е</div>
+                  <div>Ё</div>
+                  <div>Ж</div>
+                  <div>З</div>
+                  <div>И</div>
+                  <div>Й</div>
+                  <div>К</div>
+                  <div>Л</div>
+                  <div>М</div>
+                  <div>Н</div>
+                  <div>О</div>
+                  <div>П</div>
+                  <div>Р</div>
+                  <div>С</div>
+                  <div>Т</div>
+                  <div>У</div>
+                  <div>Ф</div>
+                  <div>Х</div>
+                  <div>Ц</div>
+                  <div>Ч</div>
+                  <div>Ш</div>
+                  <div>Щ</div>
+                  <div>Э</div>
+                  <div>Ю</div>
+                  <div>Я</div>
                 </div>
                 <div class="plan-form__country-block">
                   <ul class="plan-form__country-list">
@@ -392,7 +380,7 @@
                     <li><a href="">Армения</a></li>
                     <li><a href="">Австралия</a></li>
                     <li><a href="">Австрия</a></li>
-                    <li><a href="">Азербайджанм</a></li>
+                    <li><a href="">Азербайджан</a></li>
                   </ul>
                 </div>
               </div>
@@ -409,7 +397,7 @@
             <a href="#step1" class="plan-form__button plan-form__button--prev">На шаг назад</a>
           </div>
         </div>
-        <div id="step3" class="plan-form__step">
+        <div id="step3" class="plan-form__step plan-form__step--fun">
           <div class="plan-form__step-header">
             <div class="plan-form__step-info">
               <h3 class="plan-form__step-title">Шаг 3. <br>Развлечения</h3>
@@ -417,16 +405,22 @@
                 Можно писать в свободной форме и ставить тэги.</p>
             </div>
             <ul class="plan-form__step-navigation">
-              <li><a class="plan-form__step-navigation-link" href="">Даты</a></li>
-              <li><a class="plan-form__step-navigation-link" href="">Маршрут</a></li>
-              <li><a class="plan-form__step-navigation-link plan-form__step-navigation-link--active" href="">Развлечения</a></li>
+              <li>
+                <a class="plan-form__step-navigation-link" href="">Даты</a>
+              </li>
+              <li>
+                <a class="plan-form__step-navigation-link" href="">Маршрут</a>
+              </li>
+              <li>
+                <a class="plan-form__step-navigation-link plan-form__step-navigation-link--active" href="">Развлечения</a>
+              </li>
             </ul>
           </div>
           <div class="plan-form__step-wrapper">
             <div class="plan-form__fun fun">
               <div class="fun__item">
                 <label class="fun__label">
-                  <span class="fun__country">Босния и герцегови</span>
+                  <span class="fun__country">Босния и герцеговина</span>
                   <svg class="fun__image" width="35" height="24" viewBox="0 0 71 48">
                     <use xlink:href="img/flags-sprite.svg#flag-bosnia"></use>
                   </svg>
@@ -496,6 +490,6 @@
     </div>
   </footer>
 </div>
-<script type="text/javascript" src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
