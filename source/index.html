@@ -13,8 +13,12 @@
 <header id="site-header" class="site-header">
   <div class="site-header__container container">
     <div class="site-header__wrapper">
-      <a class="site-header__logo"></a>
-      <button id="toggleMenu" type="button" class="site-header__toggle"></button>
+      <a class="site-header__logo">
+        <span class="visually-hidden">Логотип</span>
+      </a>
+      <button id="toggleMenu" type="button" class="site-header__toggle">
+        <span class="visually-hidden">Меню</span>
+      </button>
       <nav id="navigation" class="site-header__navigation navigation">
         <ul class="navigation__site site-navigation">
           <li class="site-navigation__item">
@@ -119,10 +123,7 @@
       </div>
       <ul class="directions__list">
         <li class="directions__item">
-          <picture class="directions__item-picture">
-            <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
-            <img src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" class="directions__item-img" alt="France">
-          </picture>
+          <div class="directions__item-image directions__item-image--thailand"></div>
           <div class="directions__item-wrapper">
             <div class="directions__card card-direction">
               <svg class="card-direction__flag" width="35" height="25" viewBox="0 0 71 48">
@@ -136,10 +137,7 @@
           </div>
         </li>
         <li class="directions__item">
-          <picture class="directions__item-picture">
-            <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
-            <img src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" class="directions__item-img" alt="France">
-          </picture>
+          <div class="directions__item-image directions__item-image--france"></div>
           <div class="directions__item-wrapper">
             <div class="directions__card card-direction">
               <svg class="card-direction__flag" width="35" height="25" viewBox="0 0 71 48">
@@ -152,10 +150,7 @@
           </div>
         </li>
         <li class="directions__item">
-          <picture class="directions__item-picture">
-            <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
-            <img src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" class="directions__item-img" alt="France">
-          </picture>
+          <div class="directions__item-image directions__item-image--czech"></div>
           <div class="directions__item-wrapper">
             <div class="directions__item-wrapper">
               <div class="directions__card card-direction">
@@ -179,8 +174,7 @@
       <h2 class="companions__title">Попутчики</h2>
       <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а&nbsp;другому маршрут для хайкинга.</p>
       <p class="companions__resume">Теперь можно легко<br> найти единомышленников!</p>
-      <a href="catalog.html" class="companions__show-all button button-link button--stretch">
-        <span>Показать всеx</span>
+      <a href="catalog.html" class="companions__show-all button button-link button--stretch"> <span>Показать всеx</span>
       </a>
     </div>
     <ul class="companions__list">
@@ -188,7 +182,12 @@
         <div class="companions__wrapper">
           <div class="companions__photo-wrapper">
             <img src="img/firsova-desktop@1x.jpg" width="270" height="270" alt="" class="companions__img">
-            <span class="companions__level level level--black">99</span>
+            <span class="companions__level level level--black">
+              <svg class="level__progress" width="60" height="60" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="6" stroke-dashoffset="12"></circle>
+              </svg>
+              99
+            </span>
           </div>
           <div class="companions__info">
             <ul class="companions__countries-list">
@@ -210,8 +209,8 @@
             </ul>
             <h3 class="companions__name">Таня Фирсова</h3>
             <p class="companions__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-            <ul class="companions__transports transports-list transports-list--inline">
-              <li class="transports-list__item">
+            <ul class="companions__transports transports-list transports-list--white transports-list--inline">
+              <li class="transports-list__item transports-list__item--active">
                 <svg width="19" height="21" viewBox="0 0 19 21">
                   <use xlink:href="#spr-plane"></use>
                 </svg>
@@ -243,7 +242,12 @@
         <div class="companions__wrapper">
           <div class="companions__photo-wrapper">
             <img src="img/demin-desktop@1x.jpg" width="270" height="270" alt="" class="companions__img">
-            <span class="companions__level level level--black">80</span>
+            <span class="companions__level level level--black">
+              <svg class="level__progress" width="60" height="60" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="6" stroke-dashoffset="65"></circle>
+              </svg>
+              80
+            </span>
           </div>
           <div class="companions__info">
             <ul class="companions__countries-list">
@@ -260,14 +264,14 @@
             </ul>
             <h3 class="companions__name">Петя Демин</h3>
             <p class="companions__tags">#бургер #бар #футбол #концерт #крафт</p>
-            <ul class="companions__transports transports-list transports-list--inline">
-              <li class="transports-list__item">
+            <ul class="companions__transports transports-list transports-list--white transports-list--inline">
+              <li class="transports-list__item transports-list__item--active">
                 <svg width="19" height="21" viewBox="0 0 19 21">
                   <use xlink:href="#spr-plane"></use>
                 </svg>
                 <span class="visually-hidden">Самолет</span>
               </li>
-              <li class="transports-list__item">
+              <li class="transports-list__item transports-list__item--active">
                 <svg width="17" height="21" viewBox="0 0 17 21">
                   <use xlink:href="#spr-bus"></use>
                 </svg>
@@ -279,7 +283,7 @@
                 </svg>
                 <span class="visually-hidden">Велосипед</span>
               </li>
-              <li class="transports-list__item">
+              <li class="transports-list__item transports-list__item--active">
                 <svg width="20" height="21" viewBox="0 0 20 21" preserveAspectRatio="xMidYMid meet">
                   <use xlink:href="#spr-run"></use>
                 </svg>
@@ -322,8 +326,7 @@
       <svg class="profile___modal-img" width="68" height="21" viewBox="0 0 68 21">
         <use xlink:href="#spr-business"></use>
       </svg>
-      <span>Показать тарифы для бизнеса</span>
-    </a>
+      <span>Показать тарифы для бизнеса</span> </a>
   </div>
 </section>
 <section class="cta">
@@ -344,16 +347,13 @@
           <svg class="cta__contacts-img" width="18" height="18" viewBox="0 0 36 36">
             <use xlink:href="#spr-contacts-phone"></use>
           </svg>
-        </span>
-        <span class="cta__contacts-text">8 800 555-86-28</span>
-      </a>
+        </span> <span class="cta__contacts-text">8 800 555-86-28</span> </a>
       <a href="mailto:mail@htmlacademy.ru" class="cta__contacts-link">
         <span class="cta__contacts-wrapper">
           <svg class="cta__contacts-img" width="11" height="21" viewBox="0 0 36 26">
             <use xlink:href="#spr-contacts-mail"></use>
           </svg>
-        </span>
-        <span class="cta__contacts-text">mail@htmlacademy.ru</span> </a>
+        </span> <span class="cta__contacts-text">mail@htmlacademy.ru</span> </a>
     </div>
   </div>
 </section>
@@ -369,8 +369,7 @@
         <p class="location__text">ул. Большая Конюшенная, 19/8</p>
       </div>
       <a href="https://www.google.com/maps/dir/Bolshaya+Konyushennaya+Street,+19%2F8,+Saint+Petersburg/Paris,+France/@57.9964151,3.1126324,3.62z/data=!4m13!4m12!1m5!1m1!1s0x4696310fca145cc1:0x42b32648d8238007!2m2!1d30.3230474!2d59.9387165!1m5!1m1!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!2m2!1d2.3522219!2d48.856614" target="_blank" class="location__button button button-link">
-        <span>Проложить маршрут</span>
-      </a>
+        <span>Проложить маршрут</span> </a>
     </div>
   </div>
 </section>
@@ -378,6 +377,7 @@
 <footer class="site-footer">
   <div class="site-footer__container container">
     <a href="/" class="site-footer__logo">
+      <span class="visually-hidden">Лого</span>
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
@@ -390,27 +390,25 @@
           <svg class="social-footer__img social-footer__img--fb" width="11" height="21">
             <use xlink:href="#spr-facebook"></use>
           </svg>
-          <span class="social-footer__name visually-hidden">Фейсбук</span>
-        </a>
+          <span class="social-footer__name visually-hidden">Фейсбук</span> </a>
       </li>
       <li class="social-footer__item">
         <a href="" class="social-footer__link">
           <svg class="social-footer__img social-footer__img--vk" width="23" height="12">
             <use xlink:href="#spr-vk"></use>
           </svg>
-          <span class="social-footer__name visually-hidden">Вконтакте</span>
-        </a>
+          <span class="social-footer__name visually-hidden">Вконтакте</span> </a>
       </li>
       <li class="social-footer__item">
         <a href="" class="social-footer__link">
           <svg class="social-footer__img social-footer__img--instagram" width="18" height="18">
             <use xlink:href="#spr-instagram"></use>
           </svg>
-          <span class="social-footer__name visually-hidden">Инстаграм</span>
-        </a>
+          <span class="social-footer__name visually-hidden">Инстаграм</span> </a>
       </li>
     </ul>
-    <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="site-footer__copyright"> <span class="site-footer__copyright-text">Разработано</span>
+    <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="site-footer__copyright">
+      <span class="site-footer__copyright-text">Разработано</span>
       <img src="img/htmlacademy.svg" alt="" width="27" height="34" class="site-footer__copyright-logo"> </a>
   </div>
 </footer>

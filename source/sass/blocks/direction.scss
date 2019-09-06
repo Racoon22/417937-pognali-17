@@ -81,13 +81,49 @@
   width: calc(100% - 50px);
 }
 
+.directions__item-image {
+  width: 100%;
+  min-height: 117px;
+  order: 2;
+  flex-shrink: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.directions__item-image--thailand {
+  background-image: url("../img/thailand-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/thailand-mobile@2x.jpg");
+  }
+}
+
+.directions__item-image--france {
+  background-image: url("../img/france-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/france-mobile@2x.jpg");
+  }
+}
+
+.directions__item-image--czech {
+  background-image: url("../img/czech-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/czech-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: $tablet-width) {
   .directions {
     border-radius: 0 0 60px 60px;
   }
 
   .directions__container {
-    padding: 102px 60px 197px 34px;
+    padding: 102px 60px 199px 34px;
     background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position: right 36px top 113px;
@@ -130,6 +166,39 @@
 
   .directions__item {
     display: flex;
+  }
+
+  .directions__item-image {
+    width: 186px;
+    order: 2;
+    flex-shrink: 0;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+
+  .directions__item-image--thailand {
+    background-image: url("../img/thailand-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/thailand-desktop@2x.jpg");
+    }
+  }
+
+  .directions__item-image--france {
+    background-image: url("../img/france-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/france-desktop@2x.jpg");
+    }
+  }
+
+  .directions__item-image--czech {
+    background-image: url("../img/czech-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/czech-desktop@2x.jpg");
+    }
   }
 
   .directions__item-picture {

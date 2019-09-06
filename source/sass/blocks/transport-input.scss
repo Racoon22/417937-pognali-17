@@ -1,5 +1,6 @@
 .transport-input {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .transport-input__label {
@@ -33,7 +34,8 @@
   opacity: 0.15;
 }
 
-.transport-input__label:hover {
+.transport-input__label:hover,
+.transport-input__label:focus {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 

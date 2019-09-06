@@ -14,24 +14,22 @@
   <header id="site-header" class="site-header site-header--inner">
     <div class="site-header__container container">
       <div class="site-header__wrapper">
-        <a href="/" class="site-header__logo"></a>
-        <button id="toggleMenu" type="button" class="site-header__toggle"></button>
+        <a href="/" class="site-header__logo">
+          <span class="visually-hidden">Логотип</span>
+        </a>
+        <button id="toggleMenu" type="button" class="site-header__toggle">
+          <span class="visually-hidden">Меню</span>
+        </button>
         <nav id="navigation" class="site-header__navigation navigation">
           <ul class="navigation__site site-navigation">
             <li class="site-navigation__item">
-              <a href="/" class="site-navigation__link">
-                <span data-hover="О сервисе">О сервисе</span>
-              </a>
+              <a href="/" class="site-navigation__link"> <span data-hover="О сервисе">О сервисе</span> </a>
             </li>
             <li class="site-navigation__item">
-              <a href="form.html" class="site-navigation__link">
-                <span data-hover="Направления">Направления</span>
-              </a>
+              <a href="form.html" class="site-navigation__link"> <span data-hover="Направления">Направления</span> </a>
             </li>
             <li class="site-navigation__item">
-              <a class="site-navigation__link">
-                <span data-hover="Попутчики">Попутчики</span>
-              </a>
+              <a class="site-navigation__link"> <span data-hover="Попутчики">Попутчики</span> </a>
             </li>
           </ul>
         </nav>
@@ -42,17 +40,13 @@
               <svg class="site-header__contacts-img" width="18" height="18" viewBox="0 0 36 36">
                 <use xlink:href="#spr-contacts-phone"></use>
               </svg>
-            </span>
-            <span class="site-header__contacts-text">8 800 555-86-28</span>
-          </a>
+            </span> <span class="site-header__contacts-text">8 800 555-86-28</span> </a>
           <a href="/" class="site-header__contacts-link site-header__contacts-link--mail">
             <span class="site-header__contacts-wrapper">
               <svg class="site-header__contacts-img" width="11" height="21" viewBox="0 0 36 26">
                 <use xlink:href="#spr-contacts-mail"></use>
               </svg>
-            </span>
-            <span class="site-header__contacts-text">mail@htmlacademy.ru</span>
-          </a>
+            </span> <span class="site-header__contacts-text">mail@htmlacademy.ru</span> </a>
         </div>
         <ul class="site-header__social social-header">
           <li class="social-header__item">
@@ -60,24 +54,21 @@
               <svg class="social-header__img social-header__img--fb" width="11" height="21">
                 <use xlink:href="#spr-facebook"></use>
               </svg>
-              <span class="social-header__name visually-hidden">Фейсбук</span>
-            </a>
+              <span class="social-header__name visually-hidden">Фейсбук</span> </a>
           </li>
           <li class="social-header__item">
             <a href="" class="social-header__link">
               <svg class="social-header__img social-header__img--vk" width="23" height="12">
                 <use xlink:href="#spr-vk"></use>
               </svg>
-              <span class="social-header__name visually-hidden">Вконтакте</span>
-            </a>
+              <span class="social-header__name visually-hidden">Вконтакте</span> </a>
           </li>
           <li class="social-header__item">
             <a href="" class="social-header__link">
               <svg class="social-header__img social-header__img--instagram" width="18" height="18">
                 <use xlink:href="#spr-instagram"></use>
               </svg>
-              <span class="social-header__name visually-hidden">Инстаграм</span>
-            </a>
+              <span class="social-header__name visually-hidden">Инстаграм</span> </a>
           </li>
         </ul>
       </div>
@@ -111,7 +102,8 @@
         </li>
       </ul>
       <div class="country-filter__alphabet">
-        <div class="country-filter__alphabet-item"><a href="" class="country-filter__letter country-filter__letter--active">А</a>
+        <div class="country-filter__alphabet-item">
+          <a href="" class="country-filter__letter country-filter__letter--active">А</a>
           <ul class="country-filter__countries-list country-filter__countries-list--desktop">
             <li><a href="islands/australia">Австралия</a></li>
             <li><a href="europe/austria">Австрия</a></li>
@@ -334,8 +326,8 @@
             <li><a href="">Португалия</a></li>
           </ul>
         </div>
-        <div class="country-filter__alphabet-item country-filter__alphabet-item--desktop-hidden"><a href=""
-          class="country-filter__letter">Р</a>
+        <div class="country-filter__alphabet-item country-filter__alphabet-item--desktop-hidden">
+          <a href="" class="country-filter__letter">Р</a>
           <ul class="country-filter__countries-list country-filter__countries-list--desktop">
             <li><a href="">Ангола</a></li>
             <li><a href="">Ангола</a></li>
@@ -479,8 +471,7 @@
         <li><a href="">Австрия</a></li>
         <li><a href="">Азербайджанм</a></li>
       </ul>
-      <button type="submit"
-        class="country-filter__close button button--small button--high button--grey button--stretch">
+      <button type="submit" class="country-filter__close button button--small button--high button--grey button--stretch">
         <span>Свернуть</span>
       </button>
     </div>
@@ -490,91 +481,79 @@
       <h2 class="travelmates-filter__title">Подберите идеального попутчика</h2>
       <form class="travelmates-filter__form">
         <div class="travelmates-filter__fieldset">
-          <h3 class="travelmates-filter__fieldset-title">Хобби</h3>
+          <h3 class="travelmates-filter__fieldset-title" tabindex="0" tabindex="0">Хобби</h3>
           <div class="travelmates-filter__fieldset-wrapper">
-            <label class="travelmates-filter__fieldset-label">Спортзал
-              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
-              <span class="travelmates-filter__checkbox-fake"></span>
-            </label>
+            <label class="travelmates-filter__fieldset-label" tabindex="0">Спортзал
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden" tabindex="-1">
+              <span class="travelmates-filter__checkbox-fake"></span> </label>
           </div>
           <div class="travelmates-filter__fieldset-wrapper">
-            <label class="travelmates-filter__fieldset-label">Кальян
-              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
-              <span class="travelmates-filter__checkbox-fake"></span>
-            </label>
+            <label class="travelmates-filter__fieldset-label" tabindex="0">Кальян
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden" tabindex="-1">
+              <span class="travelmates-filter__checkbox-fake"></span> </label>
           </div>
           <div class="travelmates-filter__fieldset-wrapper">
-            <label class="travelmates-filter__fieldset-label">Диван
-              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
-              <span class="travelmates-filter__checkbox-fake"></span>
-            </label>
+            <label class="travelmates-filter__fieldset-label" tabindex="0">Диван
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden" tabindex="-1">
+              <span class="travelmates-filter__checkbox-fake"></span> </label>
           </div>
         </div>
         <div class="travelmates-filter__fieldset travelmates-filter__fieldset--active">
-          <h3 class="travelmates-filter__fieldset-title">Музыка</h3>
+          <h3 class="travelmates-filter__fieldset-title" tabindex="0">Музыка</h3>
           <div class="travelmates-filter__fieldset-wrapper">
-            <label class="travelmates-filter__fieldset-label">Тяжелый рок
-              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
-              <span class="travelmates-filter__checkbox-fake"></span>
-            </label>
+            <label class="travelmates-filter__fieldset-label" tabindex="0">Тяжелый рок
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden" tabindex="-1">
+              <span class="travelmates-filter__checkbox-fake"></span> </label>
           </div>
           <div class="travelmates-filter__fieldset-wrapper">
-            <label class="travelmates-filter__fieldset-label">Русский рэп
-              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
-              <span class="travelmates-filter__checkbox-fake"></span>
-            </label>
+            <label class="travelmates-filter__fieldset-label" tabindex="0">Русский рэп
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden" tabindex="-1">
+              <span class="travelmates-filter__checkbox-fake"></span> </label>
           </div>
           <div class="travelmates-filter__fieldset-wrapper">
-            <label class="travelmates-filter__fieldset-label">Евроденс
-              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
-              <span class="travelmates-filter__checkbox-fake"></span>
-            </label>
+            <label class="travelmates-filter__fieldset-label" tabindex="0">Евроденс
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden" tabindex="-1">
+              <span class="travelmates-filter__checkbox-fake"></span> </label>
           </div>
         </div>
         <div class="travelmates-filter__fieldset">
-          <h3 class="travelmates-filter__fieldset-title">Еда</h3>
+          <h3 class="travelmates-filter__fieldset-title" tabindex="0">Еда</h3>
           <div class="travelmates-filter__fieldset-wrapper">
-            <label class="travelmates-filter__fieldset-label">Мясоед
-              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
-              <span class="travelmates-filter__checkbox-fake"></span>
-            </label>
+            <label class="travelmates-filter__fieldset-label" tabindex="0">Мясоед
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden" tabindex="-1">
+              <span class="travelmates-filter__checkbox-fake"></span> </label>
           </div>
           <div class="travelmates-filter__fieldset-wrapper">
-            <label class="travelmates-filter__fieldset-label">Сидит на ПП
-              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
-              <span class="travelmates-filter__checkbox-fake"></span>
-            </label>
+            <label class="travelmates-filter__fieldset-label" tabindex="0">Сидит на ПП
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden" tabindex="-1">
+              <span class="travelmates-filter__checkbox-fake"></span> </label>
           </div>
           <div class="travelmates-filter__fieldset-wrapper">
-            <label class="travelmates-filter__fieldset-label">Веган-сыроед
-              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden">
-              <span class="travelmates-filter__checkbox-fake"></span>
-            </label>
+            <label class="travelmates-filter__fieldset-label" tabindex="0">Веган-сыроед
+              <input type="checkbox" class="travelmates-filter__checkbox visually-hidden" tabindex="-1">
+              <span class="travelmates-filter__checkbox-fake"></span> </label>
           </div>
         </div>
         <div class="travelmates-filter__fieldset travelmates-filter__fieldset--transport">
-          <h3 class="travelmates-filter__fieldset-title">Транспорт</h3>
+          <h3 class="travelmates-filter__fieldset-title" tabindex="0">Транспорт</h3>
           <div class="travelmates-filter__transport-wrapper">
             <label class="travelmates-filter__transport-label">
-              <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" checked>
-              <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--plane"></span>
-            </label>
-            <label class="travelmates-filter__transport-label">
-              <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" checked>
-              <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--bus"></span>
-            </label>
-            <label class="travelmates-filter__transport-label">
-              <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden">
-              <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--bike"></span>
-            </label>
-            <label class="travelmates-filter__transport-label">
-              <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" checked>
-              <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--run"></span>
-            </label>
+              <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" tabindex="-1" checked>
+              <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--plane" tabindex="0"></span>
+            </label> <label class="travelmates-filter__transport-label">
+            <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" tabindex="-1" checked>
+            <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--bus" tabindex="0"></span>
+          </label> <label class="travelmates-filter__transport-label">
+            <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" tabindex="-1">
+            <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--bike" tabindex="0"></span>
+          </label> <label class="travelmates-filter__transport-label">
+            <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" tabindex="-1" checked>
+            <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--run" tabindex="0"></span>
+          </label>
           </div>
         </div>
         <div class="travelmates-filter__fieldset travelmates-filter__fieldset--level">
-          <h3 class="travelmates-filter__fieldset-title">Левел</h3>
+          <h3 class="travelmates-filter__fieldset-title" tabindex="0">Левел</h3>
           <div class="travelmates-filter__level-wrapper">
             <div class="travelmates-filter__level-values">
               <input type="text" class="travelmates-filter__level-value travelmates-filter__level-value--from" value="30">
@@ -592,7 +571,7 @@
     <div class="cards-people__wrapper">
       <ul class="cards-people__list">
         <li class="cards-people__item">
-          <a href="">
+          <a href="/firsova"> <span class="visually-hidden">Таня Фирсова</span>
             <picture>
               <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-destop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
@@ -601,7 +580,7 @@
           </a>
           <div class="cards-people__item-wrapper">
             <div class="cards-people__info">
-              <h3 class="cards-people__name">Таня Фирсова</h3>
+              <a href="/firsova" class="cards-people__name">Таня Фирсова</a>
               <div class="cards-people__actions">
                 <button class="cards-people__button button button--yellow button--small">
                   <span>Позвать!</span>
@@ -665,13 +644,18 @@
               </div>
               <div class="cards-people__level-wrapper">
                 <h4 class="cards-people__level-title">левел:</h4>
-                <span class="cards-people__level">99</span>
+                <span class="cards-people__level level level--small">
+                  <svg class="level__progress" width="60" height="60" viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="6" stroke-dashoffset="12"></circle>
+                  </svg>
+                  99
+                </span>
               </div>
             </div>
           </div>
         </li>
         <li class="cards-people__item">
-          <a href="">
+          <a href="/demin"> <span class="visually-hidden">Петя Демин</span>
             <picture>
               <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
@@ -680,7 +664,7 @@
           </a>
           <div class="cards-people__item-wrapper">
             <div class="cards-people__info">
-              <h3 class="cards-people__name">Петя Демин</h3>
+              <a href="/demin" class="cards-people__name">Петя Демин</a>
               <div class="cards-people__actions">
                 <button type="button" class="cards-people__button button button--yellow button--small">
                   <span>Позвать!</span>
@@ -738,20 +722,27 @@
               </div>
               <div class="cards-people__level-wrapper">
                 <h4 class="cards-people__level-title">левел:</h4>
-                <span class="cards-people__level">80</span>
+                <span class="cards-people__level level level--small">
+                  <svg class="level__progress" width="60" height="60" viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="6" stroke-dashoffset="65"></circle>
+                  </svg>
+                  80
+                </span>
               </div>
             </div>
           </div>
         </li>
         <li class="cards-people__item">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
-            <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" class="cards-people__avatar" alt="Smolov">
-          </picture>
+          <a href="/smolov"> <span class="visually-hidden">Марк Смолов</span>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+              <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" class="cards-people__avatar" alt="Smolov">
+            </picture>
+          </a>
           <div class="cards-people__item-wrapper">
             <div class="cards-people__info">
-              <h3 class="cards-people__name">Марк Смолов</h3>
+              <a href="/smolov" class="cards-people__name">Марк Смолов</a>
               <div class="cards-people__actions">
                 <button type="button" class="cards-people__button button button--yellow button--small">
                   <span>Позвать!</span>
@@ -815,20 +806,27 @@
               </div>
               <div class="cards-people__level-wrapper">
                 <h4 class="cards-people__level-title">левел:</h4>
-                <span class="cards-people__level">25</span>
+                <span class="cards-people__level level level--small">
+                  <svg class="level__progress" width="60" height="60" viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="6" stroke-dashoffset="270"></circle>
+                  </svg>
+                  25
+                </span>
               </div>
             </div>
           </div>
         </li>
-        <li class="cards-people__item">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
-            <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" class="cards-people__avatar" alt="Rogovaya">
-          </picture>
+        <li class="cards-people__item cards-people__item--online">
+          <a href="/rogovaya"> <span class="visually-hidden">Марк Смолов</span>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+              <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" class="cards-people__avatar" alt="Rogovaya">
+            </picture>
+          </a>
           <div class="cards-people__item-wrapper">
             <div class="cards-people__info">
-              <h3 class="cards-people__name">Лариса Роговая</h3>
+              <a href="/rogovaya" class="cards-people__name">Лариса Роговая</a>
               <div class="cards-people__actions">
                 <button type="button" class="cards-people__button button button--yellow button--small">
                   <span>Позвать!</span>
@@ -885,7 +883,12 @@
               </div>
               <div class="cards-people__level-wrapper">
                 <h4 class="cards-people__level-title">левел:</h4>
-                <span class="level">50</span>
+                <span class="cards-people__level level level--small">
+                  <svg class="level__progress" width="60" height="60" viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="6" stroke-dashoffset="175"></circle>
+                  </svg>
+                  50
+                </span>
               </div>
             </div>
           </div>
@@ -909,8 +912,12 @@
             </li>
           </ul>
           <div class="people-paginator__buttons">
-            <a href="/" class="people-paginator__button people-paginator__button--prev"></a>
-            <a href="/" class="people-paginator__button people-paginator__button--next"></a>
+            <a href="/" class="people-paginator__button people-paginator__button--prev">
+              <span class="visually-hidden">Предыдущая</span>
+            </a>
+            <a href="/" class="people-paginator__button people-paginator__button--next">
+              <span class="visually-hidden">Следующая</span>
+            </a>
           </div>
         </div>
       </div>
@@ -918,7 +925,7 @@
   </section>
   <footer class="site-footer">
     <div class="site-footer__container container">
-      <a href="/" class="site-footer__logo">
+      <a href="/" class="site-footer__logo"><span class="visually-hidden">Лого</span>
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
@@ -931,30 +938,26 @@
             <svg class="social-footer__img social-footer__img--fb" width="11" height="21">
               <use xlink:href="#spr-facebook"></use>
             </svg>
-            <span class="social-footer__name visually-hidden">Фейсбук</span>
-          </a>
+            <span class="social-footer__name visually-hidden">Фейсбук</span> </a>
         </li>
         <li class="social-footer__item">
           <a href="" class="social-footer__link">
             <svg class="social-footer__img social-footer__img--vk" width="23" height="12">
               <use xlink:href="#spr-vk"></use>
             </svg>
-            <span class="social-footer__name visually-hidden">Вконтакте</span>
-          </a>
+            <span class="social-footer__name visually-hidden">Вконтакте</span> </a>
         </li>
         <li class="social-footer__item">
           <a href="" class="social-footer__link">
             <svg class="social-footer__img social-footer__img--instagram" width="18" height="18">
               <use xlink:href="#spr-instagram"></use>
             </svg>
-            <span class="social-footer__name visually-hidden">Инстаграм</span>
-          </a>
+            <span class="social-footer__name visually-hidden">Инстаграм</span> </a>
         </li>
       </ul>
       <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="site-footer__copyright">
         <span class="site-footer__copyright-text">Разработано</span>
-        <img src="img/htmlacademy.svg" alt="" width="27" height="34" class="site-footer__copyright-logo">
-      </a>
+        <img src="img/htmlacademy.svg" alt="" width="27" height="34" class="site-footer__copyright-logo"> </a>
     </div>
   </footer>
 </div>

@@ -7,17 +7,16 @@
   color: #1d2e5b;
   font-size: 24px;
   font-weight: 700;
-  line-height: 47px;
+  line-height: 50px;
   border-radius: 50%;
-  border: 2px solid $orange;
 }
 
 .level::after {
   content: "level";
   position: absolute;
   display: none;
-  top: 34px;
-  left: 15px;
+  top: 37px;
+  left: 17px;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -32,14 +31,39 @@
   line-height: 86px;
 }
 
+.level--small {
+  width: 45px;
+  height: 45px;
+}
+
+.level--small .level__progress {
+  width: 45px;
+  height: 45px;
+}
+
+
+.level--big .level__progress {
+  width: 100px;
+  height: 100px;
+}
+
+.level--big circle {
+  stroke-width: 3px;
+}
+
 .level--big::after {
   display: block;
+  width: 50px;
   top: 58px;
-  left: 30px;
+  left: 23px;
   color: #444444;
   font-size: 18px;
   font-weight: 400;
-  line-height: 22.17px;
+  line-height: 28px;
+}
+
+.level--small::after {
+  opacity: 0.4;
 }
 
 .level--black {
@@ -55,12 +79,21 @@
   display: block;
 }
 
+.level__progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+  stroke-dasharray: 358;
+  width: 60px;
+  height: 60px;
+}
+
 @media (min-width: $tablet-width) {
   .level {
     position: relative;
     height: 60px;
     width: 60px;
-    border: 3px solid #ff8d30;
   }
 
   .level::after {
@@ -70,18 +103,27 @@
   .level--big {
     width: 94px;
     height: 94px;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 77px;
+    line-height: 81px;
   }
 
   .level--big::after {
     display: block;
     top: 56px;
-    left: 28px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22.17px;
+    left: 22px;
+  }
+
+  .level--big .level__progress {
+    width: 94px;
+    height: 94px;
+  }
+
+  .level--small .level__progress {
+    width: 60px;
+    height: 60px;
+  }
+
+  .level--big circle {
+    stroke-width: 3px;
   }
 }
 

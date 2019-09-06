@@ -42,6 +42,7 @@
 }
 
 .site-header__contacts {
+  width: 100%;
   margin-bottom: 26px;
   list-style: none;
   padding: 0;
@@ -79,7 +80,7 @@
 
 .site-header__auth {
   display: block;
-  width: 196px;
+  width: 100%;
   margin-bottom: 50px;
   padding: 12px 10px 8px;
   border-radius: 30px;
@@ -184,6 +185,7 @@
   background-color: #ffffff;
 
   .site-header__toggle {
+    display: block;
     background-image: url("../img/menu-scroll.svg");
   }
 
@@ -226,7 +228,7 @@
 
   .site-header__container {
     padding-top: 40px;
-    padding-bottom: 28px;
+    padding-bottom: 73px;
   }
 
   .site-header__wrapper {
@@ -313,6 +315,10 @@
       background-color: $midnight;
     }
 
+    & .site-header__container {
+      padding-bottom: 28px;
+    }
+
     & .site-header__auth {
       display: block;
     }
@@ -329,6 +335,15 @@
 
   .site-header--scroll {
     background-color: #ffffff;
+
+    &.site-header--inner {
+      background-color: #ffffff;
+    }
+
+    & .site-header__container {
+      padding-top: 40px;
+      padding-bottom: 42px;
+    }
 
     & .site-header__navigation {
       display: none;
@@ -347,6 +362,8 @@
     }
 
     & .site-header__logo {
+      background-position: -5px -113px;
+
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-position: -2px -110px;
         background-size: 124%;
@@ -356,17 +373,53 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-header {
+    background-color: #161c36;
+  }
+
   .site-header__container {
     padding-top: 48px;
   }
-
 
   .site-header__wrapper {
     justify-content: flex-start;
   }
 
-  .site-header__logo-white {
+  .site-header__navigation {
+    order: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin: 8px 0 0;
+    padding-left: 88px;
+  }
+
+
+  .site-header__contacts {
+    display: flex;
+    order: 3;
+    margin-bottom: 0;
+    margin-left: auto;
+    width: auto;
+  }
+
+  .site-header__contacts a {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .site-header__logo {
+    background-position: -5px -57px;
+    width: 200px;
+    height: 52px;
     margin-right: 40px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/sprite-logo@2x.png") no-repeat;
+      background-position: -3px -55px;
+      background-size: 104%;
+    }
   }
 
   .site-header__navigation::before {
@@ -381,10 +434,6 @@
 
   .site-header__toggle {
     display: none;
-  }
-
-  .site-header__navigation {
-    order: 2;
   }
 
   .site-header__auth {
@@ -416,6 +465,10 @@
     &:active {
       opacity: 0.3;
     }
+  }
+
+  .site-header__social {
+    display: none;
   }
 
   .site-header__contacts-link {
@@ -450,47 +503,52 @@
     display: none;
   }
 
-  .site-header--closed {
-    background-color: #161c36;
 
-    & .site-header__navigation {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      width: auto;
-      margin: 8px 0 0;
-      padding-left: 88px;
-    }
+  .site-header--closed .site-header__navigation {
+    display: flex;
+  }
 
+  .site-header--closed .site-header__contacts {
+    display: flex;
+  }
 
-    & .site-header__contacts {
-      display: flex;
-      order: 3;
-      margin-bottom: 0;
-      margin-left: auto;
-    }
+  .site-header--closed .site-header__logo {
+    background-position: -5px -57px;
+    width: 200px;
+    height: 52px;
+    margin-right: 40px;
 
-    & .site-header__contacts a {
-      margin-left: 0;
-      padding: 0;
-    }
-
-    & .site-header__logo {
-      background-position: -5px -57px;
-      width: 200px;
-      height: 52px;
-      margin-right: 40px;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/sprite-logo@2x.png") no-repeat;
-        background-position: -3px -55px;
-        background-size: 104%;
-      }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/sprite-logo@2x.png") no-repeat;
+      background-position: -3px -55px;
+      background-size: 104%;
     }
   }
 
+
   .site-header--scroll {
     background-color: #ffffff;
+
+    &.site-header--inner {
+      background-color: #ffffff;
+    }
+
+    & .site-header__container {
+      padding-top: 19px;
+      padding-bottom: 18px;
+    }
+
+    & .site-header__toggle {
+      display: none;
+    }
+
+    & .site-header__navigation {
+      display: flex;
+    }
+
+    & .site-header__contacts {
+      display: flex;
+    }
 
     & .site-header__navigation::before {
       background-color: #192144;
@@ -512,9 +570,5 @@
         background-size: 104%;
       }
     }
-  }
-
-  .site-header--closed.site-header--inner {
-    background-color: #161c36;
   }
 }

@@ -1,6 +1,8 @@
 .transports-list {
   @include reset-list;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 
@@ -11,6 +13,10 @@
   border-radius: 50%;
   color: #161c36;
   background-color: #edeff6;
+}
+
+.transports-list--white .transports-list__item {
+  background-color: #ffffff;
 }
 
 .transports-list__item svg {
@@ -27,9 +33,7 @@
 
 @media (min-width: $tablet-width) {
   .transports-list {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     flex-direction: column;
   }
 
@@ -41,6 +45,11 @@
 
   .transports-list__item {
     background-color: transparent;
+  }
+
+  .transports-list__item svg {
+    width: 22px;
+    height: 22px;
   }
 }
 

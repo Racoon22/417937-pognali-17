@@ -18,12 +18,14 @@
 
 .plan-form__navigation {
   display: flex;
+  justify-content: space-between;
+  width: 47px;
   margin: 0 18px 0 0;
   padding: 0;
   list-style: none;
 }
 
-.plan-form__navigation-item {
+.plan-form__navigation-item a {
   display: block;
   width: 5px;
   height: 5px;
@@ -32,11 +34,11 @@
   opacity: 0.3;
 }
 
-.plan-form__navigation-item:not(:last-child) {
+.plan-form__navigation-item a:not(:last-child) {
   margin-right: 17px;
 }
 
-.plan-form__navigation-item--active {
+.plan-form__navigation-item--active a {
   opacity: 1;
 }
 
@@ -93,7 +95,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40%;
-  outline: none;
 
   &:hover {
     opacity: 0.4;
@@ -525,7 +526,7 @@
 .plan-form__country-wrapper--active .plan-form__country-name {
   width: 100%;
   color: #ffffff;
-  background: $midnight;
+  background-color: #1d2e5b;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border: none;
@@ -625,7 +626,7 @@
   padding-left: 1px;
 }
 
-.plan-form__country-alphabet div {
+.plan-form__country-letter {
   width: calc(20% + 1px);
   margin-top: -1px;
   margin-left: -1px;
@@ -646,6 +647,11 @@
     color: #ffffff;
     background-color: #1d2e5b;
   }
+}
+
+.plan-form__country-letter--active {
+  color: #ffffff;
+  background-color: #1d2e5b;
 }
 
 .plan-form__country-list {
@@ -693,6 +699,7 @@
 
   .plan-form__navigation {
     margin: 0;
+    width: 73px;
   }
 
   .plan-form__navigation-item:not(:last-child) {
@@ -961,9 +968,9 @@
     height: 47px;
   }
 
-  .cards-people__country-image {
-    width: 35px;
-    height: 24px;
+  .plan-form__country-image {
+    width: 70px;
+    height: 47px;
   }
 
   .plan-form__country-delete {
@@ -990,7 +997,8 @@
   }
 
   .plan-form__country-wrapper--active .plan-form__country-name {
-    width: 369px;
+    width: 370px;
+    flex-grow: 0;
   }
 
   .plan-form__country-wrapper--active .plan-form__country-modal {
@@ -1016,7 +1024,7 @@
     border-bottom-left-radius: 10px;
   }
 
-  .plan-form__country-alphabet div {
+  .plan-form__country-letter {
     width: calc(16.65% + 1px);
     font-size: 20px;
     font-weight: 500;
@@ -1240,6 +1248,10 @@
     border-right: 1px solid #cbced9;
   }
 
+  .plan-form__country-wrapper--active {
+    margin-bottom: 20px;
+  }
+
   .plan-form__country-wrapper--active .plan-form__country-name {
     width: 730px;
   }
@@ -1248,7 +1260,7 @@
     width: 730px;
   }
 
-  .plan-form__country-alphabet div {
+  .plan-form__country-letter {
     width: 60px;
     margin-right: 15px;
     border-radius: 4px;

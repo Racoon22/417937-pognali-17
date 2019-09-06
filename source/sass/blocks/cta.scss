@@ -153,6 +153,7 @@
   .cta {
     margin-bottom: -60px;
     padding-bottom: 62px;
+    padding-top: 99px;
     border-radius: 0 0 60px 60px;
   }
 
@@ -237,7 +238,7 @@
 @media (min-width: $desktop-width) {
   .cta {
     border-radius: 0 0 60px 60px;
-    padding-top: 132px;
+    padding-top: 129px;
     padding-bottom: 118px;
   }
 
@@ -264,6 +265,7 @@
   }
 
   .cta__contacts {
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;

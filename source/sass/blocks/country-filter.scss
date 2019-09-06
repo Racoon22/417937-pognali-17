@@ -1,7 +1,8 @@
 .country-filter {
   border-radius: 0 0 20px 20px;
   background-color: #e2e5f2;
-  margin-bottom: 23px;
+  padding-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .country-filter__container {
@@ -328,7 +329,7 @@
   }
 
   .country-filter__container {
-    padding: 120px 81px 50px;
+    padding: 120px 81px 74px;
     justify-content: flex-start;
   }
 
@@ -344,6 +345,7 @@
 
   .country-filter__alphabet {
     width: 100%;
+    margin-bottom: 34px;
   }
 
   .country-filter__countries-list {
@@ -404,5 +406,9 @@
   .country-filter__close {
     order: 5;
     margin: 0;
+  }
+
+  .country-filter {
+    margin-bottom: 78px;
   }
 }
