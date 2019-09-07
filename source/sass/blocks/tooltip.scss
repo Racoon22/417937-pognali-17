@@ -1,0 +1,33 @@
+.tooltip {
+  position: relative;
+}
+
+.tooltip__popup {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 10;
+  top: calc(100% + 5px);
+  left: 50%;
+  padding: 10px 25px;
+  border-radius: 4px;
+  background-color: #101d41;
+  color: #ffffff;
+  transform: translateX(-50%);
+  white-space: nowrap;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #101d41 transparent;
+  }
+}
+
+.tooltip:hover .tooltip__popup {
+  display: block;
+}

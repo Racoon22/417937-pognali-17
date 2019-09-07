@@ -4,6 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font" crossorigin="anonymous">
   <title>HTML Academy: Погнали</title>
 </head>
 <body>
@@ -537,18 +545,22 @@
         <div class="travelmates-filter__fieldset travelmates-filter__fieldset--transport">
           <h3 class="travelmates-filter__fieldset-title" tabindex="0">Транспорт</h3>
           <div class="travelmates-filter__transport-wrapper">
-            <label class="travelmates-filter__transport-label">
+            <label class="travelmates-filter__transport-label tooltip">
               <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" tabindex="-1" checked>
               <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--plane" tabindex="0"></span>
-            </label> <label class="travelmates-filter__transport-label">
+              <span class="tooltip__popup">Авиатранспорт</span>
+            </label> <label class="travelmates-filter__transport-label tooltip">
             <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" tabindex="-1" checked>
             <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--bus" tabindex="0"></span>
-          </label> <label class="travelmates-filter__transport-label">
+            <span class="tooltip__popup">Автотранспорт</span>
+          </label> <label class="travelmates-filter__transport-label tooltip">
             <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" tabindex="-1">
             <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--bike" tabindex="0"></span>
-          </label> <label class="travelmates-filter__transport-label">
+            <span class="tooltip__popup">Велосипед</span>
+          </label> <label class="travelmates-filter__transport-label tooltip">
             <input type="checkbox" class="travelmates-filter__transport-checkbox visually-hidden" tabindex="-1" checked>
             <span class="travelmates-filter__transport-fake travelmates-filter__transport-fake--run" tabindex="0"></span>
+            <span class="tooltip__popup">Пешком</span>
           </label>
           </div>
         </div>
@@ -573,7 +585,10 @@
         <li class="cards-people__item">
           <a href="/firsova"> <span class="visually-hidden">Таня Фирсова</span>
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-destop@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp, img/firsova-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/firsova-mobile@1x.webp, img/firsova-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
               <img src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" class="cards-people__avatar" alt="Firsova">
             </picture>
@@ -597,21 +612,30 @@
               <h4 class="cards-people__country-wanted">хочет посетить:</h4>
               <ul class="cards-people__counties-list">
                 <li class="cards-people__country-item">
-                  <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
-                    <use xlink:href="img/flags-sprite.svg#flag-sri-lanka"></use>
-                  </svg>
+                  <span class="tooltip">
+                    <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
+                      <use xlink:href="img/flags-sprite.svg#flag-sri-lanka"></use>
+                    </svg>
+                    <span class="tooltip__popup">Шри ланка</span>
+                  </span>
                   <span class="cards-people__country-name">Шри ланка</span>
                 </li>
                 <li class="cards-people__country-item">
-                  <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
-                    <use xlink:href="img/flags-sprite.svg#flag-thailand"></use>
-                  </svg>
+                  <span class="tooltip">
+                    <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
+                      <use xlink:href="img/flags-sprite.svg#flag-thailand"></use>
+                    </svg>
+                    <span class="tooltip__popup">Тайланд</span>
+                  </span>
                   <span class="cards-people__country-name">Тайланд</span>
                 </li>
                 <li class="cards-people__country-item">
-                  <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
-                    <use xlink:href="img/flags-sprite.svg#flag-seychelles"></use>
-                  </svg>
+                  <span class="tooltip">
+                    <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
+                      <use xlink:href="img/flags-sprite.svg#flag-seychelles"></use>
+                    </svg>
+                    <span class="tooltip__popup">Сейшелы</span>
+                  </span>
                   <span class="cards-people__country-name">Сейшелы</span>
                 </li>
               </ul>
@@ -620,26 +644,30 @@
               <div class="cards-people__transport-wrapper">
                 <h4 class="cards-people__transport">транспорт:</h4>
                 <ul class="cards-people__transports transports-list transports-list--companions">
-                  <li class="transports-list__item transports-list__item--active">
+                  <li class="transports-list__item tooltip transports-list__item--active tooltip">
                     <svg width="19" height="21">
                       <use xlink:href="#spr-plane"></use>
                     </svg>
-                    <span class="visually-hidden">Самолет</span></li>
-                  <li class="transports-list__item">
+                    <span class="tooltip__popup">Авиаперелет</span>
+                  </li>
+                  <li class="transports-list__item tooltip">
                     <svg width="17" height="21">
                       <use xlink:href="#spr-bus"></use>
                     </svg>
-                    <span class="visually-hidden">Автобус</span></li>
-                  <li class="transports-list__item">
+                    <span class="tooltip__popup">Автотранспорт</span>
+                  </li>
+                  <li class="transports-list__item tooltip">
                     <svg width="24" height="21">
                       <use xlink:href="#spr-bike"></use>
                     </svg>
-                    <span class="visually-hidden">Велосипед</span></li>
-                  <li class="transports-list__item">
+                    <span class="tooltip__popup">Велосипед</span>
+                  </li>
+                  <li class="transports-list__item tooltip">
                     <svg width="20" height="21">
                       <use xlink:href="#spr-run"></use>
                     </svg>
-                    <span class="visually-hidden">Пешком</span></li>
+                    <span class="tooltip__popup">Пешком</span>
+                  </li>
                 </ul>
               </div>
               <div class="cards-people__level-wrapper">
@@ -657,6 +685,9 @@
         <li class="cards-people__item">
           <a href="/demin"> <span class="visually-hidden">Петя Демин</span>
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp, img/demin-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/demin-mobile@1x.webp, img/demin-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
               <img src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" class="cards-people__avatar" alt="Demin">
@@ -681,15 +712,21 @@
               <h4 class="cards-people__country-wanted">хочет посетить:</h4>
               <ul class="cards-people__counties-list">
                 <li class="cards-people__country-item">
-                  <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
-                    <use xlink:href="img/flags-sprite.svg#flag-belgium"></use>
-                  </svg>
+                  <span class="tooltip">
+                    <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
+                      <use xlink:href="img/flags-sprite.svg#flag-belgium"></use>
+                    </svg>
+                    <span class="tooltip__popup">Бельгия</span>
+                  </span>
                   <span class="cards-people__country-name">Бельгия</span>
                 </li>
                 <li class="cards-people__country-item">
-                  <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
-                    <use xlink:href="img/flags-sprite.svg#flag-czech"></use>
-                  </svg>
+                  <span class="tooltip">
+                    <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
+                      <use xlink:href="img/flags-sprite.svg#flag-czech"></use>
+                    </svg>
+                    <span class="tooltip__popup">Чехия</span>
+                  </span>
                   <span class="cards-people__country-name">Чехия</span>
                 </li>
               </ul>
@@ -698,26 +735,30 @@
               <div class="cards-people__transport-wrapper">
                 <h4 class="cards-people__transport">транспорт:</h4>
                 <ul class="cards-people__transports transports-list transports-list--companions">
-                  <li class="transports-list__item">
+                  <li class="transports-list__item transports-list__item--active tooltip">
                     <svg width="19" height="21">
                       <use xlink:href="#spr-plane"></use>
                     </svg>
-                    <span class="visually-hidden">Самолет</span></li>
-                  <li class="transports-list__item">
+                    <span class="tooltip__popup">Авиаперелет</span>
+                  </li>
+                  <li class="transports-list__item transports-list__item--active tooltip">
                     <svg width="17" height="21">
                       <use xlink:href="#spr-bus"></use>
                     </svg>
-                    <span class="visually-hidden">Автобус</span></li>
-                  <li class="transports-list__item">
+                    <span class="tooltip__popup">Автотранспорт</span>
+                  </li>
+                  <li class="transports-list__item tooltip">
                     <svg width="24" height="21">
                       <use xlink:href="#spr-bike"></use>
                     </svg>
-                    <span class="visually-hidden">Велосипед</span></li>
-                  <li class="transports-list__item">
+                    <span class="tooltip__popup">Велосипед</span>
+                  </li>
+                  <li class="transports-list__item transports-list__item--active tooltip">
                     <svg width="20" height="21">
                       <use xlink:href="#spr-run"></use>
                     </svg>
-                    <span class="visually-hidden">Пешком</span></li>
+                    <span class="tooltip__popup">Пешком</span>
+                  </li>
                 </ul>
               </div>
               <div class="cards-people__level-wrapper">
@@ -735,6 +776,9 @@
         <li class="cards-people__item">
           <a href="/smolov"> <span class="visually-hidden">Марк Смолов</span>
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp, img/smolov-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp, img/smolov-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/smolov-mobile@1x.webp, img/smolov-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
               <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" class="cards-people__avatar" alt="Smolov">
@@ -759,21 +803,30 @@
               <h4 class="cards-people__country-wanted">хочет посетить:</h4>
               <ul class="cards-people__counties-list">
                 <li class="cards-people__country-item">
-                  <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
-                    <use xlink:href="img/flags-sprite.svg#flag-usa"></use>
-                  </svg>
+                  <span class="tooltip">
+                    <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
+                      <use xlink:href="img/flags-sprite.svg#flag-usa"></use>
+                    </svg>
+                    <span class="tooltip__popup">США</span>
+                  </span>
                   <span class="cards-people__country-name">США</span>
                 </li>
                 <li class="cards-people__country-item">
-                  <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
-                    <use xlink:href="img/flags-sprite.svg#flag-australia"></use>
-                  </svg>
+                  <span class="tooltip">
+                    <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
+                      <use xlink:href="img/flags-sprite.svg#flag-australia"></use>
+                    </svg>
+                    <span class="tooltip__popup">Австралия</span>
+                  </span>
                   <span class="cards-people__country-name">Австралия</span>
                 </li>
                 <li class="cards-people__country-item">
-                  <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
-                    <use xlink:href="img/flags-sprite.svg#flag-dominica"></use>
-                  </svg>
+                  <span class="tooltip">
+                    <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
+                      <use xlink:href="img/flags-sprite.svg#flag-dominica"></use>
+                    </svg>
+                    <span class="tooltip__popup">Доминикана</span>
+                  </span>
                   <span class="cards-people__country-name">Доминикана</span>
                 </li>
               </ul>
@@ -782,26 +835,30 @@
               <div class="cards-people__transport-wrapper">
                 <h4 class="cards-people__transport">транспорт:</h4>
                 <ul class="cards-people__transports transports-list transports-list--companions">
-                  <li class="transports-list__item">
+                  <li class="transports-list__item transports-list__item--active tooltip">
                     <svg width="19" height="21">
                       <use xlink:href="#spr-plane"></use>
                     </svg>
-                    <span class="visually-hidden">Самолет</span></li>
-                  <li class="transports-list__item">
+                    <span class="tooltip__popup">Авиаперелет</span>
+                  </li>
+                  <li class="transports-list__item tooltip">
                     <svg width="17" height="21">
                       <use xlink:href="#spr-bus"></use>
                     </svg>
-                    <span class="visually-hidden">Автобус</span></li>
-                  <li class="transports-list__item">
+                    <span class="tooltip__popup">Автотранспорт</span>
+                  </li>
+                  <li class="transports-list__item transports-list__item--active tooltip">
                     <svg width="24" height="21">
                       <use xlink:href="#spr-bike"></use>
                     </svg>
-                    <span class="visually-hidden">Велосипед</span></li>
-                  <li class="transports-list__item">
+                    <span class="tooltip__popup">Велосипед</span>
+                  </li>
+                  <li class="transports-list__item tooltip">
                     <svg width="20" height="21">
                       <use xlink:href="#spr-run"></use>
                     </svg>
-                    <span class="visually-hidden">Пешком</span></li>
+                    <span class="tooltip__popup">Пешком</span>
+                  </li>
                 </ul>
               </div>
               <div class="cards-people__level-wrapper">
@@ -817,8 +874,11 @@
           </div>
         </li>
         <li class="cards-people__item cards-people__item--online">
-          <a href="/rogovaya"> <span class="visually-hidden">Марк Смолов</span>
+          <a href="/rogovaya"> <span class="visually-hidden">Лариса Роговая</span>
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp, img/rogovaya-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp, img/rogovaya-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp, img/rogovaya-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
               <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" class="cards-people__avatar" alt="Rogovaya">
@@ -842,15 +902,21 @@
               <h4 class="cards-people__country-wanted">хочет посетить:</h4>
               <ul class="cards-people__counties-list">
                 <li class="cards-people__country-item">
-                  <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
-                    <use xlink:href="img/flags-sprite.svg#flag-united-kingdom"></use>
-                  </svg>
+                  <span class="tooltip">
+                    <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
+                      <use xlink:href="img/flags-sprite.svg#flag-united-kingdom"></use>
+                    </svg>
+                    <span class="tooltip__popup">Великобритания</span>
+                  </span>
                   <span class="cards-people__country-name">Великобритания</span>
                 </li>
                 <li class="cards-people__country-item">
-                  <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
-                    <use xlink:href="img/flags-sprite.svg#flag-thailand"></use>
-                  </svg>
+                  <span class="tooltip">
+                    <svg class="cards-people__country-image" width="26" height="18" viewBox="0 0 71 48">
+                      <use xlink:href="img/flags-sprite.svg#flag-belgium"></use>
+                    </svg>
+                    <span class="tooltip__popup">Германия</span>
+                  </span>
                   <span class="cards-people__country-name">Германия</span>
                 </li>
               </ul>
@@ -859,26 +925,30 @@
               <div class="cards-people__transport-wrapper">
                 <h4 class="cards-people__transport">транспорт:</h4>
                 <ul class="cards-people__transports transports-list transports-list--companions">
-                  <li class="transports-list__item">
+                  <li class="transports-list__item transports-list__item--active tooltip">
                     <svg width="19" height="21">
                       <use xlink:href="#spr-plane"></use>
                     </svg>
-                    <span class="visually-hidden">Самолет</span></li>
-                  <li class="transports-list__item">
+                    <span class="tooltip__popup">Авиаперелет</span>
+                  </li>
+                  <li class="transports-list__item transports-list__item--active tooltip">
                     <svg width="17" height="21">
                       <use xlink:href="#spr-bus"></use>
                     </svg>
-                    <span class="visually-hidden">Автобус</span></li>
-                  <li class="transports-list__item">
+                    <span class="tooltip__popup">Автотранспорт</span>
+                  </li>
+                  <li class="transports-list__item tooltip">
                     <svg width="24" height="21">
                       <use xlink:href="#spr-bike"></use>
                     </svg>
-                    <span class="visually-hidden">Велосипед</span></li>
-                  <li class="transports-list__item">
+                    <span class="tooltip__popup">Велосипед</span>
+                  </li>
+                  <li class="transports-list__item tooltip">
                     <svg width="20" height="21">
                       <use xlink:href="#spr-run"></use>
                     </svg>
-                    <span class="visually-hidden">Пешком</span></li>
+                    <span class="tooltip__popup">Пешком</span>
+                  </li>
                 </ul>
               </div>
               <div class="cards-people__level-wrapper">

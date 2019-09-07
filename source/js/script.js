@@ -23,11 +23,13 @@ toggleMenu.addEventListener("click", function () {
   header.classList.add("site-header--closed")
 });
 
-tariffsButton.addEventListener("click", function (e) {
-  e.preventDefault();
-  tariffsModal.classList.add("modal--show");
-});
+if (tariffsButton) {
+  tariffsButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    tariffsModal.classList.add("modal--show");
+  });
 
-closeTariffs.addEventListener("click", function (e) {
-  tariffsModal.classList.remove("modal--show");
-});
+  closeTariffs.addEventListener("click", function (e) {
+    tariffsModal.classList.remove("modal--show");
+  });
+}

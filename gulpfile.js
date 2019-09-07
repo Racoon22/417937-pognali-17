@@ -65,13 +65,13 @@ gulp.task("images", function () {
       imagemin.svgo()
       ]))
     .pipe(gulp.dest("source/img"))
-})
+});
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("source/img/**/{firsova,demin,rogovaya,smolov}-*.jpg")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"))
-})
+    .pipe(gulp.dest("build/img"))
+});
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/**/spr-*.svg")
@@ -80,14 +80,14 @@ gulp.task("sprite", function () {
     }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
-})
+});
 
 gulp.task("flags", function () {
   return gulp.src("source/img/**/flag-*.svg")
     .pipe(svgstore())
     .pipe(rename("flags-sprite.svg"))
     .pipe(gulp.dest("build/img"))
-})
+});
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
@@ -95,7 +95,7 @@ gulp.task("html", function () {
       include()
     ]))
     .pipe(gulp.dest("build"))
-})
+});
 
 gulp.task("copy", function () {
   return gulp.src([
@@ -120,6 +120,7 @@ gulp.task("build", gulp.series(
   "js",
   "sprite",
   "flags",
+  "webp",
   "html"
 ));
 

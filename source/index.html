@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Погнали</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
 <div style="display: none;">
@@ -191,48 +199,51 @@
           </div>
           <div class="companions__info">
             <ul class="companions__countries-list">
-              <li class="companions__countries-item">
+              <li class="companions__countries-item tooltip">
                 <svg class="companions__countries-img" width="35" height="25" viewBox="0 0 71 48">
                   <use xlink:href="img/flags-sprite.svg#flag-sri-lanka"></use>
                 </svg>
+                <span class="tooltip__popup">Шри ланка</span>
               </li>
-              <li class="companions__countries-item">
+              <li class="companions__countries-item tooltip">
                 <svg class="companions__countries-img" width="35" height="25" viewBox="0 0 71 48">
                   <use xlink:href="img/flags-sprite.svg#flag-thailand"></use>
                 </svg>
+                <span class="tooltip__popup">Тайланд</span>
               </li>
-              <li class="companions__countries-item">
+              <li class="companions__countries-item tooltip">
                 <svg class="companions__countries-img" width="35" height="25" viewBox="0 0 71 48">
                   <use xlink:href="img/flags-sprite.svg#flag-seychelles"></use>
                 </svg>
+                <span class="tooltip__popup">Сейшелы</span>
               </li>
             </ul>
             <h3 class="companions__name">Таня Фирсова</h3>
             <p class="companions__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
             <ul class="companions__transports transports-list transports-list--white transports-list--inline">
-              <li class="transports-list__item transports-list__item--active">
+              <li class="transports-list__item tooltip transports-list__item--active">
                 <svg width="19" height="21" viewBox="0 0 19 21">
                   <use xlink:href="#spr-plane"></use>
                 </svg>
-                <span class="visually-hidden">Самолет</span>
+                <span class="tooltip__popup">Авиаперелет</span>
               </li>
-              <li class="transports-list__item">
+              <li class="transports-list__item tooltip">
                 <svg width="17" height="21" viewBox="0 0 17 21">
                   <use xlink:href="#spr-bus"></use>
                 </svg>
-                <span class="visually-hidden">Автобус</span>
+                <span class="tooltip__popup">Автотранспорт</span>
               </li>
-              <li class="transports-list__item">
+              <li class="transports-list__item tooltip">
                 <svg width="24" height="21" viewBox="0 0 24 21">
                   <use xlink:href="#spr-bike"></use>
                 </svg>
-                <span class="visually-hidden">Велосипед</span>
+                <span class="tooltip__popup">Велосипед</span>
               </li>
-              <li class="transports-list__item">
+              <li class="transports-list__item tooltip">
                 <svg width="20" height="21" viewBox="0 0 20 21" preserveAspectRatio="xMidYMid meet">
                   <use xlink:href="#spr-run"></use>
                 </svg>
-                <span class="visually-hidden">Пешком</span>
+                <span class="tooltip__popup">Пешком</span>
               </li>
             </ul>
           </div>
@@ -251,43 +262,45 @@
           </div>
           <div class="companions__info">
             <ul class="companions__countries-list">
-              <li class="companions__countries-item">
+              <li class="companions__countries-item tooltip">
                 <svg class="companions__countries-img" width="35" height="25" viewBox="0 0 71 48">
                   <use xlink:href="img/flags-sprite.svg#flag-belgium"></use>
                 </svg>
+                <span class="tooltip__popup">Бельгия</span>
               </li>
-              <li class="companions__countries-item">
+              <li class="companions__countries-item tooltip">
                 <svg class="companions__countries-img" width="35" height="25" viewBox="0 0 71 48">
                   <use xlink:href="img/flags-sprite.svg#flag-czech"></use>
                 </svg>
+                <span class="tooltip__popup">Чехия</span>
               </li>
             </ul>
             <h3 class="companions__name">Петя Демин</h3>
             <p class="companions__tags">#бургер #бар #футбол #концерт #крафт</p>
             <ul class="companions__transports transports-list transports-list--white transports-list--inline">
-              <li class="transports-list__item transports-list__item--active">
+              <li class="transports-list__item tooltip transports-list__item--active">
                 <svg width="19" height="21" viewBox="0 0 19 21">
                   <use xlink:href="#spr-plane"></use>
                 </svg>
-                <span class="visually-hidden">Самолет</span>
+                <span class="tooltip__popup">Авиаперелет</span>
               </li>
-              <li class="transports-list__item transports-list__item--active">
+              <li class="transports-list__item tooltip transports-list__item--active">
                 <svg width="17" height="21" viewBox="0 0 17 21">
                   <use xlink:href="#spr-bus"></use>
                 </svg>
-                <span class="visually-hidden">Автобус</span>
+                <span class="tooltip__popup">Автотранспорт</span>
               </li>
-              <li class="transports-list__item">
+              <li class="transports-list__item tooltip">
                 <svg width="24" height="21" viewBox="0 0 24 21">
                   <use xlink:href="#spr-bike"></use>
                 </svg>
-                <span class="visually-hidden">Велосипед</span>
+                <span class="tooltip__popup">Велосипед</span>
               </li>
-              <li class="transports-list__item transports-list__item--active">
+              <li class="transports-list__item tooltip transports-list__item--active">
                 <svg width="20" height="21" viewBox="0 0 20 21" preserveAspectRatio="xMidYMid meet">
                   <use xlink:href="#spr-run"></use>
                 </svg>
-                <span class="visually-hidden">Пешком</span>
+                <span class="tooltip__popup">Пешком</span>
               </li>
             </ul>
           </div>

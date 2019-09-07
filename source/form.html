@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Погнали</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
 <div style="display: none;">
@@ -88,7 +96,9 @@
         80
       </span>
       <picture class="info__avatar">
-        <source media="(min-width: 1200px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp 2x">
+        <source type="image/webp" srcset="img/demin-tablet@1x.webp, img/demin-tablet@2x.webp 2x">
+        <source media="(min-width: 14400px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
         <img src="img/demin-tablet@1x.jpg" srcset="img/demin-tablet@1x.jpg 2x" alt="Demin">
       </picture>
       <button type="button" class="info__change"><span>Сменить </span>фото</button>
@@ -99,18 +109,26 @@
       <div class="info__transport-wrapper">
         <label for="tags" class="info__transport-label">транспорт</label>
         <div class="info__transport transport-input">
-          <label class="transport-input__label" tabindex="0">
+          <label class="transport-input__label tooltip" tabindex="0">
             <input type="checkbox" class="transport-input__checkbox visually-hidden" tabindex="-1" checked>
-            <span class="transport-input__fake transport-input__fake--plane"></span></label>
-          <label class="transport-input__label" tabindex="0">
+            <span class="transport-input__fake transport-input__fake--plane"></span>
+            <span class="tooltip__popup">Авиатранспорт</span>
+          </label>
+          <label class="transport-input__label tooltip" tabindex="0">
             <input type="checkbox" class="transport-input__checkbox visually-hidden" tabindex="-1" checked>
-            <span class="transport-input__fake transport-input__fake--bus"></span> </label>
-          <label class="transport-input__label" tabindex="0">
+            <span class="transport-input__fake transport-input__fake--bus"></span>
+            <span class="tooltip__popup">Автотранспорт</span>
+          </label>
+          <label class="transport-input__label tooltip" tabindex="0">
             <input type="checkbox" class="transport-input__checkbox visually-hidden" tabindex="-1">
-            <span class="transport-input__fake transport-input__fake--bike"></span> </label>
-          <label class="transport-input__label" tabindex="0">
+            <span class="transport-input__fake transport-input__fake--bike"></span>
+            <span class="tooltip__popup">Велосипед</span>
+          </label>
+          <label class="transport-input__label tooltip" tabindex="0">
             <input type="checkbox" class="transport-input__checkbox visually-hidden" tabindex="-1" checked>
-            <span class="transport-input__fake transport-input__fake--run"></span> </label>
+            <span class="transport-input__fake transport-input__fake--run"></span>
+            <span class="tooltip__popup">Пешком</span>
+          </label>
         </div>
       </div>
     </div>
